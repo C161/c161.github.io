@@ -1,0 +1,1275 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="keywords" content="privacy, security, anonymity, tor, environmentalism, climate change, collapse">
+      <title>C16.one</title>
+      <link rel="stylesheet" href="base.css">
+      <link rel="stylesheet" type="text/css" href="list.css"/>
+      <link rel="stylesheet" type="text/css" href="compartmentalization.css"/>
+      <link rel="shortcut icon" href="icon.png">
+   </head>
+   <body id="body" class="darkmode">
+      <script>
+         function changeImage1() {
+             var image = document.getElementById('GitHub');
+             if (image.src.match("GitHub-Mark-Light")) {
+                 image.src = "icons/GitHub-Mark-Dark.png";
+             } else {
+                 image.src = "icons/GitHub-Mark-Light.png";
+             }
+         }
+         
+         function changeImage2() {
+             var image = document.getElementById('xxiivv');
+             if (image.src.match("https://webring.xxiivv.com/icon.white.svg")) {
+                 image.src = "https://webring.xxiivv.com/icon.black.svg";
+             } else {
+                 image.src = "https://webring.xxiivv.com/icon.white.svg";
+             }
+         }
+         
+         function toggleDarkLight() {
+           var body = document.getElementById("body");
+           var currentClass = body.className;
+           body.className = currentClass == "darkmode" ? "light-mode" : "darkmode";
+         }
+      </script>
+      <header>
+         <img src="logo.png" class="logo" alt="logo">
+         <div class="name">
+            <h1><a href="index.html" >C16.one</a></h1>
+         </div>
+         <div class="header-list">
+            <ul class="header-list-items">
+               <li class="hli inactive"> <a href="about.html">About</a></li>
+               <li class="hli inactive"> <a href="contact.html">Contact</a></li>
+               <li class="hli inactive" style="padding-bottom: 25px;"> <a href="index.html">Index</a></li>
+               <li class="hli no-click-button"> <a style="color:#fcfcfc;" href="https://www.youtube.com/watch?v=2PW2eMboreI">Don't click!</a></li>
+               <button type="button" class="theme-toggle" name="dark_light" onclick="changeImage1(); changeImage2(); toggleDarkLight()">🌙/🌞</button>
+            </ul>
+         </div>
+      </header>
+      <div class="content" style="margin-top: 50px;">
+         <section style="max-width: 888px ;margin: 0 auto; width: 90%; padding: 0; margin: 0;">
+            <div class="structure">
+               <h3 style="color:#e3e3e3">Structure</h3>
+               I. <a href="#prerequisite">Prerequisite</a><br>
+               - <a href="#what-this-is-and-what-this-isnt">What this is and what this isn't</a><br> 
+               - <a href="#things-you-should-know-before-reading">Things and concepts you should know before reading</a><br>
+               II. <a href="#hardware">Hardware</a><br>
+               - <a href="#your-computer-hardware">Your computer hardware</a><br>
+               - <a href="#your-processor">Your processor</a><br>
+               - <a href="#your-router">Your router</a><br>
+               - <a href="#additional-hardware">Additional hardware</a><br>
+               III. <a href="#firmware">Firmware</a><br>
+               IV. <a href="#in-the-bios-uefi-of-your-computer">In the BIOS / UEFI of your computer</a><br>
+               V. <a href="#compartmentalization">Compartmentalization</a><br>
+               - <a href="#basic-examples-for-compartmentalization">Basic examples for compartmentalization</a><br>
+               VI. <a href="#operating-systems">Operating systems</a><br>
+               - <a href="#installation-and-system-settings-in-linux">Installation and system settings in Linux</a><br>
+               - <a href="#hardening-linux">Hardening Linux</a><br>
+               - <a href="#whonix">Whonix</a><br>
+               VII. <a href="#virtual-machines">Virtual machines</a><br>
+               - <a href="#hardening-virtualbox-virtual-machines">Hardening VirtualBox virtual machines</a><br>
+               VIII. <a href="#dns">DNS</a><br> 
+               IX. <a href="#browsers">Browsers</a><br> 
+               - <a href="#hardening-firefox">Hardening Firefox</a><br>
+               - <a href="#the-tor-browser">The Tor Browser</a><br>
+               X. <a href="#add-ons">Add-ons</a><br>
+               - <a href="#add-ons-recommendations">My recommendations</a><br> 
+               XI. <a href="#search-engines">Search engines</a><br> 
+               - <a href="#search-engines-recommendations">My recommendations</a><br> 
+               - <a href="#mediocre-search-engines">Mediocre search engines</a><br>
+               - <a href="#unrecommended-search-engines">Unrecommended search engines</a><br>
+               XII. <a href="#browsing-habits">Browsing habits</a><br>
+               XIII. <a href="#aliases-Pseudonyms-Online-Identities">Aliases / Pseudonyms / Online Identities</a><br>
+               XIV. <a href="#emails">Emails</a><br>
+               XV. <a href="#files-and-metadata">Files and metadata</a><br>
+               - <a href="#removing-metadata">Removing metadata</a><br>
+               XVI. <a href="#cloud-storage">Cloud storage</a><br>
+               XVII. <a href="#password-passphrases">Passwords / Passphrases</a><br>
+               XVIII. <a href="#accounts">Accounts</a><br>
+               - <a href="#social-media">Social Media</a><br>
+               XIX. <a href="#two-factor-authentication">Two-Factor Authentication</a><br>
+               XX. <a href="#vpns">VPNs</a><br>
+               XXI. <a href="#downloads">Downloads</a><br>
+               XXII. <a href="#tampering-and-intrusion-detection">Tampering and intrusion detection</a><br>
+               XXIII. <a href="#deleting-your-footpring">Deleting your footprint</a><br>
+               XXIV. <a href="#in-real-life">In real life</a><br>
+               - <a href="#opsec">OPSEC</a><br>
+               XXV. <a href="#smart-devices">Smart devices</a><br>
+               XXVI. <a href="#using-public-wi-fi">Using public Wi-Fi</a><br>
+               XXVII. <a href="#advanced-threat-protection">Advanced threat protection</a><br>
+               XXVIII. <a href="#if-you-are-in-serious-trouble">If you are in serious trouble</a><br>
+            </div>
+            <hr style="color:white; height:2px;">
+            <br>
+            <div class="list" style="margin-top:50px;">
+            <h3 id="prerequisite"><b>I. Prerequisite</b></h3>
+            <h3 id="what-this-is-and-what-this-isnt">What this is and what this isn't</h3>
+            <p style="display:inline;">As you can see, this is more of a to-do list and not a full guide on how to protect yourself. If you need detailed instructions and more background knowledge, I can highly recommend <a href="https://anonymousplanet-ng.org">The Hitchhiker’s Guide to Online Anonymity</a> / <a href="http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.html">Tor</a>. Before you start, there are some things you need to know. During every step in the process, you should fully understand what you are doing and what the implications and limitations of your actions are. It is impossible to have a set-up that is completely secure and anonymous. Everything can be breached by an adversary if time and resources are on their side. Since you as a human are the weakest link in the chain, you should also have a plan, what to do if things are starting to go sideways.<br>
+                This list does not follow a strict threat model, so that you can decide how deep you want to dive into the privacy rabbit hole. Some things might contradict each other, so be aware and think twice before implementing (especially in regard to balancing security vs uniqueness of your fingerprint). <br> Relevant articles and further reading will be hidden in HTML details (
+            </p>
+            <details closed style="display:unset;">
+               <summary></summary>
+            </details>
+            <p style="display:inline;">) tags.<br>
+               I take no responsibility for the accuracy of the information contained in this guide or for the consequences caused by the actions taken by the reader.<br>
+               Edit: The .onion links for THGTOA don't work anymore. I will remove them later.
+            </p>
+            <br><br><br>
+            <h3 id="things-you-should-know-before-reading">Things and concepts you should know before reading</h3>
+            <ul style="margin-bottom:0;">
+               <li>You should understand the differences between security, privacy and anonymity</li>
+               <li>You should be familiar with concepts like fingerprinting, malware and social engineering techniques</li>
+               <li>You should know what your <a href="https://owasp.org/www-community/Threat_Modeling">threat model</a> is → assets, adversaries, threats and mitigation</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://pixelprivacy.com/resources/browser-fingerprinting">Browser Fingerprinting: What Is It And What Should You Do About It?</a></li>
+                  <li><a href="https://invidious.kavin.rocks/watch?v=dbpys-2VL7w">009 Security Vulnerabilities Threats and Adversaries</a> / <a href="http://w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion/watch?v=dbpys-2VL7w">Tor</a></li>
+                  <li><a href="https://invidious.kavin.rocks/watch?v=blKAzwAD1mU">010 Threat Modeling and Risk Assessments</a> / <a href="http://w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion/watch?v=blKAzwAD1mU">Tor</a></li>
+                  <li><a href="https://opsec101.org">Opsec 101</a></li>
+                  <li><a href="https://www.comparitech.com/net-admin/threat-modeling-guide">Threat Modeling Guide</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="hardware"><b>II. Hardware</b></h3>
+            <h3 id="your-computer-hardware">Your computer hardware</h3>
+            <ul>
+               <li>Prefer secure and "Respects Your Freedom" rated hardware from vendors such as Vikings, Technoethical or Libiquity</li>
+               <li>Hardware that ships with Linux preinstalled: Insurgo, NitroKey, ThinkPenguin, System76 and Purism</li>
+               <li>Hardware from <a href="https://puri.sm/posts/anti-interdiction-services">Purism</a> and NitroKey can be bought with tamper-evident packaging (tamper-evident tape, bag, glitter nail polish)</li>
+               <li>Prefer to buy your hardware anonymously from small retailers with cash and not online (unless bought with Monero over Tor)</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li> <a href="https://ryf.fsf.org/products">Hardware classified as Respects your Freedom</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="your-processor">Your processor</h3>
+            <p>Since the Intel ME and the AMD PSP are possible privacy and security threats, you can:</p>
+            <ul>
+               <li><a href="https://github.com/corna/me_cleaner/wiki/me_cleaner-status";">Check</a> if you can use me_cleaner to deactivate the ME as far as that is possible</li>
+               <li>Use an AMD processor, since the AMD PSP can be deactivated in some BIOSes/UEFIs</li>
+               <li>To avoid IntelME and AMD PSP completely use devices from RaptorCS (POWER9 processor), Pine64 (Rockchip / Allwinner processor) or old models of Intel / AMD processors</li>
+            </ul>
+            <details>
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://cybersecuritylab.de/amd-processors-without-amd-psp-secure-technology">AMD processors without AMD PSP / Secure Technology</a></li>
+                  <li><a href="https://freundschafter.com/cybersecurity-intel-management-engine-intel-me-intel-active-management-technlogy-iamt">Cybersecurity: CPU and system alternatives without Intel ME iAMT and AMD PSP / Secure Technology</a></li>
+                  <li><a href="https://freundschafter.com/cybersecurity-cpu-and-system-alternatives-without-intel-me-iamt-and-amd-psp-secure-technology">Cybersecurity: Intel Management Engine (Intel ME) &amp; Intel Active Management Technlogy (iAMT)</a></li>
+                  <li><a href="https://cybersecuritylab.de/system-alternatives-without-intel-me-iamt-and-amd-psp-secure-technology">System alternatives without Intel ME / iAMT and AMD PSP / Secure Technology</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="your-router">Your router</h3>
+            <p>Routers brands usually have  unique configurations and settings, so I will list many different options here. Probably not all of them are available to you.</p>
+            <ul>
+               <li>Buy your router instead of <a href="https://routersecurity.org/ISProuters.php">renting</a> one from your ISP</li>
+               <li>Use open source firmware like OpenWrt</li>
+               <li>Keep your firmware up-to-date</li>
+               <li>Change the default password of your router</li>
+               <li>Turn on your firewall and enable automatic updates</li>
+               <li>Disable WPS, PING, Telnet, SSH, UPnP, HNAP and Remote Administration</li>
+               <li>Disable Cloud-Based Management</li>
+               <li>Prohibit communication between different devices</li>
+               <li>Whitelist MAC addresses</li>
+               <li>Change the DNS server of your router to one that respects privacy</li>
+               <li>Change the local &amp; the default IP address of your router</li>
+               <li>Don't open ports unless you know what you are doing</li>
+               <li>Turn off your router when you don't use it</li>
+               <li>Use an HTTPS web interface instead of just an HTTP one</li>
+               <li>You might want to <a href="https://www.whonix.org/wiki/Router_and_Local_Area_Network_Security#Wireless_Network_Router_Settings">consider using Ethernet instead of Wi-Fi</a> </a> / <a href="http://www.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Router_and_Local_Area_Network_Security#Wireless_Network_Router_Settings">Tor</a></li>
+               <br>
+               <p><u>If you use Wi-Fi:</u></p>
+               <li>Make your SSID as impersonal as possible so that you are not immediately identified</li>
+               <li>add _nomap to the SSID to opt-out of the SSID data collection from Google</li>
+               <li>Use WPA3 or WPA2 encryption, since all others (WEP and WPA) are not secure</li>
+               <li>Change your SSID from time to time</li>
+               <li>Use a guest Wi-Fi for friends' devices or for IoT devices if you have to use them</li>
+               <li>Use <a href="https://www.routersecurity.org/vlan.php" <a>VLANs</a> to isolate devices further</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://routersecurity.org">Router Security</a></li>
+                  <li><a href="https://www.flashrouters.com/router-basics/open-source-firmware">Open Source Firmware - What Is Open Source Firmware?</a></li>
+                  <li><a href="https://teklager.se/en/best-free-linux-router-firewall-software-2019">Best free Linux router and firewall distributions of 2020</a></li>
+                  <li><a href="https://invidious.kavin.rocks/watch?v=_5cFosVHR5s&amp;list=PL3KeV6Ui_4CayDGHw64OFXEPHgXLkrtJO">Secure Networking Explained | Go Incognito 5.4</a> / <a href="http://w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion/watch?v=_5cFosVHR5s&amp;list=PL3KeV6Ui_4CayDGHw64OFXEPHgXLkrtJO">Tor</a></li>
+                  <li><a href="https://arxiv.org/abs/1608.03430">FreeSense:Indoor Human Identification with WiFi Signals</a></li>
+                  <li><a href="https://osintcurio.us/2019/01/15/tracking-all-the-wifi-things">Tracking All the WiFi Things</a></li>
+                  <li><a href="https://www.crc.id.au/tracking-people-via-wifi-even-when-not-connected">Tracking people via WiFi (even when not connected)</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="additional-hardware">Additional hardware</h3>
+            <ul>
+               <li>Raspberry Pi for Pihole or hosting a <a href="https://github.com/alecmuffett/dohot">DoHoT</a> server</li>
+               <li>USB-keys like Nitrokey/Librem Key to detect if someone has tampered with your firmware</li>
+               <li>Mic-Lock</li>
+               <li>USB data blocker for example, from <a href="https://portablepowersupplies.co.uk">PortaPow</a> to protect against <a href="https://blog.malwarebytes.com/explained/2019/11/explained-juice-jacking">juice jacking</a></li>
+               <li><a href="https://www.buskill.in">BusKill</a> LUKS Header Shredder / <a href="http://buskillvampfih2iucxhit3qp36i2zzql3u6pmkeafvlxs3tlmot5yad.onion/">Tor</a></li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://mg.lol/blog/data-blocker-teardown">USB Data Blocker Teardown</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="firmware"><b>III. Firmware</b></h3>
+            <ul>
+               <li>Use open source firmware on all devices that support it</li>
+               <li>Computer firmware: Libreboot, Coreboot (Skulls, Heads), 1vyrain］</li>
+               <li>Router firmware: OpenWRT, pfSense</li>
+            </ul>
+            <details>
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://www.flashrouters.com/router-basics/open-source-firmware">Open Source Firmware - What Is Open Source Firmware?</a></li>
+                  <li><a href="https://teklager.se/en/best-free-linux-router-firewall-software-2019">Best free Linux router and firewall distributions of 2020</a></li>
+                  <li><a href="https://firmwaresecurity.com">News/info on the firmware security/development communities</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="in-the-bios-uefi-of-your-computer"><b>IV. In the BIOS / UEFI of your computer</b></h3>
+            <p>Again, I will list many options here, but not all of them will probably be available to you:</p>
+            <ul>
+               <li>Protect your BIOS / UEFI with a strong passphrase</li>
+               <li>Enable virtualization to be able to use virtual machines</li>
+               <li>Enable HDD / SSD password if the feature is available</li>
+               <li>Disable Bluetooth completely if you can</li>
+               <li>Disable the Webcam and Microphone if you can</li>
+               <li>Disable USB / HDMI or any other port (Ethernet, FireWire, SD card …) if you can</li>
+               <li>Disable Intel ME or AMD PSP if you can</li>
+               <li>Disable boot from CD / DVD / flash drive if you can</li>
+               <li>Disable Secure Boot if you intend to use QubesOS as they don't support it out of the box / Keep it on if you use Linux or Windows</li>
+            </ul>
+            <details>
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://anonymousplanet-ng.org/guide.html#biosuefifirmware-settings-of-your-laptop">thgtoa - Bios/UEFI/Firmware Settings of your laptop</a> / <a href="http://www.thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.html#biosuefifirmware-settings-of-your-laptop">Tor</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="compartmentalization"><b>V. Compartmentalization</b></h3>
+            <ul>
+               <li>Divide your digital life into multiple compartments with multiple browsers (or browser profiles), email addresses and operating systems</li>
+               <li>Try to use different services to minimize damage if one gets compromised</li>
+               <li>Avoid mixing different identities with each other</li>
+            </ul>
+            <br>
+            <div style="overflow-x: auto;">
+               <table class="tg" style="margin-left: 12%; margin-right: 12%;">
+                  <thead>
+                     <tr>
+                        <th class="tg-1wig">Everything related to work</th>
+                        <th class="tg-1wig">Everything related to accounts</th>
+                        <th class="tg-1wig">Everything without accounts</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td class="tg-0lax">Operating system 1</td>
+                        <td class="tg-0lax">Operating system 2</td>
+                        <td class="tg-0lax">Operating system 3</td>
+                     </tr>
+                     <tr>
+                        <td class="tg-0lax">Browser 1</td>
+                        <td class="tg-0lax">Browser 2</td>
+                        <td class="tg-0lax">Browser 3</td>
+                     </tr>
+                     <tr>
+                        <td class="tg-0lax">Email provider 1</td>
+                        <td class="tg-0lax">Email provider 2</td>
+                        <td class="tg-0lax">None</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <br>
+            <details>
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://en.wikiless.org/wiki/Compartmentalization_(intelligence)">Compartmentalization (information security)</a></li>
+                  <li><a href="https://invidious.kavin.rocks/watch?v=jxeeKKfjb5o">How to protect your online privacy in 2020</a> / <a href="http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion/watch?v=jxeeKKfjb5o">Tor</a></li>
+                  <li><a href="https://invidious.kavin.rocks/watch?v=jQsuwB4G3o8">Full Guide to Online Privacy 2020 - (Browser, Email, OS, &amp; Compartmentalization)</a> / <a href="http://w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion/watch?v=jQsuwB4G3o8">Tor</a></li>
+                  <li><a href="https://medium.com/@privacyhivesoftware/why-compartmentalisation-is-the-key-to-protecting-your-online-privacy-b91d86482cd">Why “Compartmentalisation” is the key to protecting your online privacy…</a></li>
+                  <li><a href="https://invidious.kavin.rocks/watch?v=R7gWAKwHbhg&amp;list=PL3KeV6Ui_4CayDGHw64OFXEPHgXLkrtJO">Physical Device Separation &amp; Compartmentalization | Go Incognito 5.6</a> / <a href="http://w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion/watch?v=R7gWAKwHbhg&amp;list=PL3KeV6Ui_4CayDGHw64OFXEPHgXLkrtJO">Tor</a></li>
+               </ul>
+            </details>
+            <br><br>
+            <details>
+               <summary id="basic-examples-for-compartmentalization" style="font-size:19.83px; color:#206ecb;">Basic examples for compartmentalization</summary>
+               <div>
+               <h4>1. One hard drive with two partitions</h4>
+               <br>
+               <div style="overflow-x: auto;">
+                  <table class="tg">
+                     <thead>
+                        <tr>
+                           <th class="tg-baqh"><span style="font-weight:400;font-style:normal">Compartment 1-2</span></th>
+                           <th class="tg-baqh">Compartment 3</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td class="tg-baqh" colspan="2"><span style="font-weight:400;font-style:normal">Hard Drive</span></td>
+                        </tr>
+                        <tr>
+                           <td class="tg-baqh">Partition 1</td>
+                           <td class="tg-baqh">Partition 2</td>
+                        </tr>
+                        <tr>
+                           <td class="tg-baqh">Host OS 1</td>
+                           <td class="tg-baqh">Host OS 2</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <br>
+               <br>
+               <br>
+               <h4>2. One hard drive + one USB flash drive</h4>
+               <br>
+               <div style="overflow-x: auto;">
+                  <table class="tg">
+                     <thead>
+                        <tr>
+                           <th class="tg-baqh"><span style="font-weight:400;font-style:normal">Compartment 1-2</span></th>
+                           <th class="tg-baqh">Compartment 3</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td class="tg-baqh">Hard Drive</td>
+                           <td class="tg-baqh">Flash Drive</td>
+                        </tr>
+                        <tr>
+                           <td class="tg-baqh">Partition 1</td>
+                           <td class="tg-baqh">Partition 2</td>
+                        </tr>
+                        <tr>
+                           <td class="tg-baqh">Host OS 1</td>
+                           <td class="tg-baqh">Host OS 2 (live)</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <br>
+               <br>
+               <br>
+               <h4>3. One hard drive with one partition for 2 VMs + one USB flash drive</h4>
+               <br>
+               <div style="overflow-x: auto;">
+                  <table class="tg">
+                     <thead>
+                        <tr>
+                           <th class="tg-baqh" colspan="3">Compartment 1-2</th>
+                           <th class="tg-baqh">Compartment 3</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td class="tg-baqh" colspan="3">Hard Drive</td>
+                           <td class="tg-baqh">Flash Drive</td>
+                        </tr>
+                        <tr>
+                           <td class="tg-baqh" colspan="3">Partition 1</td>
+                           <td class="tg-baqh">Partition 1</td>
+                        </tr>
+                        <tr>
+                           <td class="tg-baqh" colspan="3">Host OS 1</td>
+                           <td class="tg-baqh">Host OS 2 (live)</td>
+                        </tr>
+                        <tr>
+                           <td class="tg-baqh">VM for work</td>
+                           <td class="tg-baqh" colspan="2">VM for accounts</td>
+                           <td class="tg-baqh"></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <br>
+               <br>
+               <br>
+               <h4>4. One hard drive with two partitions for 1 guest VM each + one USB flash drive</h4>
+               <br>
+               <div style="overflow-x: auto;">
+                  <table class="tg">
+                     <thead>
+                        <tr>
+                           <th class="tg-baqh" colspan="3">Compartment 1-2</th>
+                           <th class="tg-baqh">Compartment 3</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td class="tg-baqh" colspan="3">Hard Drive</td>
+                           <td class="tg-baqh">Flash Drive</td>
+                        </tr>
+                        <tr>
+                           <td class="tg-baqh">Partition 1</td>
+                           <td class="tg-baqh" colspan="2">Partition 2</td>
+                           <td class="tg-baqh">Partition 1</td>
+                        </tr>
+                        <tr>
+                           <td class="tg-baqh">Host OS 1</td>
+                           <td class="tg-baqh" colspan="2">Host OS 2</td>
+                           <td class="tg-baqh">Host OS 3 (live)</td>
+                        </tr>
+                        <tr>
+                           <td class="tg-baqh">VM for work</td>
+                           <td class="tg-baqh" colspan="2">VM for accounts</td>
+                           <td class="tg-baqh"></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <br>
+               <br>
+               <br>
+               <h4>5. Two hard drives with one partition for 1 guest VM each + one USB flash drive</h4>
+               <br>
+               <div style="overflow-x: auto;">
+               <table class="tg">
+                  <thead>
+                     <tr>
+                        <th class="tg-c3ow"><span style="font-weight:normal">Compartment 1</span></th>
+                        <th class="tg-c3ow"><span style="font-weight:normal">Compartment 2</span></th>
+                        <th class="tg-c3ow"><span style="font-weight:normal">Compartment 3</span></th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td class="tg-c3ow">Hard Drive 1</td>
+                        <td class="tg-c3ow"><span style="font-weight:400;font-style:normal">Hard Drive 2</span></td>
+                        <td class="tg-c3ow">Flash Drive</td>
+                     </tr>
+                     <tr>
+                        <td class="tg-c3ow">Partition 1</td>
+                        <td class="tg-c3ow"><span style="font-weight:400;font-style:normal">Partition 1</span></td>
+                        <td class="tg-c3ow"><span style="font-weight:400;font-style:normal">Partition 1</span></td>
+                     </tr>
+                     <tr>
+                        <td class="tg-c3ow">Host OS 1</td>
+                        <td class="tg-c3ow"><span style="font-weight:400;font-style:normal">Host OS 2</span></td>
+                        <td class="tg-c3ow"><span style="font-weight:400;font-style:normal">Host OS 3</span></td>
+                     </tr>
+                     <tr>
+                        <td class="tg-c3ow">VM for work</td>
+                        <td class="tg-c3ow">VM for accounts</td>
+                        <td class="tg-c3ow"></td>
+                     </tr>
+                  </tbody>
+               </table>
+               <br>
+               <br>
+               <h4>6. QubesOS</h4>
+               <br>
+               <br>
+               <br>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="operating-systems"><b>VI. Operating systems</b></h3>
+            <ul>
+               <li>Use multiple operating systems for compartmentalization</li>
+               <li>Operating systems designed with privacy, security and anonymity in mind</li>
+               → QubesOS, PlagueOS, Whonix, Tails, Kicksecure, [Sculpt OS]
+            </ul>
+            <details>
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://www.whonix.org/wiki/Comparison_with_Others">Anonymity Operating System Comparison - Whonix ™ vs Tails vs Tor Browser Bundle</a> / <a href="http://www.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Comparison_with_Others">Tor</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="installation-and-system-settings-in-linux">Installation and system settings in Linux</h3>
+            <ul>
+               <li>Verify that the checksum of the installation ISO is correct</li>
+               <li>Do the installation offline</li>
+               <li>Don't use personal information (name, device model...) as names</li>
+               <li>Use strong passphrases for your root / user account (over 15 characters)</li>
+               <li>Choose a "minimal installation"</li>
+               <li>Create different file partitions for /usr, /home, /var and /tmp</li>
+               <li>Use full disk encryption when installing a new distro</li>
+               <li>Fill your drive with random data</li>
+               <li>Don't connect accounts to the operating system</li>
+               <li>Don't allow any data collection if prompted</li>
+               <li>Disable Bluetooth and location services if you don't need them</li>
+               <li>Enable automatic updates</li>
+               <li>Set a privacy-respecting DNS server in the network settings (at best your <a href="https://docs.pi-hole.net/guides/dns/unbound">own</a>)</li>
+            </ul>
+            <details>
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://eldritchdata.neocities.org/CGFTPU/HardwareSecurity.html">Eldritchdata - Hardware Security (Split Disk Partitions And Secure System Partitions)</a> / <a href="http://www.kj2aybibqqcwt5nrskmv2qzdbq2gfgimpyshcnerbxkhkbyqz64kgcyd.onion/CGFTPU/HardwareSecurity.html">Tor</a></li>
+                  <li>Bluetooth vulnerabilities: <a href="https://asset-group.github.io/disclosures/braktooth">BrakTooth</a>, <a href="https://friends.cs.purdue.edu/pubs/WOOT20.pdf">Blesa</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="hardening-linux">Hardening Linux</h3>
+            <ul>
+               <li>Rather use pre-hardened distributions instead of trying to do it yourself if you are a beginner</li>
+               <li>If you still want to harden your distribution, read this extensive <a href="https://madaidans-insecurities.github.io/guides/linux-hardening.html">guide</a></li>
+               <li>Idea: place the boot partition on a <a href="https://web.archive.org/web/20160315063309/https://drwho.virtadpt.net/archive/2014/04/19/how-to-move-your-boot-partition-onto-removable-media">separate drive</a></li>
+            </ul>
+            <details>
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://www.calcomsoftware.com/resources" >CalCom hardening resources</a></li>
+               </ul>
+            </details>
+                        
+            
+            <div style="margin-top:50px;">
+            <h3 id="whonix">Whonix</h3>
+            <ul>
+               <li>Check out the <a href="https://www.whonix.org/wiki/Documentation">Whonix documentation</a> / <a href="http://www.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Documentation">Tor</a></li>
+               <li>Use the provided Whonix Workstation VM instead of hybrid systems (like Whonix Gateway with Kali)</li>
+               <li>Consider using the Whonix in a <a href="https://github.com/aforensics/HiddenVM">HiddenVM</a> in Tails <br> or under a <a href="https://www.whonix.org/wiki/Host_Live_Mode">live host</a> / <a href="http://www.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Host_Live_Mode">Tor</a> to combat VM-escaping persistent malware</li>
+               <li>Desync the clock of your VM compared to your host OS within a 60000 milliseconds range</li>
+            </ul>
+            <p>→ $ VBoxManage modifyvm "Whonix-Gateway-XFCE" --biossystemtimeoffset -40397</p>
+            <p>→ $ VBoxManage modifyvm "Whonix-Workstation-XFCE" --biossystemtimeoffset +22963</p>
+            <details>
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://www.whonix.org/wiki/Network_Time_Synchronization#Spoof_the_Initial_Virtual_Hardware_Clock_Offset" >Whonix - Network Time Synchronization</a> / <a href="http://www.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Network_Time_Synchronization#Spoof_the_Initial_Virtual_Hardware_Clock_Offset">Tor</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="virtual-machines"><b>VII. Virtual machines</b></h3>
+            <ul>
+               <li>Store your virtual machine files in a hidden or at least encrypted VeraCrypt volume (has <a href="https://proprivacy.com/privacy-service/guides/veracrypt-hidden-volumes">pros</a> and <a href="https://defuse.ca/truecrypt-plausible-deniability-useless-by-game-theory.htm">cons</a>)</li>
+            </ul>
+            <div style="margin-top:50px;">
+            <h3 id="hardening-virtualbox-virtual-machines">Hardening VirtualBox virtual machines</h3>
+            <ul>
+               <li>Use a USB network adapter, instead of host's network adapter <br>
+               <li>Use VLAN for virtual isolation</li>
+               <li>Consider making a VM without internet access for sensitive information (e.g. passphrases) if you don't want to use a VeraCrypt container</li>
+            </ul>
+            <br>
+            <p><u>Hardening in VirtualBox</u></p>
+            <ul>
+               <li>Settings → General → Advanced → Disable Shared Clipboard</li>
+               <li>Settings → General → Advanced → Disable Drag'n'Drop</li>
+               <li>Settings → General → Disk Encryption → Encrypt the VM with AES-XTS256-Plain64</li>
+               <li>Settings → System → Boot Order → Uncheck Floppy</li>
+               <li>Settings → System → Boot Order → Uncheck Optical</li>
+               <li>Settings → System → Motherboard → Extended Features: Disable IO-APIC</li>
+               <li>Settings → System → Motherboard → Extended Features: Don't enable EFI</li>
+               <li>Settings → System → Processor → Enable PAE/NX</li>
+               <li>Settings → System → Acceleration → Disable Nested Paging</li>
+               <li>Settings → Display → Screen → Don't enable 3D acceleration</li>
+               <li>Settings → Display → Remote Display → Don't enable Remote Display Server</li>
+               <li>Settings → Audio → Disable audio</li>
+               <li>Settings → Network → Advanced → Change your MAC address from time to time</li>
+               <li>Settings → Serial Ports → Don't Enable Serial Ports</li>
+               <li>Settings → USB → Disable USB Controller</li>
+               <p>→ Pointing Device: PS/2 Mouse</p>
+               <li>Settings → Shared Folders → Don't use Shared Folders</li>
+               <br>
+               <li>Don't use guest additions if possible</li>
+               <li>If you can avoid it, don't attach USB devices to a VM</li>
+               <li>Only use Pause or Suspend if you have physical control over the VM, since that saves full disk encryption keys to the RAM</li>
+               <li>Check out the <a href="https://www.whonix.org/wiki/Spectre_Meltdown#VirtualBox">Spectre/Meltdown mitigation</a> / <a href="http://www.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Spectre_Meltdown#VirtualBox">Tor</a></li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://invidious.kavin.rocks/watch?v=-osZKdulM5Q">104 Virtual Machine Hardening</a> / <a href="http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion/watch?v=-osZKdulM5Q">Tor</a></li>
+                  <li><a href="https://www.virtualbox.org/manual/ch13.html">VirtualBox - Chapter 13. Security Guide</a></li>
+                  <li><a href="https://www.whonix.org/wiki/Virtualization_Platform_Security#VirtualBox_Hardening">Whonix - VirtualBox Hardening</a> / <a href="http://www.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Virtualization_Platform_Security#VirtualBox_Hardening">Tor</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="dns"><b>VIII. DNS</b></h3>
+            <ul>
+               <li>Use encrypted DNS instead of default DNS over Port 53</li>
+               <li>If you follow <a href="https://anonymousplanet-ng.org/guide.html#your-dns-and-ip-requests">this</a> evaluation, the ranking would be:</li>
+               <p>Default DNS < Custom DNS < Custom Encrypted DNS < Custom Encrypted DNS with ECH support < ODoH with ECH support < DNS over Tor < <a href="https://github.com/alecmuffett/dohot">DNS over HTTPS over Tor</a></p>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://routersecurity.org/testdns.php">DNSSEC</a> </li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="browsers"><b>IX. Browsers</b></h3>
+            <ul>
+               <li><a href="https://madaidans-insecurities.github.io/firefox-chromium.html">Prefer</a> Chromium based browsers</li>
+               <li>Good security, less privacy: <a href="https://web.archive.org/web/20220210113137/https://www.ftc.gov/system/files/documents/public_comments/2018/08/ftc-2018-0074-d-0018-155525.pdf">Google Chrome</a>, Edge</li>
+               <li>Good privacy, less security: <a href="https://qua3k.github.io/ungoogled">ungoogled-chromium</a></li>
+               <li>I recommend: Tor Browser, hardened Firefox, </a> Brave (if you don't care about <a href="https://wikiless.org/wiki/Brave_(web_browser)#Controversies">past events</a>) and Lynx</li>
+               <li>Keep your browsers up to date</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+               
+               <li><a href="https://privacytests.org">Open-source tests of web browser privacy</a></li>
+                  <li><a href="https://b3rap.neocities.org/browsers.html#alternative">How to choose an everyday web browser</a></li>
+                  <li><a href="https://invidious.kavin.rocks/watch?v=GeOLK-gpukU">What's The BEST Browser? | Go Incognito 3.7</a> / <a href="http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion/watch?v=GeOLK-gpukU">Tor</a></li>
+                  <li><a href="https://restoreprivacy.com/browser/secure">Secure Browsers That Protect Your Privacy</a></li>
+                  <li><a href="https://www.scss.tcd.ie/Doug.Leith/pubs/browser_privacy.pdf">Web Browser Privacy: What Do Browsers Say When They Phone Home?</a></li>
+                  <li><a href="https://arxiv.org/abs/2112.15561">SOK: On the Analysis of Web Browser Security</a></li>
+
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="hardening-firefox">Hardening Firefox</h3>
+            <ul>
+               <li>If you launch your browser for the first time, do it offline to configure the settings</li>
+               <li>Use <a href="https://github.com/arkenfox/user.js">arkenfox user.js</a> to automatically change many about:config settings</li>
+               <li>Use <a href="https://ffprofile.com">Firefox Profilemaker</a> to easily create profiles</li>
+               <li>Change the security settings in about:preferences (DNT, permissions, user data collection, privacy-respecting default search engine etc.)</li>
+               <li>Limit as many permissions as possible</li>
+               <li>Delete history, cookies and cache regularly / don't save them at all / use Incognito mode</li>
+               <li>Use Firefox Multi-Account Containers</li>
+               <li>Don't log in to your browser (Firefox Sync)</li>
+               <li>Disable automatic downloads</li>
+               <li>Disable password management by your browser</li>
+               <li>Disable WebRTC → about:config / Add-on</li>
+               <li>Spoof your user agent → Add-on</li>
+               <li>Protect yourself from Exfil attacks → Add-on</li>
+               <li>Protect yourself from Canvas fingerprinting → Add-on</li>
+               <li>Mitigate behavioral analysis by disabling JavaScript → Add-on</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://invidious.kavin.rocks/watch?v=NXsC1j7wIQE">Hardening Your Browser | Go Incognito 3.8</a> / <a href="http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion/watch?v=NXsC1j7wIQE">Tor</a></li>
+                  <li><a href="https://brainfucksec.github.io/hardening-firefox-2022">Hardening Firefox 2022 - v0.15.0</a></li>
+                  <li><a href="https://wiki.archlinux.org/title/Firefox/Privacy">ArchWiki - Firefox/Privacy</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="the-tor-browser">The Tor Browser</h3>
+            <ul>
+               <li>Use an obfs4 bridge to hide the fact that you are using Tor</li>
+               <li>Set the <a href="https://tb-manual.torproject.org/security-settings">security level</a> / <a href="http://dsbqrprgkqqifztta6h3w7i2htjhnq7d3qkh3c7gvc35e66rrcv66did.onion/security-settings/index.html">Tor</a> to safest</li>
+               <li>Don't save your <a href="https://www.helpnetsecurity.com/2020/08/27/browsing-histories-track-users">history</a></li>
+               <li>Avoid enabling JavaScript</li>
+               <li>Enable JavaScript only with NoScript</li>
+               <li>Write longer texts in a text editor and copy it in Tor (because of <a href="https://www.whonix.org/wiki/Keystroke_Deanonymization">fingerprinting</a> / <a href="http://www.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Keystroke_Deanonymization">Tor</a>)</li>
+               <li>Turn off all smartphones  in a Faraday cage, e.g. a microwave (because of <a href="https://www.bleepingcomputer.com/news/security/ultrasound-tracking-could-be-used-to-deanonymize-tor-users">cross-device tracking</a>)</li>
+               <li>Open downloaded files only without internet connection</li>
+               <li>Don't log into accounts over Tor</li>
+               <li>Don't share personal information</li>
+               <li>Don't install <a href="https://tb-manual.torproject.org/plugins">Add-ons, plugins or themes</a> / <a href="http://dsbqrprgkqqifztta6h3w7i2htjhnq7d3qkh3c7gvc35e66rrcv66did.onion/plugins">Tor</a></li>
+               <li>Don't click on any unknown .onion links</li>
+               <li>Don't visit HTTP pages (unless it is an .onion page)</li>
+               <li>Don't change any settings in about:config</li>
+               <li>Never use full screen (best is <a href="https://security.stackexchange.com/questions/102133/how-can-you-be-tracked-using-screen-resolution-monitor-size-in-tor">not to resize</a>)</li>
+               <li>Don't <a href="https://www.bittorrentvpn.com/tor-torrents">torrent</a></li>
+               <li>Don't use Tor with a VPN <a href="https://anonymousplanet-ng.org/guide.html#pick-your-connectivity-method-1">unless</a> /
+                  <a href="http://www.thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.html#pick-your-connectivity-method-1">Tor</a> you know what you are doing
+               </li>
+               <li>Use Whonix to mitigate multiple types of attacks against tor</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://invidious.kavin.rocks/watch?v=yveTy-mf3u8">How to use Tor Browser | Tor Tutorial part 1</a> / <a href="http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion/watch?v=yveTy-mf3u8">Tor</a></li>
+                  <li><a href="https://arstechnica.com/information-technology/2015/07/how-the-way-you-type-can-shatter-anonymity-even-on-tor">Keystroke Deanonymization</a></li>
+                  <li><a href="https://matt.traudt.xyz/posts/you-want-tor-24tFBCJV/">You want Tor Browser ... not a VPN</a> / <a href="http://tv54samlti22655ohq3oaswm64cwf7ulp6wzkjcvdla2hagqcu7uokid.onion/posts/about-me-6eKe2i5v">Tor</a></li>
+                  <li><a href="https://home.sophos.com/en-us/security-news/2019/cross-device-tracking.aspx">Cross-device tracking: there’s nowhere digital to hide anymore</a></li>
+                  <li><a href="https://github.com/Attacks-on-Tor/Attacks-on-Tor">Attacks on Tor</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="add-ons"><b>X. Add-ons</b></h3>
+            <ul>
+               <li>Try to use only open source Add-ons</li>
+               <li>Remember that more Add-ons make you unique</li>
+               <li>Keep in mind that some Add-ons will break the functionality of certain websites</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://palant.info/2020/12/10/how-anti-fingerprinting-extensions-tend-to-make-fingerprinting-easier">How anti-fingerprinting extensions tend to make fingerprinting easier</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="add-ons-recommendations">My recommendations</h3>
+            <b><u>HTTPS Everywhere (alternatively Smart HTTPS)</u></b>
+            <ul>
+               <li>Enable all eligible pages to be encrypted</li>
+            </ul>
+            <p style="margin-left: 5%;">
+               / or HTTPS-Only Mode in Firefox
+            </p>
+            <br>
+            <b><u>Cookie AutoDelete</u></b>
+            <ul>
+               <li>Enable automatic cleanup → delay: 3sec</li>
+               <li>Enable cleanup on domain change</li>
+               <li>Clean up cookies from open tabs on startup</li>
+            </ul>
+            <br>
+            <b><u>uMatrix (not maintained)</u></b>
+            <ul>
+               <li>Settings → check everything in the Privacy section</li>
+            </ul>
+            <br>
+            <b><u>NoScript</u></b>
+            <ul>
+               <li>Settings → Default: uncheck frame, fetch and other</li>
+               <li>Options → check "Show domains that don't seem to track your internet activity" and "Also learn in private or incognito windows"</li>
+            </ul>
+            <br>
+            <b><u>uBlock Origin</u></b>
+            <ul>
+               <li>Enable I am an experienced user</li>
+               <li>Enable Prevent local IP address sharing via WebRTC</li>
+               <li>Turn on block CSP reports</li>
+               <li>Enable block external fonts</li>
+               <li>Enable Disable JavaScript</li>
+               <li>Scripts from third-party sites left red</li>
+               <li>Settings → My Filters → add *$websocket</li>
+            </ul>
+            <br>
+            <b><u>CSS exfil protection</u></b>
+            <br>
+            <ul>
+               <li>Settings → Always Scan / Always Sanitize (default)</li>
+            </ul>
+            <br>
+            <b><u>CanvasBlocker</u></b>
+            <br>
+            <ul>
+               <li>Settings → Block mode → block everything</li>
+            </ul>
+            <br>
+            <b><u>WebRTC Network Limiter (for Chromium-based browsers)</u></b>
+            <ul>
+               <li>Options → Use only my default public IP address</li>
+            </ul>
+            <br>
+            <b><u>User-Agent Switcher and Manager</u></b>
+            <ul>
+               <li>Note that you should only use it if JS is disabled, since the fake User-Agent can be detected</li>
+               <li>Set it to  the latest version of Chrome on Windows 10 (most common configuration)</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://proprivacy.com/privacy-service/guides/lifehacks-setup-umatrix-beginners">How to setup uMatrix: a beginner's guide</a></li>
+                  <li><a href="https://www.howtogeek.com/138865/htg-explains-should-you-disable-javascript">What Is NoScript, and Should You Use It to Disable JavaScript?</a></li>
+                  <li><a href="https://proprivacy.com/privacy-service/guides/lifehacks-setup-umatrix-beginners">How to setup uMatrix: a beginner's guide</a></li>
+                  <li><a href="https://www.maketecheasier.com/ultimate-ublock-origin-superusers-guide">The Ultimate Superuser’s Guide to uBlock Origin</a></li>
+                  <li><a href="https://gbhackers.com/css-exfil-vulnerability">Attackers can Steal Sensitive Data by Abusing CSS – CSS Exfil Vulnerability</a></li>
+                  <li><a href="https://restoreprivacy.com/webrtc-leaks">How to Fix WebRTC Leaks (All Browsers)</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="search-engines"><b>XI. Search engines</b></h3>
+            <ul>
+               <li>Try to avoid major search engines like Google, Bing, Yahoo etc.</li>
+               <li>Use privacy-respecting search engines instead</li>
+            </ul>
+            <div style="margin-top:50px;">
+            <h3 id="search-engines-recommendations">My recommendations</h3>
+            <ul>
+               <li><a href="https://searx.space">Searx instances</a> / <a href="http://searxspbitokayvkhzhsnljde7rqmn7rvoga6e4waeub3h7ug3nghoad.onion/">Tor instances</a></li>
+               <li><a href="https://search.brave.com">Brave Search</a> / <a href="https://search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion">Tor</a>
+               <li><a href="https://DuckDuckGo.com">DuckDuckGo</a> / <a href="https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion">Tor</a></li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://invidious.kavin.rocks/watch?v=wa_-pYQUQ0c">The Most Private Search Engines | Go Incognito 3.6</a> / <a href="http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion/watch?v=wa_-pYQUQ0c">Tor</a></li>
+                  <li><a href="https://invidious.kavin.rocks/watch?v=ktxuTNmUcLM">Search Engine Review</a> / <a href="http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion/watch?v=ktxuTNmUcLM">Tor</a></li>
+                  <li><a href="https://seirdy.one/2021/03/10/search-engines-with-own-indexes.html">A look at search engines with their own indexes</a> / <a href="http://wgq3bd2kqoybhstp77i3wrzbfnsyd27wt34psaja4grqiezqircorkyd.onion/2021/03/10/search-engines-with-own-indexes.html">Tor</a></li>
+               </ul>
+            </details>
+            
+            
+            <div style="margin-top:50px;">
+            <h3 id="mediocre-search-engines">Mediocre search engines</h3>
+            <ul>
+               <li><a href="https://metager.de">MetaGer</a> / <a href="http://metagerv65pwclop2rsfzg4jwowpavpwd6grhhlvdgsswvo6ii4akgyd.onion/en">Tor</a></li>
+               <li><a href="https://www.startpage.com">Startpage</a></li>
+               <li><a href="https://www.qwant.com">Qwant</a></li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  
+               </ul>
+            </details>
+            
+                        <div style="margin-top:50px;">
+            <h3 id="unrecommended-search-engines">Unrecommended search engines</h3>
+            <ul>
+               <li><a href="http://google.com">Google</a></li>
+               <li><a href="https://www.bing.com">Bing</a></li>
+               <li><a href="https://yandex.com">Yandex</a></li>               
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  
+               </ul>
+            </details>
+            
+            
+            
+            
+            <div style="margin-top:50px;">
+            <h3 id="browsing-habits"><b>XII. Browsing habits</b></h3>
+            <ul>
+               <li>Only visit websites you know and trust</li>
+               <li>Check unknown websites with <a href="https://www.virustotal.com/gui/home/url">VirusTotal</a> and <a href="https://www.browserling.com/">Browserling</a></li>
+               <li>Expand shortened URLs with <a  href="https://urlex.org">Urlex</a> or <a href="https://urlscan.io">urlscan.io</a></li>
+               <li>Download programs only from the original website</li>
+               <li>Don't ignore the warnings from your browser</li>
+               <li>Be aware of redirects</li>
+               <li>Avoid giving away too much personally identifiable information online</li>
+               <li>Avoid clicking on popup notifications</li>
+               <li>Check the encryption of websites you frequently visit with <a href="https://www.ssllabs.com/ssltest">Qualys SSL Server Test</a> (websites should get A or A+)</li>
+               <br>
+               <p>For website with accounts:<br></p>
+               <li>If the URL of the website is correct</li>
+               <li>Check the SSL certificate</li>
+               <li>Log out of the account if you are done using the website</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://invidious.kavin.rocks/watch?v=g0mId51upt0">Your Browsing Habits | Go Incognito 3.9</a> / <a href="http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion/watch?v=g0mId51upt0">Tor</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="aliases-Pseudonyms-Online-Identities"><b>XIII. Aliases / Pseudonyms / Online Identities</b></h3>
+            <ul>
+               <li>Never share personal details (online or offline) that could lead to your online identities</li>
+               <li>Create full online identities with <a href="https://fakenamegenerator.com">Fake Name Generator</a>, if you don't want to do it yourself</li>
+               <li>Store your identities in an encrypted file</li>
+               <br>
+               <p><u>Categories that are important are:</u></p>
+               <li>Date of birth</li>
+               <li>Country of birth</li>
+               <li>Nationality</li>
+               <li>Country of residence</li>
+               <li>Address of residence</li>
+               <li>Languages spoken</li>
+               <li>Friends</li>
+               <li>Occupation (job title, University…)</li>
+               <li>Various interests (art, politics, technology…)</li>
+               <li>Phone number (virtual or one that you bought anonymously)</li>
+               <br>
+               <li>Keep track of the background stories of your Identities</li>
+               <li>Always use the same facts for one identity so that everything always matches up</li>
+               <li>Adapt your language/writing to the identity (e.g. with <a href="https://hemingwayapp.com">Hemingway</a>, <a href="rewritingtools.com">Article Rewriter Tool</a> or <a href="https://paraphrasing-tool.com">paraphrasing tool</a>)</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://anonymousplanet-ng.org/guide.html#creating-new-identities">thgtoa - Creating new identities</a> / <a href="http://www.thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.html#creating-new-identities">Tor</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="emails"><b>XIV. Emails</b></h3>
+            <ul>
+               <li>Host your own email server or use a privacy-friendly email provider</li>
+               <li>Use an email forwarding service like <a href="https://simplelogin.io">SimpleLogin</a> / <a href="https://anonaddy.com">AnonAddy</a> or use aliases</li>
+               <li>Use multiple email addresses for compartmentalization</li>
+               <p style="margin-bottom:0;">→ e.g. use one address for your real identity and one for anonymous accounts</p>
+               <li>Keep your email addresses private</li>
+               <li>Try to use disposable email-services like <a href="https://www.guerrillamail.com">Guerrilla Mail</a></li>
+               <li>Don't send sensitive information with email</li>
+               <p style="margin-bottom:0;">→ if you have to: encrypt your email with PGP</p>
+               <li>Try to send emails between the same secure provider</li>
+               <li>Disable automatic loading of remote content</li>
+               <li>Use strong mail protocols (don't use something below IMAPv4 or POPv3)</li>
+               <li>If you don't know the sender, don't click on any links in the email</li>
+               <p style="margin-bottom:0;">→ If you have, to check them with <a href="https://urlscan.io">urlscan.io</a> or <a href="https://www.virustotal.com/gui/home/url">VirusTotal</a></p>
+               <li>Scan attached documents on <a href="https://www.virustotal.com">VirusTotal</a></li>
+               <li>Always keep in mind that a legit looking email can be a scam</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://defensivecomputingchecklist.com/#email2">A Defensive Computing Checklist - Email</a></li>
+                  <li><a href="https://www.wired.com/story/avoid-spam-disposable-email-burner-phone-number">How to Avoid Spam - Using Disposable Contact Information</a></li>
+                  <li><a href="https://www.tripwire.com/state-of-security/featured/essential-tips-for-keeping-your-email-safe">12 Essential Tips for Keeping Your Email Safe</a></li>
+                  <li><a href="https://www.chase.com/digital/resources/privacy-security/security/suspicious-emails">How to spot suspicious emails</a></li>
+                  <li><a href="https://www.whonix.org/wiki/E-Mail">Whonix - Email Overview</a> / <a href="http://www.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/E-mail">Tor</a></li>
+                  <li><a href="https://teddit.net/r/emailprivacy/wiki/index">/r/EmailPrivacy subreddit</a> / <a href="http://tedditfyn6idalzso5wam5qd3kdtxoljjhbrbbx34q2xkcisvshuytad.onion/r/emailprivacy/wiki/index">Tor</a></li>
+               </ul>
+            </details>
+
+
+            <div style="margin-top:50px;">
+            <h3 id="files-and-metadata"><b>XV. Files and metadata</b></h3>
+            <ul>
+               <li>Encrypt files or folders that contain important / sensitive information</li>
+               <li>Delete unused files</li>
+               <li>Use a file shredder like BleachBit to delete and overwrite files on spinning hard drives</li>
+               <li>Transfer sensitive documents to secure and encrypted devices</li>
+               <li>Don't use your own printer for printing sensitive details (due to printer steganography)</li>
+               <li>Don't blur details, since parts can be <a href="https://github.com/subeeshvasu/Awesome-Deblurring">easily recovered</a> → blacken or fully remove details</li>
+               <li>Delete metadata from documents and EXIF from images before uploading them</li>
+               <li>Convert potentially dangerous PDFs into save PDFs with <a href="https://github.com/firstlookmedia/dangerzone">Dangerzone</a></li>
+            </ul>
+            <div style="margin-top:50px;">
+            <h3 id="removing-metadata">Removing metadata</h3>
+            <br>
+            <b><u>From Images</u></b>
+            <li>Software: <a href="https://gitlab.com/rmnvgr/metadata-cleaner">Metadata Cleaner</a> and <a href="https://exiftool.org">ExifTool</a></li>
+            <li>Online: <a href="https://www.verexif.com/ver.php">verexif</a></li>
+            <br>
+            <b><u>From Microsoft Office Documents</u></b>
+            <li><a href="https://support.microsoft.com/en-us/office/remove-hidden-data-and-personal-information-by-inspecting-documents-presentations-or-workbooks-356b7b5d-77af-44fe-a07f-9aa4d085966f">Tutorial for that</a></li>
+            <div style="margin-top:50px;">
+
+
+            <h3 id="cloud-storage"><b>XVI. Cloud storage</b></h3>
+            <ul>
+               <li>Don't trust cloud providers with your data</li>
+               <li>If you can host your own server (e.g. with Nextcloud), do it</li>
+               <li>Encrypt your data before you upload it</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://invidious.kavin.rocks/watch?v=I1nj05n5lL4&amp;list=PL3KeV6Ui_4CayDGHw64OFXEPHgXLkrtJO">Secure Storage, File Encryption, &amp; The Cloud | Go Incognito 3.14</a> / <a href="http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion/watch?v=I1nj05n5lL4&amp;list=PL3KeV6Ui_4CayDGHw64OFXEPHgXLkrtJO">Tor</a></li>
+                  <li><a href="https://www.spaetzle.info/nextcloud-over-tor-onion-service">NextCloud over Tor (onion service)</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+
+
+            <h3 id="password-passphrases"><b>XVII. Passwords / Passphrases</b></h3>
+            <ul>
+               <li>Use passphrases instead of passwords</li>
+               <li>Passphrases should contain 15 characters or more</li>
+               <p>→ they should consist of upper and lower case letters, numbers and characters</p>
+               <li>Use some kind of <a href="https://www.michaelhorowitz.com/BestPasswordAdvice.php">formula</a></li>
+               <li>Don’t use 4-digit PINs</li>
+               <li>Avoid using only multiple words (because of dictionary attacks)</li>
+               <li>Don't use the same passphrase for more than one account</li>
+               <li>Change default passphrases only if there was a hack</li>
+               <li>Don't share your passphrases with anyone</li>
+               <li>Don't let websites/apps store passphrases</li>
+               <li>Use hardware tokens</li>
+               <li>Don't use security questions</li>
+               <p>→ if you have to: don't answer honestly</p>
+               <li>Avoid password managers that are browser-based</li>
+               <p>→ offline password managers</p>
+               <li>Avoid using your password manager to Generate OTPs</li>
+               <li>Most secure method: write the passphrases down</li>
+               <li>Check regularly if passphrases are listed on <a href="https://haveibeenpwned.com">Have I Been Pwned</a> or <a href="https://dehashed.com">DeHashed</a></li>
+               <li>Store the most important passphrases, e.g. for online banking offline or on devices that you rarely use</li>
+               <li>Don't log into accounts on devices that you don't own</li>
+               <li>Sign up for breach alerts if you want</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://invidious.kavin.rocks/watch?v=jZr4u5nEZP4">Most Secure Password Management Explained | Go Incognito 3.4</a> / <a href="http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion/watch?v=jZr4u5nEZP4"> Tor</a></li>
+                  <li><a href="https://www.upguard.com/blog/the-password-security-checklist">How to Create a Secure Password in 2021</a></li>
+                  <li><a href="https://blog.servermania.com/how-to-choose-a-strong-password-with-examples">How to Choose a Strong Password (with examples)</a></li>
+                  <li><a href="https://www.michaelhorowitz.com/BestPasswordAdvice.php">The world's BEST password advice</a></li>
+                  <li><a href="https://www.benwr.net/2022/01/16/password_entropy.html">Entropy isn't sufficient to measure password strength</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="accounts"><b>XVIII. Accounts</b></h3>
+            <ul>
+               <li>Try to use accounts that are not associated with you (<a href="http://bugmenot.com">BugMeNot</a>)</li>
+               <li>Use 2FA if possible</li>
+               <p>→ avoid <a href="https://alpinesecurity.com/blog/why-sms-authentication-isnt-safe-anymore">SMS</a> as a second factor</p>
+               <li>Use an impersonal and unique username</li>
+               <li>Avoid connecting your phone number with to service</li>
+               <li>Delete accounts if you no longer use them</li>
+               <li>Avoid creating accounts for big data collectors like Amazon, Google, Facebook ...</li>
+               <li>Use all security settings that are given</li>
+               <li>If you need the account only once, use a throwaway email address (e.g. Guerrilla Mail)</li>
+               <li>Be aware of scams and phishing</li>
+               <li>Remember to log out if you are done using the account</li>
+               <li>Delete connections with third-parties</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://gizmodo.com/18-ways-to-make-your-online-accounts-more-secure-1793250264">18 Ways to Make Your Online Accounts More Secure</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="social-media">Social Media</h3>
+            <ul>
+               <li>Never provide information that can identify you or your location (as much as it is possible)</li>
+               <li>Publish as little information as possible</li>
+               <li>Remove metadata from files you publish</li>
+               <li>Always use different usernames</li>
+               <li>Switch to a private account (see Instagram)</li>
+               <li>Use given security/privacy settings</li>
+               <li>Don't publish your email address or phone number</li>
+               <li>Don't log into websites with social media accounts</li>
+               <li>Use 2FA for all possible services</li>
+               <li>Try to avoid 3rd-Party integrations</li>
+               <li>Consider giving false information</li>
+               <li>Switch to FOSS social media alternatives</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://privacysavvy.com/security/social/social-media-security-tips">13 social media security best practices for optimum privacy</a></li>
+                  <li><a href="https://securityintelligence.com/articles/practice-social-media-safety-to-protect-both-personal-and-enterprise-data">Practice Social Media Safety to Protect Both Personal and Enterprise Data</a></li>
+                  <li><a href="https://www.themuse.com/advice/should-you-actually-post-that-online-your-ultimate-guide">Should You Actually Post That Online? Your Ultimate Guide</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="two-factor-authentication"><b>XIX. Two-Factor Authentication</b></h3>
+            <ul>
+               <li>Use 2FA with all services if you can</li>
+               <li>Don't use <a href="https://info.phishlabs.com/blog/sim-swap-attacks-two-factor-authentication-obsolete">SMS</a> as a second factor</li>
+               <li>Try to avoid cloud synced 2FA</li>
+               <li>Prefer Hardware keys like Nitrokey / Yubikey / SoloKey over Time-based One-Time Passwords</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://defensivecomputingchecklist.com/#twofactor">A Defensive Computing Checklist - TWO FACTOR AUTHENTICATION</a></li>
+                  <li><a href="https://twofactorauth.org">Two Factor Auth (2FA)</a></li>
+                  <li><a href="https://2fa.directory">2FA Directory</a> lists services that support 2FA</li>
+                  <li><a href="https://invidious.kavin.rocks/watch?v=iXSyxm9jmmo">The Ultimate TOTP/2FA Guide for Max Security Online!</a> / <a href="http://w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion/watch?v=iXSyxm9jmmo">Tor</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="vpns"><b>XX. VPNs</b></h3>
+            <ul>
+               <li>A VPN alone will make you neither more secure nor anonymous</li>
+               <li>Use a VPN if you torrent, want to get access to geo-blocked content or if you are on a public Wi-Fi</li>
+               <li>Don't use free VPNs (except for ProtonVPN)</li>
+               <li>Compare VPN-providers with <a href="https://techlore.tech/vpnchart.html">Techlore's VPN Chart</a> or with the comparison from
+                  <a href="https://www.safetydetectives.com/best-vpns#comparison">That One Privacy Guy</a>
+               </li>
+               <br>
+               <p>For strong security, the VPN provider should:</p>
+               <li>Offer anonymous payment (cash/Monero)</li>
+               <li>Utilize strong encryption</li>
+               <li>Have Open Source clients</li>
+               <li>Host their own servers</li>
+               <li>Use bare-metal servers</li>
+               <li>Use a strong VPN protocol like WireGuard</li>
+               <li>Use perfect forward secrecy</li>
+               <li>Have a good privacy history</li>
+               <li>Have a clear privacy policy</li>
+               <br>
+               <li>Check your public IP and your DNS before and after you connect</li>
+               <li>Check for DNS leaks</li>
+               <li>Check for WebRTC leaks</li>
+               <li>Since IPV6 can leak data, you may want to disable it</li>
+               <li>Check the settings of your VPN to see if you can cut off your device from other devices on the same network</li>
+               <br>
+               <li>If you are an advanced user, try to set up your own VPN with a VPS</li>
+               <li>Don't use a VPN with Tor unless you know what you are doing</li>
+               <p>
+                  → Read more about that <a href="https://anonymousplanet-ng.org/guide.html#pick-your-connectivity-method-1">here</a> / <a href="http://www.thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.html#pick-your-connectivity-method-1">Tor</a>
+               </p>
+               <li>Avoid VPNs from <a href="https://restoreprivacy.com/kape-technologies-owns-expressvpn-cyberghost-pia-zenmate-vpn-review-sites">Kape Technologies</a>: Zenmate, Private Internet Access, ExpressVPN and CyberGhost </li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://defensivecomputingchecklist.com/#vpnvpn">A Defensive Computing Checklist - VPNs</a></li>
+                  <li><a href="https://uk.pcmag.com/alphabet-outline/120746/backstabbing-disinformation-and-bad-journalism-the-state-of-the-vpn-industry">Backstabbing, Disinformation, and Bad Journalism: The State of the VPN Industry</a></li>
+                  <li><a href="https://matt.traudt.xyz/posts/you-want-tor-24tFBCJV/">You want Tor Browser ... not a VPN</a> / <a href="http://tv54samlti22655ohq3oaswm64cwf7ulp6wzkjcvdla2hagqcu7uokid.onion/posts/about-me-6eKe2i5v">Tor</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="downloads"><b>XXI. Downloads</b></h3>
+            <ul>
+               <li>Only download software from the original website</li>
+               <li>Scan downloads with a virus scanner, VirusTotal or Hybrid Analysis</li>
+               <li>Check if the hash signatures (if available) match</li>
+               <li>Open files you don't trust only in a disposable virtual machine without access to the internet</li>
+            </ul>
+            <div style="margin-top:50px;">
+            <h3 id="tampering-and-intrusion-detection"><b>XXII. Tampering and intrusion detection</b></h3>
+                        <ul>
+   <li>If you use glitter nail polish, you can verify its integrity with <a href="https://github.com/proninyaroslav/blink-comparison">Blink Comparison</a></li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://dys2p.com/en/2021-12-tamper-evident-protection.html">Random Mosaic – Detecting unauthorized physical access</a></li>
+                  <li><a href="https://dl.acm.org/doi/10.1145/3485832.3485894">Obfuscation Revealed: Leveraging Electromagnetic Signals for Obfuscated Malware Classification</a> [<a href="https://transfer.sh/I1sVWo/3485832.3485894.pdf">full</a>]</li>
+
+               </ul>
+            </details>
+                  
+            <div style="margin-top:50px;">
+            <h3 id="deleting-your-footpring"><b>XXIII. Deleting your footprint</b></h3>
+            <ul>
+               <li><a href="https://justdeleteme.xyz">JustDeleteMe</a> and <a href="https://justgetmydata.com">JustGetMyData</a> can be helpful tools if you don't know where to start</li>
+               <li>Search your email account for accounts to delete</li>
+               <li>Search your name or email on Google or DuckDuckGo to find accounts or services you signed up for</li>
+               <li>Check if you are listed on whitepages → if yes, try to delete the records</li>
+               <li>Fake personal information → then delete your account</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://invidious.kavin.rocks/watch?v=ot_modpLo8g">How To DELETE Your Online Identity | Go Incognito 2.4</a> / <a href="http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion/watch?v=ot_modpLo8g">Tor</a></li>
+                  <li><a href="https://anonymousplanet-ng.org/guide.html#removing-some-traces-of-your-identities-on-search-engines-and-various-platforms">thgtoa - Removing some traces of your identities on search engines and various platforms</a> / <a href="http://www.thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.html#removing-some-traces-of-your-identities-on-search-engines-and-various-platforms">Tor</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="in-real-life"><b>XXIV. In real life</b></h3>
+            <ul>
+               <li>Use a safe to store hard drives, flash drives, etc. and a shredder to destroy sensitive documents</li>
+               <li>Tape over your webcam and use a mic lock for your microphone</li>
+               <p>//Disable both completely</p>
+               <li>Wipe drives before you sell / destroy them</li>
+               <li>If you do online shopping, have the package delivered to a forwarding address / PO box</li>
+               <li>If you have to leave your devices unattended, power it off, or at least suspend it</li>
+               <li>Avoid visiting regions with many CCTV cameras (like London)</li>
+               <li>Protect your home address</li>
+               <li>Watch out for shoulder surfers while entering passphrases in public</li>
+            </ul>
+            <div style="margin-top:50px;">
+            <h3 id="opsec">OPSEC</h3>
+            <ul>
+               <li>Make sure you don’t keep traces of information about plausible deniability</li>
+               <li>Look for information about you using various search engines to monitor your online identities</li>
+               <li>Don't ever travel with encrypted devices if you have to pass strong border checks and where they could be illegal or raise suspicion</li>
+               <li>Don't plug USB devices that you don't own into your computer</li>
+               <li>Check the signatures and hashes of Software you download before installing them</li>
+               <li>Don’t talk to anyone about your sensitive activities using your real identity</li>
+               <li>Encrypt everything but don’t take it for granted. Remember the $5 wrench</li>
+               <li>Keep plausible deniability as an option, but remember it won’t help against the $5 wrench</li>
+               <li>Check for tampering regularly (not only your devices but also your home/room)</li>
+               <li>Know and always have the details of a lawyer at your disposal that could help you in case things go wrong</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://anonymousplanet-ng.org/guide.html#some-last-opsec-thoughts">thgtoa - Some last OPSEC thoughts</a> / <a href="http://www.thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.html#some-last-opsec-thoughts">Tor</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="smart-devices"><b>XXV. Smart devices</b></h3>
+            <ul>
+               <li>Buy smart devices that respect your privacy (best would be <a href="https://medevel.com/17-home-automation-open-source">open source</a>)</li>
+               <li>Figure out if your smart devices actually need internet access</li>
+               <li>Give your smart home devices a guest Wi-Fi</li>
+               <li>Try to not link them to your real identity</li>
+               <li>Give the devices unidentifiable names</li>
+               <li>Follow the password advice from above and use 2FA if possible</li>
+               <li>Review privacy settings and opt out of data sharing</li>
+               <li>Disable camera and microphone if you don't use them</li>
+               <li>Keep the devices up to date</li>
+               <li>Only turn them on if you need them</li>
+               <li>Do a factory reset before you get rid of them</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://invidious.kavin.rocks/watch?v=POHYyP4EbzE">What your smart devices know (and share) about you | Kashmir Hill and Surya Mattu</a> / <a href="http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion/watch?v=POHYyP4EbzE">Tor</a></li>
+                  <li><a href="https://www.forbes.com/sites/forbestechcouncil/2020/01/07/the-smart-home-cybersecurity-checklist">Forbes - The Smart Home Cybersecurity Checklist</a></li>
+                  <li><a href="https://www.smarthome.com/blogs/tips-tricks/10-handy-tips-for-cyber-security-and-smart-homes">smarthome - 10 Handy Tips For Cyber Security and Smart Homes</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="using-public-wi-fi"><b>XXVI. Using public Wi-Fi</b></h3>
+            <ul>
+               <li>Don't allow your devices to auto-connect to networks</li>
+               <li>Change your MAC-address before connecting to a network</li>
+               <li>Use a VPN or Tor → not only as your browser but for the whole device</li>
+               <li>To see if it is working check your public IP and your DNS before and after connecting</li>
+               <li>IF you use a VPN see if you can cut your device off from other devices</li>
+               <li>Don't use devices containing sensitive data in public networks</li>
+               <li>Avoid sensitive things like banking or logging into your email account</li>
+               <li>Disable file sharing</li>
+               <li>Only visit sites using HTTPS</li>
+               <li>Instead of using a public Wi-Fi you could create a hotspot from your phone for your computer</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://invidious.kavin.rocks/watch?v=POHYyP4EbzE">What your smart devices know (and share) about you | Kashmir Hill and Surya Mattu</a> / <a href="http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion/watch?v=POHYyP4EbzE">Tor</a></li>
+                  <li><a href="https://us.norton.com/internetsecurity-privacy-risks-of-public-wi-fi.html">Norton - The risks of public Wi-Fi</a></li>
+                  <li><a href="https://www.europol.europa.eu/activities-services/public-awareness-and-prevention-guides/risks-of-using-public-wi-fi">Europol - RISKS OF USING PUBLIC WI-FI</a></li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="advanced-threat-protection"><b>XXVII. Advanced threat protection</b></h3>
+            <ul>
+               <li>Don't conduct sensitive activity while connected to an untrusted/unsecure power line to prevent power line leaks</li>
+               <li>Don't use your devices in front of a camera that could be compromised</li>
+               <li>Use your devices in a soundproofed room to prevent sound leaks (at the best case with no windows)</li>
+               <li>Use your devices in Faraday cage to prevent electromagnetic leaks</li>
+               <li>Don't talk sensitive information where lightbulbs could be observed from outside</li>
+               <li>Buy your devices from different/unpredictable/offline places (shops) where the probability of them being infected with malware is lower</li>
+               <li>Don't let anyone access your air-gapped computers</li>
+               <li>Trust no one</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://web.archive.org/web/20201223230951/https://cyber.bgu.ac.il/advanced-cyber">
+                     Advanced Cyber-Security Research Lab
+                     </a>
+                  </li>
+                  <li><a href="https://invidious.kavin.rocks/channel/UCjCSvlOcENVup0Xeiim1u0g">Cyber Security Labs @ Ben Gurion University</a> / <a href="http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion/channel/UCjCSvlOcENVup0Xeiim1u0g">Tor</a></li>
+                  <li> <a href="https://anonymousplanet-ng.org/guide.html#some-advanced-targeted-techniques">
+                     thgtoa - Some Advanced targeted techniques
+                     </a> / <a href="http://www.thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.html#some-advanced-targeted-techniques">Tor</a>
+                  </li>
+               </ul>
+            </details>
+            <div style="margin-top:50px;">
+            <h3 id="if-you-are-in-serious-trouble"><b>XXVIII. If you are in serious trouble</b></h3>
+            <b><u>If you have some time</u></b>
+            <ul>
+               <li>Stay calm</li>
+               <li>Delete everything you can from the internet related to that specific identity (accounts, comments …)</li>
+               <li>Delete and destroy everything offline you have related to that identity including the backups</li>
+               <li>Securely erase the hard drive(s) of your computer(s) and then ideally proceed to physically destroy the HDD/SDD/Computer and dump it somewhere</li>
+               <li>Do the same with your backups</li>
+               <li>Know what kind of <a href="https://en.wikiless.org/wiki/Key_disclosure_law">key disclosure laws</a> your country has</li>
+               <li>Contact a lawyer in advance to prepare your case if needed</li>
+               <li>Return to normal and try not to act suspicious</li>
+            </ul>
+            <br>
+            <b><u>If they stand in front of your door</u></b>
+            <ul>
+               <li>Don’t panic</li>
+               <li>Try to shut down / hibernate your computer(s) as soon as possible</li>
+               <li>Contact a lawyer and try to remain silent (if your country allows that)</li>
+            </ul>
+            <details closed style="display:unset; width:100%;">
+               <summary style="padding-left: 25px;">Further reading</summary>
+               <ul class="source">
+                  <li><a href="https://anonymousplanet-ng.org/guide.html#if-you-think-you-got-burned">thgtoa - If you think you got burned</a> / <a href="http://www.thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.html#if-you-think-you-got-burned">Tor</a></li>
+               </ul>
+            </details>
+			</div>
+         </section>
+		 </div>
+      <div class="footer">
+         <hr class=bottom-row>
+         <div style="text-align:center;">
+            <a href="https://webring.xxiivv.com/#c16.one" target="_blank">
+            <img id="xxiivv" src="https://webring.xxiivv.com/icon.white.svg" alt="XXIIVV webring"/>
+            </a>            
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> <img class="footer-icon"  src="icons/cc-icon-black.svg" alt="CC icon"> </a>
+            <a href="https://github.com"> <img id="GitHub" class="footer-icon" src="icons/GitHub-Mark-Light.png" alt="GitHub icon"></a>
+         </div>
+      </div>
+   </body>
+</html>

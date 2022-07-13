@@ -1,0 +1,2054 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="keywords" content="privacy, security, anonymity, tor, environmentalism, climate change, collapse">
+      <title>C16.one</title>
+      <link rel="shortcut icon" href="icon.png">
+	<link rel="stylesheet" href="./Matrix_files/bootstrap.min.css">
+	<link id="demo_style" type="text/css" rel="stylesheet" href="./Matrix_files/tablefilter.css">
+   </head>
+	
+   <body>
+   <section id="header">
+     <header style="padding-left:10px;">
+        <h2>Updated Messenger Matrix</h2>
+		<h6>A fork from <a href="https://www.messenger-matrix.de/">Messenger-Matrix</a></h6><br><br><br>
+		
+		<p>To compare multiple apps enter: "messenger 1 || messenger 2" in the first column</p>
+     </header>
+
+
+      <table id="demo" border="1" class="dataframe TF">
+        <thead>
+          <tr style="text-align: center;">		  
+            <th>Last updated: 23.04.2022</th>
+            <th class="frow1"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Price</th>
+            <th class="frow1"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Repository</th>
+            <th class="frow1"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Software license</th>
+			<th class="frow1"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Availability</th>
+			<th class="frow1"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Client is available since</th>
+			<th class="frow1"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Comes without proprietary libraries</th>
+			<th class="" style="background-color:#fff; border-top: #fff;border-bottom: #fff;padding: 20px;"></th>
+            <th class="frow2"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Android</span></th>
+            <th class="frow2"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">iOS</span></th>
+            <th class="frow2"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Windows</span></th>
+            <th class="frow2"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">macOS</span></th>
+            <th class="frow2"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Linux</span></th>
+            <th class="frow2"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Web</span></th>
+			<th class="" style="background-color:#fff; border-top: #fff;border-bottom: #fff;padding: 20px;"></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Encryption protocol / library</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Cryptographic primitives</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">End-to-end encryption</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">End-to-end encrypted <br />2-user chat</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">End-to-end encrypted group chat</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">E2EE is turned on by default</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Local message encryption</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Perfect Forward Secrecy is enforced</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Certificate pinning is used</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Directory service can be modified to enable a MITM attack</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Contact verification possible</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Contact can be added without needing to trust a directory server</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Notification if contact's fingerprint changes</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Contact's fingerprints can be verified manually</th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Avoids / Protects metadata during use</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Native onion routing support</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Last security audit</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Tracker integration (<a style="color:white;" href="https://exodus-privacy.eu.org/">Exodus</a>)</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Use without phone number possible</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Use without Google Play Services possible</span></th>
+            <th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Reasonably useful without sharing the contact list</span></th>
+			<th class="" style="background-color:#fff; border-top: #fff;border-bottom: #fff;padding: 20px;"></th>
+            <th class="frow4"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Centralized / Federated / Decentralized</span></th>
+            <th class="frow4"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Infrastructure hosting</span></th>
+            <th class="frow4"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Open Source server</span></th>
+            <th class="frow4"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Transparency report</span></th>
+            <th class="frow4"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Legal jurisdiction</span></th>
+            <th class="frow4"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Jurisdiction of the devs/company</span></th>
+            <th class="frow4"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Funding</span></th>
+			<th class="" style="background-color:#fff; border-top: #fff;border-bottom: #fff;padding: 20px;"></th>
+            <th class="frow5"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Visible if contacts are online</span></th>
+            <th class="frow5"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Audio-/Video-chats</span></th>
+            <th class="frow5"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Group chats</span></th>
+            <th class="frow5"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Voice messages</span></th>
+            <th class="frow5"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">File exchange</span></th>
+            <th class="frow5"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Read receipts</span></th>
+            <th class="frow5"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Editing sent messages</span></th>
+            <th class="frow5"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Self-destructing messages</span></th>
+            <th class="frow5"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Deleting sent messages locally</span></th>
+            <th class="frow5"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Deleting sent messages for both<br />(2 user chat)</span></th>
+            <th class="frow5"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Synchronization between multiple devices</span></th>
+			<th class="" style="background-color:#fff; border-top: #fff;border-bottom: #fff;padding: 20px;"></th>
+            <th class="frow6"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Storage location of the backup</span></th>
+            <th class="frow6"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Automated backup</span></th>
+            <th class="frow6"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Encrypted backup</span></th>
+			<th class="" style="background-color:#fff; border-top: #fff;border-bottom: #fff;padding: 20px;"></th>
+			<th class="frow7"><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Additional features and information</span></th>
+			<th class=""><span style="font-weight:bold; color:#FFFFFF; font-family:'Arial'; font-size:10px;">Last date information got verified</span></th>
+          </tr>
+       </thead>
+
+    
+	<!--	<tr>
+		 	<th style="background-color:#404040; color:white;" colspan="7">About the app</th>
+			<th style="background-color:#fff;" colspan="1"></th>
+			<th style="background-color:#404040; color:white;" colspan="6">Platforms</th>
+			<th style="background-color:#fff;" colspan="1"></th>
+			<th style="background-color:#404040; color:white;" colspan="21">Privacy / Security / Anonymity</th>
+			<th style="background-color:#fff;" colspan="1"></th>
+			<th style="background-color:#404040; color:white;" colspan="8"></th>
+			<th style="background-color:#fff;" colspan="1"></th>
+			<th style="background-color:#404040; color:white;" colspan="11"></th>
+			<th style="background-color:#fff;" colspan="1"></th>
+			<th style="background-color:#404040; color:white;" colspan="3">Backup</th>
+			<th style="background-color:#fff;" colspan="1"></th>
+			<th style="background-color:#404040; color:white;" colspan="1">Date</th>
+		</tr>-->
+	  
+
+		<tbody>		  
+          <tr>
+            <td class="messenger-name">Berty</td>
+            <td class="n-yes">Free</td>
+            <td class="n-yes"><a href="https://github.com/berty/berty" title="">GitHub</a></td>
+            <td class="n-yes"><a href="https://github.com/berty/berty#user-content-licensing">Apache 2.0 / MIT</a></td>
+            <td class="n-yes"><a href="https://apps.apple.com/tt/app/berty/id1535500412">App Store,</a> <a href="https://play.google.com/store/apps/details?id=tech.berty.android">Play Store</a>, <a href="https://github.com/berty/berty/releases">Github</a></td>
+            <td class="">2019</td>
+			<td class="1 "></td>
+            <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+			<td class=""><a href="https://berty.tech/docs/protocol">Berty protocol</a></td>
+            <td class="">Curve25519 / XSalsa20 / Poly1305</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="">0</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+            <td class="n-yes">Distributed<br>&nbsp;Peer-to-peer</td>
+            <td class="n-yes">N/A (no servers)</td>
+            <td class="n-yes">N/A (no servers)</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="">Nodle</td>
+            <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+			<td class=""></td>
+            <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+		    <td class="" style="text-align: left;">
+				- Message sharing over Bluetooth</td>
+            <td class=""></td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">Briar</td>
+            <td class="n-yes">Free</td>
+            <td class="n-yes"><a href="https://code.briarproject.org/briar/briar/tree/master" title="">GitLab</a></td>
+            <td class="n-yes"><a href="https://code.briarproject.org/briar/briar/-/blob/master/LICENSE.txt">GPLv3</a></td>
+            <td class="n-yes"><a href="https://play.google.com/store/apps/details?id=org.briarproject.briar.android">Play Store</a>, <a href="https://briarproject.org/installing-briar-via-f-droid/">F-Droid</a>, <a href="https://briarproject.org/installing-briar-via-direct-download/">website</a></td>
+            <td class="">2018</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+            <td class=""><a href="https://code.briarproject.org/briar/briar-spec/-/tree/master/">Bramble</a></td>
+            <td class="">Curve25519 / XSalsa20-Poly1305 / Blake2</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="">N/A (no servers)</td>
+            <td class="">N/A (no directory service)</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes via onion routing</td>
+            <td class="n-yes">Yes</td>
+            <td class=""><a href="https://briarproject.org/news/2017-beta-released-security-audit/">2017</a></td>
+            <td class="">0</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+            <td class="n-yes">Distributed Peer-to-peer</td>
+            <td class="n-yes">N/A (no servers)</td>
+            <td class="n-yes">N/A (no servers)</td>
+            <td class="n-no">No</td>
+            <td class="">—</td>
+            <td class="">UK</td>
+            <td class=""><a href="https://briarproject.org/about-us/#funding">List here</a></td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-part">Yes (images only)</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+            <td class="n-no">No</td>
+			<td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+            <td class="" style="text-align: left;">
+				- Screenshot protection<br>
+				- Mesh networking<br>
+				- Forums, blogs, RSS feed<br>
+				- Deniability for one-to-one messages<br>
+				- Message sharing over Wi-Fi and Bluetooth<br>
+				- <a href="https://code.briarproject.org/briar/briar/-/issues/1273">Reproducible builds</a></td>
+            <td class=""></td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">Conversations (XMPP) (f)</td>
+			<td class="n-yes">Free / paid</td>
+            <td class="n-yes"><a href="https://github.com/iNPUTmice/Conversations" title="">GitHub</a></td>
+            <td class="n-yes"><a href="https://github.com/iNPUTmice/Conversations/blob/master/LICENSE">GPLv3</a></td>
+            <td class="n-yes"><a href="https://play.google.com/store/apps/details?id=eu.siacs.conversations">Play Store</a>, <a href="https://f-droid.org/en/packages/eu.siacs.conversations/">F-Droid</a></td>
+            <td class="">2014</td>
+            <td class="n-yes">Yes</td>
+            <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>						       
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""><a href="https://en.wikipedia.org/wiki/OMEMO" title=""><span style="14px color:#337ab7; font-family:'Arial'; font-size:14px">OMEMO</a></td>
+            <td class="">&nbsp;Curve25519 / AES-256 / HMAC-SHA256</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="">N/A (no directory service)</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-part"><span style="color:#000000; font-family:'Arial'; font-size:14px">yes<br>(if previously verified)</span></td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class=""><a href="https://conversations.im/omemo/audit.pdf">2016</a></td>
+            <td class="">0</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+		    <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+            <td class="n-part">Federated</td>
+            <td class="n-part">Distributed server</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Not required. Client only</td>
+            <td class="">Depending on server location</td>
+            <td class="">Germany</td>
+            <td class="">NLNet, user pays, donations</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-part">Yes (depending on server)</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes but not individually</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Locally</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+           <td class="" style="text-align: left;">
+		   - Interoperability with other XMPP clients
+		   </td>			
+            <td class="n-yes">23.12.2021</td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">Cwtch</td>
+            <td class="n-yes">Free</td>
+            <td class="n-yes"><a href="https://git.openprivacy.ca/cwtch.im" title="">Open Privacy Gitea</a></td>
+            <td class="n-yes"><a href="https://git.openprivacy.ca/cwtch.im/cwtch/src/branch/master/LICENSE">MIT</a></td>
+            <td class="n-part"><a href="https://www.patreon.com/posts/cwtch-beta-1-4-58350445">Play Store (currently patreon only)</a>, <a href="https://cwtch.im/download/">Website</a></td>
+            <td class="">2019</td>
+            <td class=""></td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="">Tor hidden services/TLS</td>
+            <td class="">Curve25519 / AES-128</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="n-yes">Yes via onion routing</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Decentralized Peer-to-peer</td>
+            <td class="n-yes">N/A (no servers, except for experimental groups)</td>
+            <td class="n-yes">N/A (no servers, Cwtch Server for groups is <a href="https://git.openprivacy.ca/cwtch.im/server">open source</a>)</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="">Canada</td>
+            <td class="">Open Privacy Research Society</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+            <td class=""></td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">Delta Chat (f)</td>
+			<td class="n-yes">Free</td>
+            <td class="n-yes"><a href="https://github.com/deltachat/" title="">GitHub</a></td>
+            <td class="n-yes"><a href="https://github.com/deltachat/deltachat-android/blob/master/LICENSE">GPLv3</a></td>
+            <td class="n-yes"><a href="https://delta.chat/de/download">App Store, Play Store, F-Droid, Website, different package managers</a></td>
+            <td class="">2017</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="">OpenPGP <br>with Autocrypt</td>
+            <td class=""></td>
+            <td class="n-part">Only DC contacts</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-part">Yes for DC contacts / no for normal emails</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="">N/A (no directory service)</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-part">Only in verified group chats</td>
+            <td class=""></td>
+            <td class="n-no">No</td>
+            <td class="n-no">Experimental socks5 proxy feature</td>
+            <td class="n-no">—</td>
+            <td class="">1</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-part">Federated</td>
+            <td class="n-part">Distributed server</td>
+            <td class="n-part">depends on the server</td>
+            <td class=""></td>
+            <td class="">Depending on server location</td>
+            <td class="">Germany</td>
+            <td class=""><a href="https://delta.chat/en/help#how-are-delta-chat-developments-funded">List here</a></td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Locally</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+            <td class="n-yes">22.12.2021</td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">Discord</td>
+			<td class="n-yes">Free</td>
+            <td class="n-no">—</td>
+            <td class="n-no">Proprietary</td>
+            <td class="n-part"><a href="https://apps.apple.com/us/app/discord-chat-for-games/id985746746">App Store</a>, <a href="https://play.google.com/store/apps/details?id=com.discord">Play Store</a>, <a href="https://discord.com/download">Website</a></td>
+            <td class="">2015</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="">Not encrypted</td>
+            <td class=""></td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="n-no">No</td>
+            <td class=""></td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">—</td>
+            <td class="">6</td>
+            <td class="n-part">Partly, for anti-abuse necessary</td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">Centralized</td>
+            <td class="n-no">Google and Cloudflare</td>
+            <td class="n-no">No</td>
+            <td class=""></td>
+            <td class="">USA</td>
+            <td class=""></td>
+            <td class=""></td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+            
+			<td class=""></td>
+            <td class="n-no">Denied email contact</td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">Element</td>
+			<td class="n-yes">Free</td>
+            <td class="n-yes"><a href="https://github.com/vector-im" title="">GitHub</a></td>
+            <td class="n-yes"><a href="https://github.com/vector-im/element-android/blob/develop/LICENSE">Apache 2.0</a></td>
+            <td class="n-yes"><a href="https://apps.apple.com/app/vector/id1083446067">App Store</a>, <a href="https://play.google.com/store/apps/details?id=im.vector.app">Play Store</a>, <a href="https://f-droid.org/packages/im.vector.app/">F-Droid</a>, <a href="https://element.io/get-started#download">website</a></td>
+            <td class="">2016</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""><a href="https://en.wikipedia.org/wiki/Signal_Protocol" title=""><span style="font-family:'Arial'; font-size:14px">Olm / Megolm (Signal&nbsp;Protocol)</span></a></td>
+            <td class="">Curve25519 / AES-256 / HMAC-SHA256</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes"><a href="https://www.nccgroup.com/globalassets/our-research/us/public-reports/2016/november/ncc_group_olm_cryptogrpahic_review_2016_11_01.pdf#page=6">Yes</a></td>
+            <td class=""></td>
+            <td class="n-no">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class=""></td>
+            <td class=""><a href="https://matrix.org/blog/2016/11/21/matrixs-olm-end-to-end-encryption-security-assessment-released-and-implemented-cross-platform-on-riot-at-last">2016</a></td>
+            <td class="">0</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-part">Federated</td>
+            <td class="n-part">Distributed server / Google (Opt-In)</td>
+            <td class=""></td>
+            <td class="n-no">No</td>
+            <td class="">Depending on server location</td>
+            <td class="">UK</td>
+            <td class="">New Vector Limited, Community</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-part">Partially (depending on server)</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Locally and / or Cloud</td>
+            <td class="n-yes">Partially, after setup</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+            <td class=""></td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">Facebook Messenger</td>
+			<td class="n-yes">Free</td>
+            <td class="n-no">—</td>
+            <td class="n-no">Proprietary</td>
+            <td class="n-part"><a href="https://apps.apple.com/us/app/messenger/id454638411">App Store</a>, <a href="https://play.google.com/store/apps/details?id=com.facebook.orca">Play Store</a>, <a href="https://www.microsoft.com/de-de/p/messenger/9wzdncrf0083">Microsoft Store</a></td>
+            <td class="">2011</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="">Signal Protocol (unverifable)</td>
+            <td class="">Curve25519 / AES-256 / HMAC-SHA256</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class="n-no">Yes</td>
+            <td class=""></td>
+            <td class="n-no">No</td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="n-no">—</td>
+            <td class="">5</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">Centralized</td>
+            <td class="n-no">Facebook</td>
+            <td class="n-no">No</td>
+            <td class="n-yes"><a href="https://transparency.fb.com/data/">Yes</a></td>
+            <td class="">USA</td>
+            <td class="">USA</td>
+            <td class="">Facebook</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+            <td class=""></td>
+			<td class=""></td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">Gajim (XMPP)</td>
+            <td class="n-yes">Free</td>
+            <td class="n-yes"><a href="https://dev.gajim.org/gajim/gajim" title="">GitLab</a></td>
+            <td class="n-yes"><a href="https://dev.gajim.org/gajim/gajim/-/blob/e5570a993d1e536c68802d53454dde1abc98e3d2/data/org.gajim.Gajim.appdata.xml.in">GPLv3-only</a></td>
+            <td class="n-yes"><a href="https://gajim.org/download/">Website, different package managers</a></td>
+            <td class="">2004</td>
+            <td class=""></td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+            <td class=""><a href="https://en.wikipedia.org/wiki/OMEMO" title=""><span style="14px color:#337ab7; font-family:'Arial'; font-size:14px">OMEMO<br>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-part">Only with plugin</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="">No mobile app</td>
+            <td class="n-yes">Yes</td>
+            <td class="">No mobile app</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+            <td class="n-part">Federated</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+           <td class="" style="text-align: left;">
+		   - Interoperability with other XMPP clients
+		   </td>            <td class=""></td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">ginlo (f)</td>
+			<td class="n-yes">Free</td>
+            <td class="n-yes"><a href="https://github.com/orgs/cdskev/repositories?type=all" title="">GitHub</a></td>
+            <td class="n-yes"><a href="https://github.com/cdskev/ginlo-android/blob/develop/LICENSE.txt">Apache 2.0</a></td>
+            <td class="n-part"><a href="https://apps.apple.com/de/app/ginlo-private/id1498035143">App Store</a>, <a href="https://play.google.com/store/apps/details?id=eu.ginlo_apps.ginlo">Play Store</a>, <a href="https://www.ginlo.net/downloads/">Website</a></td>
+            <td class="">2014</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+			<td class="">AES</td>
+            <td class="">RSA-2048 / AES-256</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="">2019</td>
+            <td class="">1</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">Centralized</td>
+            <td class="n-part">Servers in Germany</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="">Germany</td>
+            <td class="">Germany</td>
+            <td class="">ginlo Business customers, Karsten Schramm &amp; Co-Investors</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Locally and / or Cloud</td>
+            <td class="n-yes">After setup</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>			
+            <td class="n-yes">05.04.2022</td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">Messages</td>
+			<td class="n-yes">Free</td>
+            <td class="n-no">—</td>
+            <td class="n-no">Proprietary</td>
+            <td class="n-no"><a href="https://apps.apple.com/us/app/messages/id1146560473">App Store</a></td>
+            <td class="">2011</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="">Proprietary, unknown</td>
+            <td class="">RSA-1280 / ECDSA 256 (signing) / <br>AES-128 / <br>SHA-1</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes (&gt;=iOS 9.3)</td>
+            <td class="n-no">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="">2016</td>
+            <td class="">0</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">Centralized</td>
+            <td class="n-no">Apple</td>
+            <td class="n-no">No</td>
+            <td class="n-yes"><a href="https://www.apple.com/legal/transparency/">Yes</a></td>
+            <td class="">USA</td>
+            <td class="">USA</td>
+            <td class="">Apple</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>						
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Locally and / or Cloud</td>
+            <td class="n-yes">After setup (only cloud)</td>
+            <td class="n-yes">Locally</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+            <td class=""></td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">Jami</td>
+			<td class="n-yes">Free</td>
+            <td class="n-yes"><a href="https://git.jami.net/savoirfairelinux/jami-project" title="">GitLab</a></td>
+            <td class="n-yes"><a href="https://savannah.gnu.org/projects/jami/">GPLv3</a></td>
+            <td class="n-yes"><a href="https://apps.apple.com/ca/app/ring-a-gnu-package/id1306951055">App Store</a>, <a href="https://play.google.com/store/apps/details?id=cx.ring">Play Store</a>, <a href="https://f-droid.org/packages/cx.ring/">F-Droid</a>, <a href="https://jami.net/download/">website</a></td>
+            <td class="">2018</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="">RSA-Keys (4096-Bit)</td>
+            <td class="">RSA-4096 PKI / AES-256</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="n-part">Partially</td>
+            <td class=""></td>
+            <td class="n-no">—</td>
+            <td class="">0</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Distributed Peer-to-peer</td>
+            <td class="n-yes">N/A (no servers)</td>
+            <td class="n-yes">N/A (no servers)</td>
+            <td class=""></td>
+            <td class="">—</td>
+            <td class="">Canada</td>
+            <td class="">Donations, GNU/EFF</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes (with Swarms)</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Locally</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+			<td class=""></td>
+          </tr>
+
+<tr>
+            <td class="messenger-name">RetroShare (f)</td>
+			<td class="n-yes">Free</td>
+            <td class="n-yes"><a href="https://github.com/RetroShare/RetroShare">GitHub</a></td>
+            <td class="n-yes"><a href="http://retroshare.sourceforge.net/wiki/index.php/Frequently_Asked_Questions#Is_RetroShare_Open_source.3F">Multiple</a></td>
+            <td class="n-yes"><a href="https://github.com/RetroShare/RetroShare/releases">GitHub</a>, <a href="https://f-droid.org/en/packages/org.retroshare.android.qml_app/">F-Droid</a>, <a href="https://retroshare.cc/downloads.html">website</a></td>
+            <td class="">2006</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No (web app is not complete yet)</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="">TLS 1.3 (OpenSSL)</td>
+            <td class="">TLS_AES_256_GCM_SHA384 / Chacha20+poly1305</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">No</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class="n-yes">Yes (stops connecting to those friends)</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="">2017</td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Decentralized Peer-to-peer</td>
+            <td class="n-yes">N/A (no servers)</td>
+            <td class="n-yes">N/A (no servers)</td>
+            <td class="n-no">No</td>
+            <td class="">—</td>
+            <td class="">—</td>
+            <td class="">Mostly none, except Google summer of code</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes (experimental)</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Locally (old versions of config and data files)</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+            <td class="n-yes"><a href="https://github.com/RetroShare/RetroShare/issues/2615">20.04.2022</a></td>
+          </tr>		  
+		  
+          <tr>
+            <td class="messenger-name">Session (f)</td>
+			<td class="n-yes">Free</td>
+            <td class="n-yes"><a href="https://github.com/oxen-io" title="">GitHub</a></td>
+            <td class="n-yes"><a href="https://github.com/oxen-io/session-android/blob/master/LICENSE">GPLv3</a></td>
+            <td class="n-yes"><a href="https://apps.apple.com/app/session-private-messenger/id1470168868">App Store</a>, <a href="https://play.google.com/store/apps/details?id=network.loki.messenger">Play Store</a>, <a href="https://fdroid.getsession.org/">F-Droid</a>, <a href="https://github.com/oxen-io/session-android/releases">GitHub</a>, <a href="https://getsession.org/download">Website</a></td>
+            <td class="">2020</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""><a href="https://getsession.org/blog/session-protocol-technical-information">Session Protocol</a></td>
+            <td class="" title="Double Ratchet, 3XDH handshake, using Curve25519, AES-256, and HMAC-SHA256 primitives, Session IDs are X25519 Key pairs, and Onion requests X25519 with HMAC-SHA-256 for deriving symmetric key, then AES-256 with that key">Curve25519 / AES-256 / HMAC-SHA256</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="">N/A (no directory service)</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes" title="Once connected to the network encrypted messages can be sent to new Session IDs without needing to query any resolving server.">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes" title="By contacting the user you suspect you are talking to out of band and comparing their Session ID with the Session ID you are talking to. If they match then you know you are speaking with the real person.">Yes</td>
+            <td class="n-yes" title="We use sealed sender for all sent messages. Sending and retrieval of messages is all done using onion routing. This means that no central server knows your IP address, who you are sending to and who you receive messages from. Other metadata like mobile phone numbers is removed through the usage of public key pairs.">Yes via onion routing</td>
+            <td class="n-yes">Onion routing supported by default</td>
+            <td class=""><a href="https://blog.quarkslab.com/resources/2021-05-04_audit-of-session-secure-messaging-application/20-08-Oxen-REP-v1.4.pdf">2021</a></td>
+            <td class="">0</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Decentralized Peer-to-peer</td>
+            <td class="n-yes">N/A (no servers)</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes"><a href="https://optf.ngo/transparency/">Yes</a></td>
+            <td class="">Depending on server location</td>
+            <td class="">Australia</td>
+            <td class="">LAG Foundation Ltd, OPTF Foundation</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Locally</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+            <td class="n-yes">16.01.2022</td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">Signal</td>
+			<td class="n-yes">Free</td>
+            <td class="n-yes"><a href="https://github.com/signalapp" title="">GitHub</a></td>
+            <td class="n-yes">GPLv3</td>
+            <td class="n-part">App Store, Play Store, Website</td>
+            <td class="">2014</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""><a href="https://en.wikipedia.org/wiki/Signal_Protocol" title=""><span style="14px color:#337ab7; font-family:'Arial'; font-size:14px">Signal&nbsp;Protocol</span></a></td>
+            <td class="">Curve25519 / AES-256 / HMAC-SHA256</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-part">Partially</td>
+            <td class=""></td>
+            <td class=""><a href="https://hal.inria.fr/hal-01575923/file/KobeissiBhargavanBlanchetEuroSP17.pdf"2017</a></td>
+            <td class="">0</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">Centralized</td>
+            <td class="n-no">Amazon, Microsoft, Google &amp; Cloudflare</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes"><a href="https://signal.org/bigbrother/">Yes</a></td>
+            <td class="">USA</td>
+            <td class="">USA</td>
+            <td class=""><a href="https://productmint.com/signal-business-model-how-does-signal-make-money/">List here</a></td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-part">Solely desktop, smartphone or tablet</td>
+            <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+			<td class="n-yes">Locally</td>
+			<td class="n-yes">After setup</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+            <td class=""></td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">SimpleX Chat (f)</td>
+            <td class="n-yes">Free</td>
+            <td class="n-yes"><a href="https://github.com/simplex-chat/simplex-chat" title="">GitHub</a></td>
+            <td class="n-yes">AGPLv3</td>
+            <td class="n-yes">App Store, Play Store, Github</td>
+            <td class="">2021</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="">Double ratchet (aka signal), NaCl Crypto_box</td>
+            <td class="">Ed448 / Curve448 / Curve25519 / XSalsa20 256 / Poly1305 / AES-GCM AEAD / SHA512 based HKDF / SHA256</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="">N/A (no directory service)</td>
+            <td class="">N/A, there are no identities, the contacts are verified out-of-band - we do not have identities in the network</td>
+            <td class="n-yes">Yes</td>
+            <td class="">N/A, there are no permanent identities</td>
+            <td class="">Key exchange happens out of band, via QR code, so MITM attack is not possible and key integrity is preserved in a non-optional way, unlike how it happens with fingerprint verification</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">Servers can be accessed via Tor, but clients do not natively support it yet - it is planned</td>
+            <td class="n-no">—</td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Client centric network based on the platform that consists of cheap redundant server nodes providing unidirectional queues, that do not talk to each other, without any central catalogue</td>
+            <td class="n-yes">Anybody can host the servers, open-source code is available, with one-click deployment on Digital Ocean and Linode</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="">—</td>
+            <td class="">UK</td>
+            <td class="">SimpleX Chat</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Locally</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td> 
+			<td class="n-yes">13.01.2022</td>
+          </tr>
+		  
+		  
+		  <tr><td class="messenger-name">Siskin (XMPP)</td>
+            <td class="n-yes">Free</td>
+            <td class="n-yes"><a href="https://github.com/tigase/siskin-im" title="">GitHub</a></td>
+            <td class="n-yes">GPLv3</td>
+            <td class="n-no">App Store</td>
+            <td class="">2016</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""><a href="https://en.wikipedia.org/wiki/OMEMO" title=""><span style="14px color:#337ab7; font-family:'Arial'; font-size:14px">OMEMO</a></td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="n-no">No</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class="n-part"><span style="color:#000000; font-family:'Arial'; font-size:14px">Yes<br>(if previously verified)</span></td>
+            <td class=""></td>
+            <td class="n-no">No</td>
+            <td class=""></td>
+            <td class="n-no">—</td>
+            <td class="">0</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-part">Federated</td>
+            <td class="n-part">Distributed server</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="">Depending on server location</td>
+            <td class=""></td>
+            <td class=""></td>
+
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+            <td class="n-part">Yes (depending on server)</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="n-no">No</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+           <td class="" style="text-align: left;">
+		   - Interoperability with other XMPP clients
+		   </td>			<td class=""></td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">Skype</td>
+            <td class="n-yes">Free</td>
+            <td class="n-no">—</td>
+            <td class="n-no">Proprietary</td>
+            <td class="n-part">App Store, Play Store, Microsoft Store, Website</td>
+            <td class="">2003</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="">Proprietary / Signal Protocol</td>
+            <td class="">RSA-1536 2048 / AES-256 / SHA-1</td>
+            <td class="n-part">Only individual chats (optional)</td>
+            <td class="n-part">Only  in "Private Conversation"</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="n-no">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">—</td>
+            <td class="">2</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">Centralized</td>
+            <td class="n-no">Microsoft</td>
+            <td class="n-no">No</td>
+            <td class="n-yes"><a href="https://www.microsoft.com/en-us/corporate-responsibility/law-enforcement-requests-report">Yes</a></td>
+            <td class="">USA</td>
+            <td class="">USA</td>
+            <td class="">Microsoft</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Locally</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+			<td class=""></td>
+          </tr>
+          <tr>
+            <td class="messenger-name">Speek (f)</td>
+            <td class="n-yes">Free</td>
+            <td class="n-yes"><a href="https://github.com/Speek-App/Speek" title="">GitHub</a></td>
+            <td class="n-yes">Open source but no license</td>
+            <td class="n-yes">App Store, Microsoft Store, GitHub</td>
+            <td class="">2022</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""><a href="https://github.com/Speek-App/Speek/blob/main/doc/protocol.md" title="">Speek Protocol / Tor hidden services</a></td>
+            <td class="">DHE handshake / Curve25519 / HMAC-SHA256 / RSA-2048</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No group chat</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="">N/A (no directory service)</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes" title="By contacting the user you suspect you are talking to out of band and comparing their Session ID with the Speek ID you are talking to. If they match then you know you are speaking with the real person.">Yes</td>
+            <td class="n-yes">Yes via onion routing</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">—</td>
+            <td class="">No mobile app</td>
+            <td class="n-yes">Yes</td>
+            <td class="">No mobile app</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Decentralized Peer-to-peer</td>
+            <td class="n-yes">N/A (no servers)</td>
+            <td class="n-yes">N/A (no servers)</td>
+            <td class="n-no">No</td>
+            <td class="">Germany</td>
+            <td class="">Germany</td>
+            <td class="">No funding</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-part">When  closing Speek, all  messages are deleted</td>
+            <td class="n-no">No</td>
+            <td class="n-part">Only received messages</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-part">Locally (only contacts, messages are never stored)</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+			<td class="n-yes">29.03.2022</td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">Telegram</td>
+            <td class="n-yes">Free</td>
+            <td class="n-yes"><a href="https://telegram.org/apps#source-code" title="">GitHub</a></td>
+            <td class="n-yes"><span style="color:#000000; font-family:'Arial'; font-size:14px">GPLv2<br>(only Client)</span></td>
+            <td class="n-yes">App Store, Play Store, F-Droid</td>
+            <td class="">2013</td>
+            <td class="n-part">Yes <br>(only F-Droid version)</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""><a href="https://core.telegram.org/mtproto" title=""><span style="14px color:#337ab7; font-family:'Arial'; font-size:14px">MTProto</span><span style="14px color:#0065CC; font-family:'Arial'; font-size:14px">&nbsp;2.0</span></a></td>
+            <td class="">RSA-2048 / AES-256 / SHA-256</td>
+            <td class="n-part">Only individual chats (optional)</td>
+            <td class="n-part">Only in "Secret Chat"</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">Yes</td>
+            <td class="n-part">Only in "Secret Chats"</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class=""></td>
+            <td class=""><a href="https://courses.csail.mit.edu/6.857/2017/project/19.pdf">2017</a></td>
+            <td class="">1</td>
+            <td class="n-part">required for registration</td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">Centralized</td>
+            <td class="n-no">Amazon, Google and others</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="">Dubai (alternating)</td>
+            <td class="">USA / UK / Belize / UAE</td>
+            <td class="">Pavel Durov</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-part">Only in "Secret Chats"</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+									
+            <td class="n-part">Only unencrypted chats</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">Cloud <br>(except "Secret Chats")</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">Key with the provider</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+			<td class=""></td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">Threema (f)</td>
+            <td class="n-no">Paid</td>
+            <td class="n-yes"><a href="https://github.com/threema-ch" title="">GitHub</a></td>
+            <td class="n-yes"><span style="color:#000000; font-family:'Arial'; font-size:14px">AGPLv3<br>(only Client)</span></td>
+            <td class="n-part">App Store, Play Store, Website</td>
+            <td class="">2012</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="">NaCI <a href="https://en.wikipedia.org/wiki/Forward_secrecy" title=""><span style="font-family:'Arial'; font-size:14px">(no PFS)</span></a></td>
+            <td class="">Curve25519 256 / XSalsa20 256 / Poly1305-AES 128</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-part">Partially</td>
+            <td class="n-no">No</td>
+            <td class=""><a href="https://threema.ch/press-files/2_documentation/security_audit_report_threema_2020.pdf">2020</a></td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">Centralized</td>
+            <td class="n-part">Server in Switzerland</td>
+            <td class="n-no">No</td>
+            <td class="n-yes"><a href="https://threema.ch/en/transparencyreport">Yes</a></td>
+            <td class="">Switzerland</td>
+            <td class="">Switzerland</td>
+            <td class="">User pays, Afinum Management AG</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Locally and /<br>&nbsp;or (own) Server</td>
+            <td class="n-yes">Partially, after setup</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+			<td class="n-yes">11.01.2022</td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">aTox (Tox)</td>
+            <td class="n-yes">Free</td>
+            <td class="n-yes"><a href="https://github.com/evilcorpltd/aTox" title="">GitHub</a></td>
+            <td class="n-yes">GPLv3</td>
+            <td class="n-yes">F-Droid, Website</td>
+            <td class="">2020</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+             <td class="">NaCI <a href="https://en.wikipedia.org/wiki/Forward_secrecy" title=""><span style="font-family:'Arial'; font-size:14px">(no PFS)</span></a></td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class="n-no">No</td>
+            <td class=""></td>
+            <td class="n-part">Partially</td>
+            <td class=""></td>
+            <td class="n-no">—</td>
+            <td class="">0</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Decentralized Peer-to-peer</td>
+            <td class="n-yes">N/A (no servers)</td>
+            <td class="n-yes">N/A (no servers)</td>
+            <td class="">&nbsp;</td>
+            <td class="">—</td>
+            <td class=""></td>
+            <td class=""></td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="n-no">No</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+            <td class=""></td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">Viber</td>
+			<td class="n-yes">Free</td>
+            <td class="n-no">—</td>
+            <td class="n-no">Proprietary</td>
+            <td class="n-part">App Store, Play Store, Website</td>
+            <td class="">2010</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+		    <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			
+			<td class=""><a href="https://www.viber.com/app/uploads/Viber-Encryption-Overview.pdf">Proprietary / unknown</td>
+            <td class="">Curve25519 256 / Salsa20 128 / HMAC-SHA256</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class="n-no">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class="n-no">No</td>
+            <td class="n-no">—</td>
+            <td class="">12</td>
+            <td class="n-no">No</td>
+            <td class=""></td>
+            <td class=""></td>
+		     <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+			 
+            <td class="n-no">Centralized</td>
+            <td class=""></td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class=""></td>
+            <td class="">Luxembourg / Japan</td>
+            <td class="">Rakuten / friends and family of Talmon Marco </td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+            <td class=""></td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">WhatsApp</td>
+			<td class="n-yes">Free</td>
+            <td class="n-no">—</td>
+            <td class="n-no">Proprietary</td>
+            <td class="n-part">App Store, Play Store, Website</td>
+            <td class="">2009</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="">Signal Protocol (unverifable)</td>
+            <td class="">Curve25519 / AES-256 / HMAC-SHA256</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-part">Must be enabled</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class="n-no">—</td>
+            <td class="">1</td>
+            <td class="n-no">No, forwarding to Facebook</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">Centralized</td>
+            <td class="n-no">Facebook</td>
+            <td class="n-no">No</td>
+            <td class="n-yes"><a href="https://transparency.fb.com/data/">Yes</a></td>
+            <td class="">USA</td>
+            <td class="">USA</td>
+            <td class="">Facebook</td>
+			 <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Locally and Cloud</td>
+            <td class="n-yes">After setup</td>
+            <td class="n-no">Key with the provider</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+			<td class="n-no">Denied email contact</td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">Wickr Me</td>
+			<td class="n-yes">Free</td>
+            <td class="n-no">—</td>
+            <td class="n-no">Proprietary</td>
+            <td class="n-part">App Store, Play Store, Website</td>
+            <td class="">2012</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""><a href="https://wickr.com/wickrs-messaging-protocol/">Wickr Messaging Protocol</a></td>
+            <td class="">ECDH512 / AES-256 / HMAC-SHA256</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+            <td class="n-no">No</td>
+            <td class="">2014</td>
+            <td class="">3</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">Centralized</td>
+            <td class="n-no">Amazon</td>
+            <td class="n-no">No</td>
+            <td class="n-yes"><a href="https://wickr.com/transparency/">Yes</a></td>
+            <td class=""></td>
+            <td class="">USA</td>
+            <td class="">Amazon / CIA</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class=""></td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+		    <td class="" style="text-align: left;">
+				- Custom industry solutions</td>
+            <td class=""></td>
+          </tr>
+		  
+		  
+          <tr>
+            <td class="messenger-name">Wire</td>
+			<td class="n-yes">Free / paid</td>
+            <td class="n-yes"><a href="https://github.com/wireapp" title="">GitHub</a></td>
+            <td class="n-yes">GPLv3</td>
+            <td class="n-part">App Store, Play Store, Website</td>
+            <td class="">2014</td>
+            <td class="n-no">No</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+		    <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class=""><a href="https://en.wikipedia.org/wiki/Signal_Protocol" title=""><span style="font-family:'Arial'; font-size:14px">Proteus (Signal Protocol)</span></a></td>
+            <td class="">Curve25519 / ChaCha20 / HMAC-SHA256</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-part">Yes <br>(if previously verified)</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-no">No</td>
+            <td class="n-no">No</td>
+            <td class=""><a href="https://wire.com/en/blog/application-level-security-audits/">2017</a></td>
+            <td class="">0</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">Centralized</td>
+            <td class="n-no">Amazon</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes"><a href="https://wire.com/en/resources/whitepapers/transparency/">Yes</a></td>
+            <td class="">Germany</td>
+            <td class="">USA</td>
+            <td class="">Janus Friis, Iconical, Zeta Holdings (Luxembourg), Morpheus Ventures (Los Angeles)</td>
+		    <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-no">No</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+            <td class="n-yes">Yes</td>
+		    <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+            <td class="n-yes">Locally</td>
+            <td class="n-no">No</td>
+            <td class="n-part">Only iOS</td>
+		    <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
+
+		    <td class="" style="text-align: left;">
+				- GDPR / CCPA compliant<br>
+				- Custom industry solutions</td>
+			<td class=""></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  
+
+
+<script src="./Matrix_files/tablefilter.js"></script>
+
+<script data-config="">
+ var filtersConfig = {
+  base_path: 'tablefilter/',
+  col_7: 'none',
+  col_14: 'none',
+  col_36: 'none',
+  col_44: 'none',
+  col_56: 'none',
+  col_60: 'none',
+
+  
+  
+  auto_filter: {
+		            delay: 110 //milliseconds
+              },
+              filters_row_index: 1,
+              state: false,
+			  sticky_headers: true,
+              rows_counter: true,
+              btn_reset: true,
+              status_bar: true,
+              msg_filter: 'Sorting messengers ...'
+            };
+			
+            var tf = new TableFilter('demo', filtersConfig);
+            tf.init();
+          </script>
+
+</body></html>

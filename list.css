@@ -1,0 +1,18 @@
+h2,h3,h4,h5,h6{
+    margin-bottom:.5rem;
+    font-family:inherit;
+    line-height:1.2;
+    color:inherit;
+}
+
+.structure{
+  line-height: 2;
+  }
+
+div.structure a{
+  color: #5b84c5;
+}
+
+div.list h1,h2,h3,h4,h5,h6{
+  color: #5b84c5;
+}

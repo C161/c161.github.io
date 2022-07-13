@@ -1,0 +1,137 @@
+.tg{
+  border-collapse:collapse;
+  border-spacing:0;
+  margin-right:auto;
+  margin-left:auto;
+  text-align: center;
+}
+
+.tg td{
+  border-color:#EEEEEE;
+  border-style:solid;
+  border-width:1px;
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  overflow:hidden;
+  padding:10px 5px;
+  word-break:normal;
+}
+  
+.tg th{
+  border-color:white;
+  ;border-style:solid;
+  border-width:1px;
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  font-weight:normal;
+  overflow:hidden;
+  padding:10px 5px;
+  word-break:normal;
+}
+  
+.tg .tg-1wig{
+  font-weight:bold;
+  text-align:center;
+  vertical-align:top
+}
+
+.tg .tg-0lax{
+  text-align:center;
+  vertical-align:top
+}
+
+.flex-container {
+  display: flex;
+      justify-content: flex-start;
+}
+
+.flex-container > div {
+  margin: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 30px;
+}
+
+
+.tg2 {
+    border-collapse:collapse;
+    border-spacing:0;
+    margin-left:1%;
+    margin-right:1%;
+    }
+
+ .tg2 td{
+    border-color:white;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+ .tg2 th{
+    border-color:white;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+ .tg2 .tg-baqh{
+    text-align:center;
+    vertical-align:top
+}
+ .tg2 .tg-c3ow{
+    text-align:center;
+    vertical-align:top
+}
+ .tg2 .tg-0lax{
+    text-align:center;
+    vertical-align:top
+}
+
+ .tg3 {
+    border-collapse:collapse;
+    border-spacing:0;
+    margin-left:1%;
+    margin-right:1%;
+    }
+
+ .tg3 td{
+    border-color:white;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+     overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+ .tg3 th{
+    border-color:white;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+ .tg3 .tg-baqh{
+    text-align:center;
+    vertical-align:top
+}
+ .tg3 .tg-c3ow{
+    text-align:center;
+    vertical-align:top
+}
+ .tg3 .tg-0lax{
+    text-align:center;
+    vertical-align:top
+}

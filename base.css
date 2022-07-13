@@ -1,0 +1,155 @@
+.theme-toggle {
+  height: 57px;
+  width: 57px;
+  margin-top: 20px;
+}
+
+body.light-mode {
+  background-color: #e3e3e3;
+  color: #111;
+}
+body.light-mode a {
+  color: #111;
+}
+body.light-mode button {
+  color: #e3e3e3;
+  background-color: #111;
+  border-color:#111;
+}
+
+body.light-mode hr {
+  background-color: #111;
+}
+
+body.darkmode {
+  background-color: #111;
+  color: #e3e3e3;
+}
+body.darkmode a {
+  color: #e3e3e3;
+}
+body.darkmode button {
+  color: #111;
+  background-color: #e3e3e3;
+  border-color:#e3e3e3;
+
+}
+
+.content {
+  margin-left: 10%;
+}
+
+.sites {
+  margin-top: 50px;
+}
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("C16-font.ttf") format("truetype");
+}
+html {
+  font-family: CustomFont;
+  line-height: 1.15;
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  text-align: left;
+  transition: background 0.3s ease-in;
+}
+
+.logo{
+    width: 90px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    margin-top: 45px;
+    margin-left: 10%;
+}
+
+.name {
+  text-align: center;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 10%;
+  margin-left: 33px;
+  margin-bottom: 5px;
+  vertical-align: bottom;
+}
+.header-list {
+  display: inline-block;
+  width: 55%;
+  vertical-align: bottom;
+}
+.header-list-items {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  list-style: none;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.no-click-button {
+  background-color: #50a691;
+  padding: 13.5px;
+}
+a {
+  text-decoration: none;
+  color: #e3e3e3;
+}
+a:hover {
+  text-decoration: none;
+}
+.active > a {
+  position: relative;
+  padding-bottom: 5px;
+}
+.active > a:after {
+  content: "";
+  background: linear-gradient(to right, #00ADAD, #00ADAD 70%);
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.inactive > a {
+  padding: 10px 0;
+  text-decoration: none !important;
+  position: relative;
+}
+.inactive > a:after {
+  content: "";
+  background: linear-gradient(to right, #00ADAD, #00ADAD 70%);
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s all ease-in-out;
+}
+.inactive > a:hover:after {
+  width: 100%;
+}
+.inactive > a:hover {
+  padding-bottom: 5px;
+}
+.hli {
+  display: inline-block;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.bottom-row {
+  height: 1px;
+  width: 80%;
+  color: #e3e3e3;
+  background-color: #e3e3e3;
+  margin-top: 50px;
+}
+div.list a{
+  color:#50a691;
+}
+div.footer img{
+  width:32px;
+}
