@@ -83,7 +83,9 @@ body {
 }
 .no-click-button {
   background-color: #50a691;
-  padding: 13.5px;
+  width: 50px;
+    padding: 15px 5px 15px 5px;
+  display: inline-block;
 }
 a {
   text-decoration: none;
