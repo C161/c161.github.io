@@ -50,8 +50,8 @@
   color: #06d85f;
 }
 .popup .content {
-  max-height: 30%;
-  overflow: auto;
+  max-height: 450px;
+  overflow-y: scroll;
 }
 
 @media screen and (max-width: 700px) {
