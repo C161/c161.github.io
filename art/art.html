@@ -9,6 +9,24 @@
       <link rel="shortcut icon" href="../icon.png">
    </head>
    <body id="body" class="darkmode">
+<style>
+.art-title {
+    display: inline; 
+    vertical-align: bottom; 
+    margin-left:30px
+}
+.thumbnail{
+    display: inline-block; 
+    vertical-align: top;
+}
+@media (max-width:580px){
+      .art-title {
+            display: block;
+            margin-left:0;
+      }
+}
+</style>
+
       <script>
          function changeImage1() {
              var image = document.getElementById('GitHub');
@@ -37,7 +55,7 @@
    <header>
       <img src="../logo.png" class="logo" alt="logo">
       <div class="name">
-         <h1><a href="index.html" >C16.one</a></h1>
+         <h1><a href="../index.html" >C16.one</a></h1>
       </div>
       <div class="header-list">
          <ul class="header-list-items">
@@ -54,12 +72,12 @@
             <h3><u>Art that I have created</u></h3>
             <br>
             <a href="rorschach/rorschach.html">
-               <img style="display: inline-block; vertical-align: top;" src="thumbnails/rorschach-thumb.png" alt="Rorschach thumbnail"> 
-               <p style="display: inline; vertical-align: bottom; margin-left:30px">The Rorschach series</p>
+               <img class="thumbnail" src="thumbnails/rorschach-thumb.png" alt="Rorschach thumbnail"> 
+               <p class="art-title">The Rorschach series</p>
             </a><br>
             <a href="mono/mono.html">
-               <img style="display: inline-block; vertical-align: top; margin-top: 30px;" src="thumbnails/mono-thumb.png" alt="Mono thumbnail"> 
-               <p style="display: inline; vertical-align: bottom; margin-left:30px">The Mono series</p>
+               <img style="margin-top: 30px;" src="thumbnails/mono-thumb.png" alt="Mono thumbnail"> 
+               <p class="art-title">The Mono series</p>
             </a><br>
          </section>
       </div>
