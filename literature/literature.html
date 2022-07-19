@@ -9,17 +9,9 @@
       <link rel="shortcut icon" href="icon.png">
    </head>
    <body id="body" class="darkmode">
-      <script>
+ <script>
+        
          function changeImage1() {
-             var image = document.getElementById('GitHub');
-             if (image.src.match("GitHub-Mark-Light")) {
-                 image.src = "../icons/GitHub-Mark-Dark.svg";
-             } else {
-                 image.src = "../icons/GitHub-Mark-Light.svg";
-             }
-         }
-         
-         function changeImage2() {
              var image = document.getElementById('xxiivv');
              if (image.src.match("https://webring.xxiivv.com/icon.white.svg")) {
                  image.src = "https://webring.xxiivv.com/icon.black.svg";
@@ -41,11 +33,13 @@
       </div>
       <div class="header-list">
          <ul class="header-list-items">
-            <li class="no-click-button"> <a style="color:#fcfcfc;" href="../art/art.html">Art</a></li>
-            <li class="hli inactive" style="padding-bottom: 25px;"> <a href="../index.html">Index</a></li>
+            <li class="art-button"> <a style="color:#fcfcfc;" href="../art/art.html">Art</a></li>
             <li class="hli inactive"> <a href="../about.html">About</a></li>
             <li class="hli inactive"> <a href="../contact.html">Contact</a></li>
-            <button type="button" class="theme-toggle" name="dark_light" onclick="changeImage1(); changeImage2(); toggleDarkLight()">🌙/🌞</button>
+            <a href="https://webring.xxiivv.com/#c16.one" target="_blank">
+            <img id="xxiivv" src="https://webring.xxiivv.com/icon.white.svg" alt="XXIIVV webring" style="padding: 0px 10px 0px 0px;"/>
+            </a>
+            <button type="button" class="theme-toggle" name="dark_light" onclick="changeImage1(); toggleDarkLight()">🌙/🌞</button>
          </ul>
       </div>
    </header>
@@ -55,6 +49,10 @@
             <br>
             <table>
               <tbody style="vertical-align: top;">
+               <tr>
+                  <td>17.07.2022 - </td>
+                  <td>Paulo Coelho – Der Alchimist</td>
+               </tr>
                <tr>
                   <td>16.07.2022</td>
                   <td>Haruki Murakami – Scheherazade</td>
@@ -163,14 +161,5 @@
             </table>
          </section>
       </div>
-      <div class="footer">
-         <hr class=bottom-row>
-         <div style="text-align:center;">
-            <a href="https://webring.xxiivv.com/#c16.one" target="_blank">
-            <img id="xxiivv" src="https://webring.xxiivv.com/icon.white.svg" alt="XXIIVV webring"/>
-            </a>            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> <img class="footer-icon"  src="../icons/cc-icon-black.svg" alt="CC icon"> </a>
-            <a href="https://github.com/C161/c161.github.io"> <img id="GitHub" class="footer-icon" src="../icons/GitHub-Mark-Light.svg" alt="GitHub icon"></a>
-         </div>
-      </div>
-   </body>
+      </body>
 </html>
