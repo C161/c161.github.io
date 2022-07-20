@@ -7,12 +7,33 @@
       <title>C16.one</title>
       <link rel="stylesheet" href="base.css">
       <link rel="stylesheet" href="index.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <link rel="shortcut icon" href="icon.png">
    </head>
-   <body id="body" class="darkmode">
+     <body id="main">
       <script>
-         
-                  function changeImage1() {
+$('#main').toggleClass(localStorage.toggled);
+
+function darkLight() {
+  /*LIGHT CLASS*/
+  if (localStorage.toggled != 'light') {
+    $('#main, p').toggleClass('light', true);
+    localStorage.toggled = "light";
+     
+  } else {
+    $('#main, p').toggleClass('light', false);
+    localStorage.toggled = "";
+  }
+}
+
+/*Add 'checked' property to input if background == dark*/
+if ($('main').hasClass('light')) {
+   $( '#dark_light' ).prop( "checked", true )
+} else {
+  $( '#dark_light' ).prop( "checked", false )
+}
+
+                 function changeImage1() {
                       var image = document.getElementById('xxiivv');
                       if (image.src.match("https://webring.xxiivv.com/icon.white.svg")) {
                           image.src = "https://webring.xxiivv.com/icon.black.svg";
@@ -21,13 +42,9 @@
                       }
                   }
          
-         function toggleDarkLight() {
-           var body = document.getElementById("body");
-           var currentClass = body.className;
-           body.className = currentClass == "darkmode" ? "light-mode" : "darkmode";
-         }
+
       </script>
-   <header>
+ <header>
       <img src="logo.png" class="logo" alt="logo">
       <div class="name">
          <h1><a href="index.html" >C16.one</a></h1>
@@ -40,7 +57,7 @@
             <a href="https://webring.xxiivv.com/#c16.one" target="_blank">
             <img id="xxiivv" src="https://webring.xxiivv.com/icon.white.svg" alt="XXIIVV webring" style="padding: 0px 10px 0px 0px;"/>
             </a>
-            <button type="button" class="theme-toggle" name="dark_light" onclick="changeImage1(); toggleDarkLight()">🌙/🌞</button>
+<button type="button" class="theme-toggle" id="dark_light" onclick="darkLight(); changeImage1();">🌙/🌞</button>
          </ul>
       </div>
    </header>
@@ -70,5 +87,5 @@
          </div>
       </div>
       </div>
-   </body>
-</html>
+     </body>
+ </html>
