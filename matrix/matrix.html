@@ -127,7 +127,7 @@
             <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
 			
 			<td class="encryption"><a href="https://berty.tech/docs/protocol">Berty protocol</a></td>
-            <td class="primitives">Curve25519 / XSalsa20 / Poly1305</td>
+            <td class="primitives"><a href="https://berty.tech/faq#whats-the-encryption-protocol-used-in-berty">Curve25519 / XSalsa20 / Poly1305</a></td>
             <td class="e2ee n-yes">Yes</td>
             <td class="e2ee-2-user n-yes">Yes</td>
             <td class="e2ee-group n-yes">Yes</td>
@@ -279,7 +279,7 @@
             <td class="web n-no">No</td>						       
 			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
 
-            <td class="encryption"><a href="https://en.wikipedia.org/wiki/OMEMO" title=""><span style="14px color:#337ab7; font-family:'Arial'; font-size:14px">OMEMO</a></td>
+            <td class="encryption"><a href="https://conversations.im/omemo/" title=""><span style="14px color:#337ab7; font-family:'Arial'; font-size:14px">OMEMO</a></td>
             <td class="primitives">Curve25519 / AES-256 / HMAC-SHA256</td>
             <td class="e2ee n-yes">Yes</td>
             <td class="e2ee-2-user n-yes">Yes</td>
@@ -574,7 +574,7 @@
 			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
 
             <td class="encryption"><a href="https://en.wikipedia.org/wiki/Signal_Protocol" title=""><span style="font-family:'Arial'; font-size:14px">Olm / Megolm (Signal Protocol)</span></a></td>
-            <td class="primitives">Curve25519 / AES-256 / HMAC-SHA256</td>
+            <td class="primitives"><a href="">Ed25519 / Curve25519 / HMAC-SHA256</a></td>
             <td class="e2ee n-yes">Yes</td>
             <td class="e2ee-2-user n-yes">Yes</td>
             <td class="e2ee-2-group n-yes">Yes</td>
@@ -719,7 +719,7 @@
             <td class="web n-no">No</td>
 			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
 			
-            <td class="encryption"><a href="https://en.wikipedia.org/wiki/OMEMO" title=""><span style="14px color:#337ab7; font-family:'Arial'; font-size:14px">OMEMO<br>
+            <td class="encryption"><a href="https://en.wikipedia.org/wiki/OMEMO" title=""><span style="14px color:#337ab7; font-family:'Arial'; font-size:14px"><a href="https://dev.gajim.org/gajim/gajim-plugins/-/wikis/OmemoGajimPlugin">OMEMO (not default)</a><br>
             <td class="primitives"></td>
             <td class="e2ee n-yes">Yes</td>
             <td class="e2ee-2-user n-yes">Yes</td>
@@ -795,7 +795,7 @@
 			
 			<td class="encryption">AES</td>
             <td class="primitives">RSA-2048 / AES-256</td>
-            <td class="e2ee n-yes">Yes</td>
+            <td class="e2ee n-yes">Yes</td> <!-- ??? AES is not an e2ee algorithm --->
             <td class="e2ee-2-user n-yes">Yes</td>
             <td class="e2ee-group n-yes">Yes</td>
             <td class="e2ee-by-default n-yes">Yes</td>
@@ -1156,8 +1156,8 @@
             <td class="web n-no">No</td>
 			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
 
-            <td class="encryption"><a href="https://en.wikipedia.org/wiki/Signal_Protocol" title=""><span style="14px color:#337ab7; font-family:'Arial'; font-size:14px">Signal&nbsp;Protocol</span></a></td>
-            <td class="primitives">Curve25519 / AES-256 / HMAC-SHA256</td>
+            <td class="encryption"><a href="https://github.com/signalapp/libsignal" title=""><span style="14px color:#337ab7; font-family:'Arial'; font-size:14px">Signal Protocol</span></a></td>
+            <td class="primitives"><a href="https://signal.org/docs/">Curve25519 / AES-256 / HMAC-SHA256</a></td>
             <td class="e2ee n-yes">Yes</td>
             <td class="e2ee-2-user n-yes">Yes</td>
             <td class="e2ee-group n-yes">Yes</td>
@@ -1229,8 +1229,8 @@
             <td class="web n-no">No</td>
 			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
 
-            <td class="encryption">Double ratchet (aka signal), NaCl Crypto_box</td>
-            <td class="primitives">Ed448 / Curve448 / Curve25519 / XSalsa20 256 / Poly1305 / AES-GCM AEAD / SHA512 based HKDF / SHA256</td>
+            <td class="encryption">Double ratchet, NaCl Crypto_box</td>
+            <td class="primitives"><a href="https://github.com/simplex-chat/simplexmq/blob/master/protocol/overview-tjr.md#encryption-primitives-used">Ed448 / Curve448 / Curve25519 / XSalsa20 256 / Poly1305 / AES-GCM AEAD / SHA512 based HKDF / SHA256</a></td>
             <td class="e2ee n-yes">Yes</td>
             <td class="e2ee-2-user n-yes">Yes</td>
             <td class="e2ee-group n-yes">Yes</td>
@@ -1301,7 +1301,7 @@
             <td class="web n-no">No</td>
 			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
 
-            <td class="encryption"><a href="https://en.wikipedia.org/wiki/OMEMO" title=""><span style="14px color:#337ab7; font-family:'Arial'; font-size:14px">OMEMO</a></td>
+            <td class="encryption"><a href="https://en.wikipedia.org/wiki/OMEMO" title=""><span style="14px color:#337ab7; font-family:'Arial'; font-size:14px"><a href="https://conversations.im/omemo/">OMEMO</a></td>
             <td class="primitives"></td>
             <td class="e2ee n-yes">Yes</td>
             <td class="e2ee-2-user"></td>
@@ -1378,7 +1378,7 @@
 			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
 
             <td class="encryption">Proprietary / Signal Protocol</td>
-            <td class="primitives">RSA-1536 2048 / AES-256 / SHA-1</td>
+            <td class="primitives"><a href="https://support.skype.com/en/faq/FA31/does-skype-use-encryption">RSA-1536 2048 / AES-256</a></td>
             <td class="e2ee n-part">Only individual chats (optional)</td>
             <td class="e2ee-2-user n-part">Only  in "Private Conversation"</td>
             <td class="e2ee-group n-no">No</td>
@@ -1594,8 +1594,8 @@
             <td class="web n-yes">Yes</td>
 			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
 
-            <td class="encryption">NaCI <a href="https://en.wikipedia.org/wiki/Forward_secrecy" title=""><span style="font-family:'Arial'; font-size:14px">(no PFS)</span></a></td>
-            <td class="primitives">Curve25519 256 / XSalsa20 256 / Poly1305-AES 128</td>
+            <td class="encryption"><a href="https://threema.ch/en/faq/why_secure">NaCI</a></span></a></td>
+            <td class="primitives"><a href="https://threema.ch/en/faq/why_secure">Curve25519 256 / XSalsa20 256 / Poly1305</a></td>
             <td class="e2ee n-yes">Yes</td>
             <td class="e2ee-2-user n-yes">Yes</td>
             <td class="e2ee-group n-yes">Yes</td>
@@ -1667,7 +1667,7 @@
             <td class="web n-no">No</td>
 			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
 
-             <td class="encryption">NaCI <a href="https://en.wikipedia.org/wiki/Forward_secrecy" title=""><span style="font-family:'Arial'; font-size:14px">(no PFS)</span></a></td>
+            <td class="encryption">NaCI</span></a></td>
             <td class="primitives"></td>
             <td class="e2ee n-yes">Yes</td>
             <td class="e2ee-2-user n-yes">Yes</td>
@@ -1741,7 +1741,7 @@
 		    <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
 			
 			<td class="encryption"><a href="https://www.viber.com/app/uploads/Viber-Encryption-Overview.pdf">Proprietary / unknown</td>
-            <td class="primitives">Curve25519 256 / Salsa20 128 / HMAC-SHA256</td>
+            <td class="primitives"><a href="https://www.viber.com/app/uploads/Viber-Encryption-Overview.pdf#page=2">Curve25519 256 / Salsa20 128 / HMAC-SHA256</a></td>
             <td class="e2ee n-yes">Yes</td>
             <td class="e2ee-2-user n-yes">Yes</td>
             <td class="e2ee-group n-yes">Yes</td>
@@ -1887,7 +1887,7 @@
 			<td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
 
             <td class="encryption"><a href="https://wickr.com/wickrs-messaging-protocol/">Wickr Messaging Protocol</a></td>
-            <td class="primitives">ECDH512 / AES-256 / HMAC-SHA256</td>
+            <td class="primitives"><a href="https://wickr.com/the-bit-security-of-cryptographic-primitives-2/#attachment_2091">ECDSA and ECDH on Curve P-521 / HKDF-SHA256 / AES-256-GCM</a></td>
             <td class="e2ee n-yes">Yes</td>
             <td class="e2ee-2-user n-yes">Yes</td>
             <td class="e2ee-group n-yes">Yes</td>
@@ -1960,8 +1960,8 @@
             <td class="web n-yes">Yes</td>
 		    <td style="border-color: #fff;background-color:#fff;border-right-color: #000;"></td>
 
-            <td class="encryption"><a href="https://en.wikipedia.org/wiki/Signal_Protocol" title=""><span style="font-family:'Arial'; font-size:14px">Proteus (Signal Protocol)</span></a></td>
-            <td class="primitives">Curve25519 / ChaCha20 / HMAC-SHA256</td>
+            <td class="encryption"><a href="https://github.com/wireapp/proteus">Proteus</a></td>
+            <td class="primitives"><a href="https://github.com/wireapp/proteus#proteus">Curve25519 / ChaCha20 / HMAC-SHA256 / HKDF</a></td>
             <td class="e2ee n-yes">Yes</td>
             <td class="e2ee-2-user n-yes">Yes</td>
             <td class="e2ee-group n-yes">Yes</td>
