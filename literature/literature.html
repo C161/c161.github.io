@@ -8,183 +8,179 @@
       <link rel="stylesheet" href="../base.css">
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <link rel="shortcut icon" href="icon.png">
+      <script>
+          $('#main').toggleClass(localStorage.toggled);
+
+      function darkLight() {
+          /*LIGHT CLASS*/
+          if (localStorage.toggled != 'light') {
+              $('#main, p').toggleClass('light', true);
+              localStorage.toggled = "light";
+          } else {
+              $('#main, p').toggleClass('light', false);
+              localStorage.toggled = "";
+          }
+      }
+      /*Add 'checked' property to input if background == dark*/
+      if ($('main').hasClass('light')) {
+          $('#dark_light').prop("checked", true)
+      } else {
+          $('#dark_light').prop("checked", false)
+      }
+
+      function changeImage1() {
+          var image = document.getElementById('xxiivv');
+          if (image.src.match("https://webring.xxiivv.com/icon.white.svg")) {
+              image.src = "https://webring.xxiivv.com/icon.black.svg";
+          } else {
+              image.src = "https://webring.xxiivv.com/icon.white.svg";
+          }
+      } 
+	</script>
    </head>
    <body id="main">
-      <script>
-$('#main').toggleClass(localStorage.toggled);
-
-function darkLight() {
-  /*LIGHT CLASS*/
-  if (localStorage.toggled != 'light') {
-    $('#main, p').toggleClass('light', true);
-    localStorage.toggled = "light";
-     
-  } else {
-    $('#main, p').toggleClass('light', false);
-    localStorage.toggled = "";
-  }
-}
-
-/*Add 'checked' property to input if background == dark*/
-if ($('main').hasClass('light')) {
-   $( '#dark_light' ).prop( "checked", true )
-} else {
-  $( '#dark_light' ).prop( "checked", false )
-}
-
-                 function changeImage1() {
-                      var image = document.getElementById('xxiivv');
-                      if (image.src.match("https://webring.xxiivv.com/icon.white.svg")) {
-                          image.src = "https://webring.xxiivv.com/icon.black.svg";
-                      } else {
-                          image.src = "https://webring.xxiivv.com/icon.white.svg";
-                      }
-                  }
-         
-
-      </script>
-   <header>
-      <img src="../logo.png" class="logo" alt="logo">
-      <div class="name">
-         <h1><a href="../index.html" >C161</a></h1>
-      </div>
-      <div class="header-list">
-         <ul class="header-list-items">
-            <li class="art-button"> <a style="color:#fcfcfc;" href="../art/art.html">Art</a></li>
-            <li class="hli inactive"> <a href="../about.html">About</a></li>
-            <li class="hli inactive"> <a href="../contact.html">Contact</a></li>
-            <a href="https://webring.xxiivv.com/#C161" target="_blank">
-            <img id="xxiivv" src="https://webring.xxiivv.com/icon.white.svg" alt="XXIIVV webring" style="padding: 0px 10px 0px 0px;"/>
-            </a>
-<button type="button" class="theme-toggle" id="dark_light" onclick="darkLight(); changeImage1();">🌙/🌞</button>
-         </ul>
-      </div>
-   </header>
+      <header>
+         <img src="../logo.png" class="logo" alt="logo">
+         <div class="name">
+            <h1><a href="../index.html" >C161</a></h1>
+         </div>
+         <div class="header-list">
+            <ul class="header-list-items">
+               <li class="art-button"> <a style="color:#fcfcfc;" href="../art/art.html">Art</a></li>
+               <li class="hli inactive"> <a href="../about.html">About</a></li>
+               <li class="hli inactive"> <a href="../contact.html">Contact</a></li>
+               <a href="https://webring.xxiivv.com/#C161" target="_blank">
+               <img id="xxiivv" src="https://webring.xxiivv.com/icon.white.svg" alt="XXIIVV webring" style="padding: 0px 10px 0px 0px;"/>
+               </a>
+               <button type="button" class="theme-toggle" id="dark_light" onclick="darkLight(); changeImage1();">🌙/🌞</button>
+            </ul>
+         </div>
+      </header>
       <div class="content" style="margin-top: 50px;">
          <section style="padding: 0; margin: 0;">
             <h3><u>Literature that I have read</u></h3>
             <br>
             <table>
-              <tbody style="vertical-align: top;">
-               <tr>
-                  <td>23.07.2022 - ?</td>
-                  <td>Margaret Atwood - The Handmaid’s Tale</td>
-               </tr>
-               <tr>
-                  <td>22.07.2022</td>
-                  <td>Margaret Atwood - Der Report der Magd (Graphic Novel von Renée Nault)</td>
-               </tr>
-               <tr>
-                  <td>17.07.2022 - 22.07.2022</td>
-                  <td>Paulo Coelho – Der Alchimist [<a style="color:#50a691" href="der-alchimist.html">Ausschnitte</a>]</td>
-               </tr>
-               <tr>
-                  <td>16.07.2022</td>
-                  <td>Haruki Murakami – Scheherazade</td>
-               </tr>
-               <tr>
-                  <td>16.07.2022</td>
-                  <td>Haruki Murakami – Von Männern, die keine Frauen haben</td>
-               </tr>
-               <tr>
-                  <td>16.07.2022</td>
-                  <td>Haruki Murakami – Samsa in Love [<a style="color:#50a691" href="samsa-in-love.html">Ausschnitte</a>]</td>
-               </tr>
-               <tr>
-                  <td>15.07.2022</td>
-                  <td>Haruki Murakami – Kinos Bar [<a style="color:#50a691" href="kinos-bar.html">Ausschnitte</a>]</td>
-               </tr>
-               <tr>
-                  <td>12.07.2022 - 13.07.2022</td>
-                  <td>Haruki Murakami – Das eigenständige Organ [<a style="color:#50a691" href="das-eigenständige-organ.html">Ausschnitte</a>]</td>
-               </tr>
-               <tr>
-                  <td>12.07.2022</td>
-                  <td>Haruki Murakami – Yesterday</td>
-               </tr>
-               <tr>
-                  <td>11.07.2022</td>
-                  <td>Haruki Murakami – Drive my Car [<a style="color:#50a691" href="drive-my-car.html">Ausschnitte</a>]</td>
-               </tr>
-               <tr>
-                  <td>06.07.2022 - 07.07.2022</td>
-                  <td>Tschingis Aitmatow – Dshamilja [<a style="color:#50a691" href="dshamilja.html">Ausschnitte</a>]</td>
-               </tr>
-               <tr>
-                  <td>26.06.2022 - 05.07.2022</td>
-                  <td>Tschingis Aitmatow – Die Richtstatt [<a style="color:#50a691" href="die-richtstatt.html">Ausschnitte</a>]</td>
-               </tr>
-               <tr>
-                  <td>25.06.2022</td>
-                  <td>Joseph von Eichendorff – Das Schloß Dürande</td>
-               </tr>
-               <tr>
-                  <td>17.06.2022 - 24.06.2022</td>
-                  <td>Joseph von Eichendorff – Eine Meerfahrt</td>
-               </tr>
-               <tr>
-                  <td>07.06.2022</td>
-                  <td>Heinrich Mann – Die deutsche Entscheidung</td>
-               </tr>
-               <tr>
-                  <td>07.06.2022</td>
-                  <td>Heinrich Mann – Wir wählen</td>
-               </tr>
-               <tr>
-                  <td>30.05.2022 - 04.06.2022</td>
-                  <td>George Orwell – 1984</td>
-               </tr>
-               <tr>
-                  <td>15.05.2022</td>
-                  <td>Rafik Schami – Gegen die Gleichgültigkeit</td>
-               </tr>
-               <tr>
-                  <td>16.04.2022 - 18.04.2022</td>
-                  <td>C. G. Jung – The Transcendent Function</td>
-               </tr>
-               <tr>
-                  <td>13.04.2022 - 15.04.2022</td>
-                  <td>Hugo von Hofmannsthal – Jedermann [<a style="color:#50a691" href="jedermann.html">Ausschnitte</a>]</td>
-               </tr>
-               <tr>
-                  <td>12.04.2022</td>
-                  <td>Alfred Tennyson – The Lady of Shalott</td>
-               </tr>
-               <tr>
-                  <td>12.04.2022</td>
-                  <td>Jean-Paul Satre – Geschlossene Gesellschaft</td>
-               </tr>
-               <tr>
-                  <td>11.04.2022</td>
-                  <td>Joseph von Eichendorff – Verschwiegene Liebe</td>
-               </tr>
-               <tr>
-                  <td>11.04.2022</td>
-                  <td>Tudor Arghezi – Testament</td>
-               </tr>
-               <tr>
-                  <td>10.04.2022</td>
-                  <td>George Bacovia – Plumb</td>
-               </tr>
-               <tr>
-                  <td>10.04.2022</td>
-                  <td>Mihai Eminescu – Luceafărul</td>
-               </tr>
-               <tr>
-                  <td>29.03.2022 - ?</td>
-                  <td>Elias Lönnrot – Kalevala</td>
-               </tr>
-               <tr>
-                  <td>26.02.2022</td>
-                  <td>Yasmina Reza – Kunst</td>
-               </tr>
-               <tr>
-                  <td style="padding-right: 25px;">04.02.2022 - 09.02.2022</td>
-                  <td>Ray Bradbury – Fahrenheit 451</td>
-               </tr>
-              </tbody>
+               <tbody style="vertical-align: top;">
+                  <tr>
+                     <td>23.07.2022 - ?</td>
+                     <td>Margaret Atwood - The Handmaid’s Tale</td>
+                  </tr>
+                  <tr>
+                     <td>22.07.2022</td>
+                     <td>Margaret Atwood - Der Report der Magd (Graphic Novel von Renée Nault)</td>
+                  </tr>
+                  <tr>
+                     <td>17.07.2022 - 22.07.2022</td>
+                     <td>Paulo Coelho – Der Alchimist [<a style="color:#50a691" href="der-alchimist.html">Ausschnitte</a>]</td>
+                  </tr>
+                  <tr>
+                     <td>16.07.2022</td>
+                     <td>Haruki Murakami – Scheherazade</td>
+                  </tr>
+                  <tr>
+                     <td>16.07.2022</td>
+                     <td>Haruki Murakami – Von Männern, die keine Frauen haben</td>
+                  </tr>
+                  <tr>
+                     <td>16.07.2022</td>
+                     <td>Haruki Murakami – Samsa in Love [<a style="color:#50a691" href="samsa-in-love.html">Ausschnitte</a>]</td>
+                  </tr>
+                  <tr>
+                     <td>15.07.2022</td>
+                     <td>Haruki Murakami – Kinos Bar [<a style="color:#50a691" href="kinos-bar.html">Ausschnitte</a>]</td>
+                  </tr>
+                  <tr>
+                     <td>12.07.2022 - 13.07.2022</td>
+                     <td>Haruki Murakami – Das eigenständige Organ [<a style="color:#50a691" href="das-eigenständige-organ.html">Ausschnitte</a>]</td>
+                  </tr>
+                  <tr>
+                     <td>12.07.2022</td>
+                     <td>Haruki Murakami – Yesterday</td>
+                  </tr>
+                  <tr>
+                     <td>11.07.2022</td>
+                     <td>Haruki Murakami – Drive my Car [<a style="color:#50a691" href="drive-my-car.html">Ausschnitte</a>]</td>
+                  </tr>
+                  <tr>
+                     <td>06.07.2022 - 07.07.2022</td>
+                     <td>Tschingis Aitmatow – Dshamilja [<a style="color:#50a691" href="dshamilja.html">Ausschnitte</a>]</td>
+                  </tr>
+                  <tr>
+                     <td>26.06.2022 - 05.07.2022</td>
+                     <td>Tschingis Aitmatow – Die Richtstatt [<a style="color:#50a691" href="die-richtstatt.html">Ausschnitte</a>]</td>
+                  </tr>
+                  <tr>
+                     <td>25.06.2022</td>
+                     <td>Joseph von Eichendorff – Das Schloß Dürande</td>
+                  </tr>
+                  <tr>
+                     <td>17.06.2022 - 24.06.2022</td>
+                     <td>Joseph von Eichendorff – Eine Meerfahrt</td>
+                  </tr>
+                  <tr>
+                     <td>07.06.2022</td>
+                     <td>Heinrich Mann – Die deutsche Entscheidung</td>
+                  </tr>
+                  <tr>
+                     <td>07.06.2022</td>
+                     <td>Heinrich Mann – Wir wählen</td>
+                  </tr>
+                  <tr>
+                     <td>30.05.2022 - 04.06.2022</td>
+                     <td>George Orwell – 1984</td>
+                  </tr>
+                  <tr>
+                     <td>15.05.2022</td>
+                     <td>Rafik Schami – Gegen die Gleichgültigkeit</td>
+                  </tr>
+                  <tr>
+                     <td>16.04.2022 - 18.04.2022</td>
+                     <td>C. G. Jung – The Transcendent Function</td>
+                  </tr>
+                  <tr>
+                     <td>13.04.2022 - 15.04.2022</td>
+                     <td>Hugo von Hofmannsthal – Jedermann [<a style="color:#50a691" href="jedermann.html">Ausschnitte</a>]</td>
+                  </tr>
+                  <tr>
+                     <td>12.04.2022</td>
+                     <td>Alfred Tennyson – The Lady of Shalott</td>
+                  </tr>
+                  <tr>
+                     <td>12.04.2022</td>
+                     <td>Jean-Paul Satre – Geschlossene Gesellschaft</td>
+                  </tr>
+                  <tr>
+                     <td>11.04.2022</td>
+                     <td>Joseph von Eichendorff – Verschwiegene Liebe</td>
+                  </tr>
+                  <tr>
+                     <td>11.04.2022</td>
+                     <td>Tudor Arghezi – Testament</td>
+                  </tr>
+                  <tr>
+                     <td>10.04.2022</td>
+                     <td>George Bacovia – Plumb</td>
+                  </tr>
+                  <tr>
+                     <td>10.04.2022</td>
+                     <td>Mihai Eminescu – Luceafărul</td>
+                  </tr>
+                  <tr>
+                     <td>29.03.2022 - ?</td>
+                     <td>Elias Lönnrot – Kalevala</td>
+                  </tr>
+                  <tr>
+                     <td>26.02.2022</td>
+                     <td>Yasmina Reza – Kunst</td>
+                  </tr>
+                  <tr>
+                     <td style="padding-right: 25px;">04.02.2022 - 09.02.2022</td>
+                     <td>Ray Bradbury – Fahrenheit 451</td>
+                  </tr>
+               </tbody>
             </table>
          </section>
       </div>
-      </body>
+   </body>
 </html>

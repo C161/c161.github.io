@@ -1,1104 +1,1193 @@
 <!DOCTYPE HTML>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta name="keywords" content="privacy, security, anonymity, tor, environmentalism, climate change, collapse">
-      <title>C161</title>
-      <link rel="stylesheet" href="base.css">
-      <link rel="stylesheet" href="collapse.css">
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <link rel="shortcut icon" href="icon.png">
-   </head>
-   <body id="main">
-      <script>
-         $('#main').toggleClass(localStorage.toggled);
-         
-         function darkLight() {
-           /*LIGHT CLASS*/
-           if (localStorage.toggled != 'light') {
-             $('#main, p').toggleClass('light', true);
-             localStorage.toggled = "light";
-              
-           } else {
-             $('#main, p').toggleClass('light', false);
-             localStorage.toggled = "";
-           }
-         }
-         
-         /*Add 'checked' property to input if background == dark*/
-         if ($('main').hasClass('light')) {
-            $( '#dark_light' ).prop( "checked", true )
-         } else {
-           $( '#dark_light' ).prop( "checked", false )
-         }
-         
-                          function changeImage1() {
-                               var image = document.getElementById('xxiivv');
-                               if (image.src.match("https://webring.xxiivv.com/icon.white.svg")) {
-                                   image.src = "https://webring.xxiivv.com/icon.black.svg";
-                               } else {
-                                   image.src = "https://webring.xxiivv.com/icon.white.svg";
-                               }
-                           }
-                  
-         
-               
-      </script>
-      <header>
-         <img src="logo.png" class="logo" alt="logo">
-         <div class="name">
-            <h1><a href="index.html" >C161</a></h1>
-         </div>
-         <div class="header-list">
-            <ul class="header-list-items">
-               <li class="art-button"> <a style="color:#fcfcfc;" href="art/art.html">Art</a></li>
-               <li class="hli inactive"> <a href="about.html">About</a></li>
-               <li class="hli inactive"> <a href="contact.html">Contact</a></li>
-               <a href="https://webring.xxiivv.com/#C161" target="_blank">
-               <img id="xxiivv" src="https://webring.xxiivv.com/icon.white.svg" alt="XXIIVV webring" style="padding: 0px 10px 0px 0px;"/>
-               </a>
-               <button type="button" class="theme-toggle" id="dark_light" onclick="darkLight(); changeImage1();">🌙/🌞</button>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="privacy, security, anonymity, tor, environmentalism, climate change, collapse">
+  <title>C161</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="collapse.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="shortcut icon" href="icon.png">
+  <style>
+    .button {
+      font-size: 1em;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 5px;
+      width: 40%;
+      position: relative;
+      transition: all 5s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .popup .close:hover {
+      color: #06d85f;
+    }
+
+    .popup .content {
+      max-height: 450px;
+      overflow-y: scroll;
+    }
+
+    @media screen and (max-width: 700px) {
+      .box {
+        width: 70%;
+      }
+
+      .popup {
+        width: 70%;
+      }
+    }
+
+    div.popup ul {
+      padding: 15px;
+    }
+
+    div.popup li {
+      list-style: disc;
+      color: #111;
+    }
+
+    .l4 {
+      list-style: telugu;
+    }
+
+    .paper {
+      content: url(icons/paper.svg);
+      position: relative;
+      top: 3px;
+      padding: 1px;
+    }
+  </style>
+  <script>
+    $('#main').toggleClass(localStorage.toggled);
+
+    function darkLight() {
+      /*LIGHT CLASS*/
+      if (localStorage.toggled != 'light') {
+        $('#main, p').toggleClass('light', true);
+        localStorage.toggled = "light";
+      } else {
+        $('#main, p').toggleClass('light', false);
+        localStorage.toggled = "";
+      }
+    }
+    /*Add 'checked' property to input if background == dark*/
+    if ($('main').hasClass('light')) {
+      $('#dark_light').prop("checked", true)
+    } else {
+      $('#dark_light').prop("checked", false)
+    }
+
+    function changeImage1() {
+      var image = document.getElementById('xxiivv');
+      if (image.src.match("https://webring.xxiivv.com/icon.white.svg")) {
+        image.src = "https://webring.xxiivv.com/icon.black.svg";
+      } else {
+        image.src = "https://webring.xxiivv.com/icon.white.svg";
+      }
+    }
+  </script>
+</head>
+
+<body id="main">
+  <header>
+    <img src="logo.png" class="logo" alt="logo">
+    <div class="name">
+      <h1><a href="index.html">C161</a></h1>
+    </div>
+    <div class="header-list">
+      <ul class="header-list-items">
+        <li class="art-button"> <a style="color:#fcfcfc;" href="art/art.html">Art</a></li>
+        <li class="hli inactive"> <a href="about.html">About</a></li>
+        <li class="hli inactive"> <a href="contact.html">Contact</a></li>
+        <a href="https://webring.xxiivv.com/#C161" target="_blank">
+          <img id="xxiivv" src="https://webring.xxiivv.com/icon.white.svg" alt="XXIIVV webring" style="padding: 0px 10px 0px 0px;" />
+        </a>
+        <button type="button" class="theme-toggle" id="dark_light" onclick="darkLight(); changeImage1();">🌙/🌞</button>
+      </ul>
+    </div>
+  </header>
+  <div class="content">
+    <div class="list" style="margin-top: 50px; margin-left:10%; line-height: 2;">
+      <section style="padding: 0; margin: 0;">
+        <h3><u>My collapse logbook</u></h3>
+        <br>
+        <div>
+          <p><strong>1. Basics (facts and statistics)</strong></p>
+          <ul>
+            <li>
+              <div class="box">
+                <a class="button" id="defining-collapse" href="#popup1">Defining Collapse</a>
+              </div>
+              <div id="popup1" class="overlay">
+                <div class="popup">
+                  <h2>Sources</h2>
+                  <a class="close" href="#defining-collapse">&times;</a>
+                  <div class="content">
+                    <ul>
+                      <li><a href="https://write.as/conjure-utopia/a-compass-for-the-politics-of-collapse-a-short-straightforward-introduction">A Compass for the Politics of Collapse: A Short Straightforward Introduction</a></li>
+                      <li><a href="https://collapsepod.buzzsprout.com/1403161/5794078-episode-1-introducing-collapse">Episode 1: Introducing Collapse (BD:C)</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>Societies</li>
+            <ul>
+              <li>
+                <div class="box">
+                  <a class="button" id="simple-vs-complex" href="#popup2">Simple vs. complex</a>
+                </div>
+                <div id="popup2" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#simple-vs-complex">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://collapsepod.buzzsprout.com/1403161/5796754-episode-2-complex-society">Episode 2: Complex Society (BD:C)</a></li>
+                        <li><a href="https://invidious.snopyta.org/watch?v=G0R09YzyuCI">Why Societies Collapse - and What it Means for Us (Dr. Joseph Tainter)</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
-         </div>
-      </header>
-      <div class="content">
-      <div class="list" style="margin-top: 50px; margin-left:10%; line-height: 2;">
-         <section style="padding: 0; margin: 0;">
-            <h3><u>My collapse logbook</u></h3>
-            <br>
-            <div>
-               <p><strong>1. Basics (facts and statistics)</strong></p>
-               <ul>
-                  <li>
-                     <div class="box">
-                        <a class="button" id="defining-collapse" href="#popup1">Defining Collapse</a>
-                     </div>
-                     <div id="popup1" class="overlay">
-                        <div class="popup">
-                           <h2>Sources</h2>
-                           <a class="close" href="#defining-collapse">&times;</a>
-                           <div class="content">
-                              <ul>
-                                 <li><a href="https://write.as/conjure-utopia/a-compass-for-the-politics-of-collapse-a-short-straightforward-introduction">A Compass for the Politics of Collapse: A Short Straightforward Introduction</a></li>
-                                 <li><a href="https://collapsepod.buzzsprout.com/1403161/5794078-episode-1-introducing-collapse">Episode 1: Introducing Collapse (BD:C)</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-                  <li>Societies</li>
-                  <ul>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="simple-vs-complex" href="#popup2">Simple vs. complex</a>
-                        </div>
-                        <div id="popup2" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#simple-vs-complex">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://collapsepod.buzzsprout.com/1403161/5796754-episode-2-complex-society">Episode 2: Complex Society (BD:C)</a></li>
-                                    <li><a href="https://invidious.snopyta.org/watch?v=G0R09YzyuCI">Why Societies Collapse - and What it Means for Us (Dr. Joseph Tainter)</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                  </ul>
-                  <li>Energy</li>
-                  <ul>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="energy-general-fatcs" href="#popup3">General facts</a>
-                        </div>
-                        <div id="popup3" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#energy-general-fatcs">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://collapsepod.buzzsprout.com/1403161/5806849-episode-3-the-energy-crisis">Episode 3: The Energy Crisis (BD:C)</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="the-post-energy-world" href="#popup27">The post-energy world</a>
-                        </div>
-                        <div id="popup27" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#the-post-energy-world">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://www.vice.com/en/article/qjkpkq/sri-lanka-fuel-economic-crisis-protest">Here’s What Life Looks Like in a Country That’s Run Out of Fuel (VICE)</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                  </ul>
-                  <li>Climate basics</li>
-                  <ul>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="structure-of-the-atmosphere" href="#popup38">Structure of the atmosphere</a>
-                        </div>
-                        <div id="popup38" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#structure-of-the-atmosphere">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://climate.nasa.gov/news/2919/earths-atmosphere-a-multi-layered-cake/">Earth's Atmosphere: A Multi-layered Cake (NASA)</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="climate-vs-weather" href="#popup39">Climate vs. weather</a>
-                        </div>
-                        <div id="popup39" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#climate-vs-weather">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://education.nationalgeographic.org/resource/weather-or-climate-whats-difference">Weather or Climate ... What's the Difference?</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="global-warming-vs-climate-change" href="#popup40">Global warming vs. climate change</a>
-                        </div>
-                        <div id="popup40" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#global-warming-vs-climate-change">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://climate.nasa.gov/global-warming-vs-climate-change/">Global Warming vs. Climate Change (NASA)</a></li>
-                                    <li><a href="https://skepticalscience.com/climate-change-global-warming.htm">Global warming vs climate change (SkepticalScience)</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="abrupt-climate-change" href="#popup41">Abrupt climate change</a>
-                        </div>
-                        <div id="popup41" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#abrupt-climate-change">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://www.priweb.org/blog-post/what-is-abrupt-climate-change">What is Abrupt Climate Change?</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>Radiation balance of the earth</li>
-                     <li>Natural causes of climate variability (terrestrial / extraterrestrial)</li>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="natural-vs-anthropogenic-warming" href="#popup42">Natural vs. anthropogenic warming</a>
-                        </div>
-                        <div id="popup42" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#natural-vs-anthropogenic-warming">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://www.dw.com/en/fact-check-is-global-warming-merely-a-natural-cycle/a-57831350">Fact check: Is global warming merely a natural cycle? (DW)</a></li>
-                                    <li><a href="https://earthobservatory.nasa.gov/features/GlobalWarming/page4.php">Is Current Warming Natural?</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="greenhouse-gases" href="#popup43">Greenhouse gases</a>
-                        </div>
-                        <div id="popup43" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#greenhouse-gases">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://www.nrdc.org/stories/greenhouse-effect-101">Greenhouse Effect 101 (NRDC)</a></li>
-                                    <li><a href="https://www.c2es.org/content/main-greenhouse-gases/">Main Greenhouse Gases (C2ES)</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="global-dimming" href="#popup44">Global dimming</a>
-                        </div>
-                        <div id="popup44" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#global-dimming">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://www.scientistswarning.org/2020/06/04/dimming-dilemma/">Global Dimming Dilemma (Scientists Warning)</a></li>
-                                    <li><a href="https://news.agu.org/press-release/aerosol-pollution-caused-decades-of-global-dimming/">AEROSOL POLLUTION CAUSED DECADES OF “GLOBAL DIMMING” (AGU)</a></li>
-                                    <li><a href="https://invidious.snopyta.org/watch?v=emn1hBSHUfQ">Global Dimming Paradox: Are we facing an abrupt temperature spike? (Just Have a Think)</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                  </ul>
-                  <li>Emissions</li>
-                  <ul>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="what-causes-emissions" href="#popup37">Who and what causes emissions?</a>
-                        </div>
-                        <div id="popup37" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#what-causes-emissions">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://www.climatewatchdata.org/key-visualizations">Key Visualizations (Climate Watch)</a></li>
-                                    <li><a href="https://ourworldindata.org/ghg-emissions-by-sector">Sector by sector: where do global greenhouse gas emissions come from? (Our World in Data)</a></li>
-                                    <li><a href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions#co2-and-greenhouse-gas-emissions-country-profiles">CO2 and Greenhouse Gas Emissions Country Profiles (Our World in Data)</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>Trends</li>
-                  </ul>
-                  <li>
-                     <div class="box">
-                        <a class="button" id="planetary-boundaries" href="#popup4">Planetary boundaries</a>
-                     </div>
-                     <div id="popup4" class="overlay">
-                        <div class="popup">
-                           <h2>Sources</h2>
-                           <a class="close" href="#planetary-boundaries">&times;</a>
-                           <div class="content">
-                              <ul>
-                                 <li><a href="https://www.stockholmresilience.org/research/planetary-boundaries.html">Stockholm Resilience Centre: Planetary boundaries</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-                  <li>
-                     <div class="box">
-                        <a class="button" id="system-dynamics" href="#popup5">System dynamics</a>
-                     </div>
-                     <div id="popup5" class="overlay">
-                        <div class="popup">
-                           <h2>Sources</h2>
-                           <a class="close" href="#system-dynamics">&times;</a>
-                           <div class="content">
-                              <ul>
-                                 <li><a href="https://invidious.snopyta.org/watch?v=qPb_0JZ6-Rc">COLLAPSE: THE ONLY REALISTIC SCENARIO ? (A. Keller) [NEXT] S02 E04</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-                  <li>
-                     <div class="box">
-                        <a class="button" id="overshoot-and-limits-to-growth" href="#popup6">Overshoot and limits to growth</a>
-                     </div>
-                     <div id="popup6" class="overlay">
-                        <div class="popup">
-                           <h2>Sources</h2>
-                           <a class="close" href="#overshoot-and-limits-to-growth">&times;</a>
-                           <div class="content">
-                              <ul>
-                                 <li><a href="https://collapsepod.buzzsprout.com/1403161/5892508-episode-4-overshoot-limits-to-growth">Episode 4: Overshoot & Limits to Growth (BD:C)</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-                  <li>
-                     <div class="box">
-                        <a class="button" id="near-real-time-tracking" href="#popup10">(Near) real-time tracking, interactive maps and charts</a>
-                     </div>
-                     <div id="popup10" class="overlay">
-                        <div class="popup">
-                           <h2>Sources</h2>
-                           <a class="close" href="#near-real-time-tracking">&times;</a>
-                           <div class="content">
-                              <ul>
-                                 <li><a href="https://climate.nasa.gov/">NASA: Climate Change and Global Warming (NASA)</a></li>
-                                 <li><a href="https://osi-saf.eumetsat.int/products">Products | OSI SAF (eumetsat.int)</a></li>
-                                 <li><a href="https://interactive-atlas.ipcc.ch/regional-information">IPCC WGI Interactive Atlas</a></li>
-                                 <li><a href="https://sites.uci.edu/zlabe/arctic-sea-ice-figures">Arctic Sea Ice Figures (Zachary Labe)</a></li>
-                                 <li><a href="https://www.zeit.de/wirtschaft/2022-04/energiekosten-deutschland-gas-strom-benzin-energiemonitor">Energiemonitor Deutschland (Zeit)</a></li>
-                                 <li><a href="https://www.sueddeutsche.de/projekte/artikel/wissen/klimawandel-aktuell-der-sz-klimamonitor-e203859/">Klimawandel aktuell: Der SZ-Klimamonitor (SZ)</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-               </ul>
-               <br>
-               <p><strong>2. History</strong></p>
-               <ul>
-                  <li>Collapse in history</li>
-                  <ul>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="collapse-in-history" href="#popup7">General</a>
-                        </div>
-                        <div id="popup7" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#collapse-in-history">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://teddit.net/r/collapse/comments/qc63pa/people_dont_realize_that_sophisticated/">People don't realize that sophisticated civilizations have been wiped off the map before</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>Examples</li>
-                     <ul>
-                        <li>
-                           <div class="box">
-                              <a class="button" id="sumerians" href="#popup8">Sumerians</a>
-                           </div>
-                           <div id="popup8" class="overlay">
-                              <div class="popup">
-                                 <h2>Sources</h2>
-                                 <a class="close" href="#sumerians">&times;</a>
-                                 <div class="content">
-                                    <ul>
-                                       <li><a href="https://invidious.snopyta.org/watch?v=d2lJUOv0hLA">The Sumerians - Fall of the First Cities</a></li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="box">
-                              <a class="button" id="bronze-age" href="#popup9">Bronze Age</a>
-                           </div>
-                           <div id="popup9" class="overlay">
-                              <div class="popup">
-                                 <h2>Sources</h2>
-                                 <a class="close" href="#bronze-age">&times;</a>
-                                 <div class="content">
-                                    <ul>
-                                       <li><a href="https://invidious.snopyta.org/watch?v=B965f8AcNbw">The Bronze Age Collapse - Mediterranean Apocalypse</a></li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </li>
-                        <li>Roman Empire</li>
-                        <li>USSR</li>
-                     </ul>
-                  </ul>
-               </ul>
-               <br>
-		   <p><strong>3. Contributors to collapse</strong></p>
-               <ul>
-                  <li>
-                     <div class="box">
-                        <a class="button" id="dependency-on-finite-resources" href="#popup28">Dependency on finite resources</a>
-                     </div>
-                     <div id="popup28" class="overlay">
-                        <div class="popup">
-                           <h2>Sources</h2>
-                           <a class="close" href="#dependency-on-finite-resources">&times;</a>
-                           <div class="content">
-                              <ul>
-                                 <li><a href="https://www.resilience.org/stories/2022-07-25/will-civilization-collapse-because-its-running-out-of-oil/">Will civilization collapse because it’s running out of oil?</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-                  <li>Overpopulation</li>
-                  <li>Overconsumption</li>
-                  <li>
-                     <div class="box">
-                        <a class="button" id="deforestation" href="#popup28">Deforestation</a>
-                     </div>
-                     <div id="popup28" class="overlay">
-                        <div class="popup">
-                           <h2>Sources</h2>
-                           <a class="close" href="#deforestation">&times;</a>
-                           <div class="content">
-                              <ul>
-                                 <li><a href="https://www.nature.com/articles/s41598-020-63657-6">Deforestation and world population sustainability: a quantitative analysis</a> <img alt="paper" class="paper"></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-                  <li>Pollution</li>
-                  <ul>
-                     <li>Light pollution</li>
-                     <li>PFAS (forever chemicals)</li>
-                     <li>Micro- and nanoplastics</li>
-                     <ul>
-                        <li>Endocrine disruptors</li>
-                     </ul>
-                  </ul>
-                  <li>Propaganda and misinformation</li>
-                  <ul>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="in-media" href="#popup11">In media</a>
-                        </div>
-                        <div id="popup11" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#in-media">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://www.vox.com/23158406/climate-change-tell-kids-wont-destroy-world">We’re giving kids “climate anxiety” and it’s not necessary</a></li>
-                                    <li><a href="https://archive.ph/59gJH">Opinion | Your Kids Are Not Doomed</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="greenwashing" href="#popup12">Greenwashing</a>
-                        </div>
-                        <div id="popup12" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#greenwashing">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://invidious.snopyta.org/watch?v=uCuy1DaQzWI">Kurzgesagt and the art of climate greenwashing</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                  </ul>
-                  <li>From cooperations</li>
-                  <ul>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="Exxon" href="#popup13">Exxon</a>
-                        </div>
-                        <div id="popup13" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#exxon">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://www.wired.com/2015/09/exxons-scientists-confirmed-climate-changein-70s/">Exxon's Own Scientists Confirmed Climate Change—In the 70s</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="british-petroleum" href="#popup14">British Petroleum</a>
-                        </div>
-                        <div id="popup14" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#british-petroleum">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://www.theguardian.com/commentisfree/2021/aug/23/big-oil-coined-carbon-footprints-to-blame-us-for-their-greed-keep-them-on-the-hook">Big oil coined ‘carbon footprints’ to blame us for their greed. Keep them on the hook</a></li>
-                                    <li><a href="https://mashable.com/feature/carbon-footprint-pr-campaign-sham">The devious fossil fuel propaganda we all use</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                  </ul>
-                  <li>About resources</li>
-                  <ul>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="plastic" href="#popup15">Plastic</a>
-                        </div>
-                        <div id="popup15" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#plastic">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://text.npr.org/897692090">How Big Oil Misled The Public Into Believing Plastic Would Be Recycled</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                  </ul>
-               </ul>
-               <br>
-               <p><strong>4. Symptoms of spherical collapses</strong></p>
-               <ul>
-                  <li>Atmosphere</li>
-                  <ul>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="structural-change" href="#popup29">Structural change</a>
-                        </div>
-                        <div id="popup29" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#structural-change">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://www.insidescience.org/news/climate-change-raising-top-troposphere">Climate Change is Raising the Top of the Troposphere</a></li>
-                                    <li><a href="https://www.science.org/doi/10.1126/sciadv.abi8065">Continuous rise of the tropopause in the Northern Hemisphere over 1980–2020</a> <img alt="paper" class="paper"></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="increase-in-aeorosol-emissions" href="#popup32">Increase in aerosol emissions</a>
-                        </div>
-                        <div id="popup32" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#increase-in-aeorosol-emissions">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://www.theguardian.com/environment/2022/jul/05/global-heating-causes-methane-growth-four-times-faster-than-thought-study">Methane much more sensitive to global heating than previously thought – study</a></li>
-                                    <li><a href="https://www.nature.com/articles/s41467-022-31345-w">Impact of interannual and multidecadal trends on methane-climate feedbacks and sensitivity</a> <img alt="paper" class="paper"></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>Worse air quality</li>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="jet-stream-disruption" href="#popup34">Jet-stream disruption</a>
-                        </div>
-                        <div id="popup34" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#jet-stream-disruption">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://www.carbonbrief.org/qa-how-is-arctic-warming-linked-to-polar-vortext-other-extreme-weather">Q&A: How is Arctic warming linked to the ‘polar vortex’ and other extreme weather?</a></li>
-                                    <li><a href="https://iopscience.iop.org/article/10.1088/1748-9326/10/1/014005">Evidence for a wavier jet stream in response to rapid Arctic warming</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>Polar vortex shift</li>
-                  </ul>
-                  <li>Cryosphere</li>
-                  <ul>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="ice-free-arctic" href="#popup33">Ice-free Arctic / Blue Ocean Event</a>
-                        </div>
-                        <div id="popup33" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#ice-free-arctic">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://invidious.snopyta.org/watch?v=U82e8XF-5Lo">The First Arctic Blue Ocean Event: What Computer Simulations and Statistical Trend Analysis Tells Us</a></li>
-                                    <li><a href="https://invidious.snopyta.org/watch?v=P_7OfhrbAPY">What will life be like after Arctic Blue-Ocean-Zero: Abrupt Climate System Disruption</a></li>
-                                    <li><a href="https://invidious.snopyta.org/watch?v=qo3cznpfIpA">Blue Ocean Event : Game Over?</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>Melting of permafrost</li>
-                     <li>Thawing glaciers</li>
-                  </ul>
-                  <li>Hydrosphere (water and oceans)</li>
-                  <ul>
-                     <li>Sea level rise</li>
-                     <li>Increased risk of floods</li>
-                     <li>Ocean warming</li>
-                     <li>Ocean acidification</li>
-                     <li>Changes in precipitation</li>
-                     <li>Worse water quality</li>
-                  </ul>
-                  <li>Lithosphere</li>
-                  <ul>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="desertification" href="#popup31">Desertification</a>
-                        </div>
-                        <div id="popup31" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#desertification">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://www.livescience.com/62168-sahara-desert-expanding.html">The Sahara Desert Is Growing. Here's What That Means</a></li>
-                                    <li><a href="https://journals.ametsoc.org/view/journals/clim/31/9/jcli-d-17-0187.1.xml">Twentieth-Century Climate Change over Africa: Seasonal Hydroclimate Trends and Sahara Desert Expansion</a> <img alt="paper" class="paper"></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="top-soil-erosion" href="#popup16">(Top) soil erosion</a>
-                        </div>
-                        <div id="popup16" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#top-soil-erosion">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://earthisland.org/journal/index.php/magazine/entry/peak_soil">Peak Soil (earthisland.org)</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>More droughts</li>
-                  </ul>
-                  <li>Biosphere</li>
-                  <ul>
-                     <li>Lower nutritional value of crops</li>
-                     <li>Rainforest turning into a savanna</li>
-                     <li>Biodiversity loss</li>
-                     <li>Species decline (birds, insects ...)</li>
-                     <ul>
-                        <li>Pollinators</li>
-                        <li>Phytoplankton</li>
-                     </ul>
-                  </ul>
-                  <li>Anthroposphere</li>
-                  <ul>
-                     <li>Political issues</li>
-                     <ul>
-                        <li>Political corruption</li>
-                        <li>
-                           <div class="box">
-                              <a class="button" id="rise-of-extremism" href="#popup17">Rise of political / religious extremism</a>
-                           </div>
-                           <div id="popup17" class="overlay">
-                              <div class="popup">
-                                 <h2>Sources</h2>
-                                 <a class="close" href="#rise-of-extremism">&times;</a>
-                                 <div class="content">
-                                    <ul>
-                                       <li><a href="https://teddit.net/r/collapse/comments/van0ff/american_christianity_and_what_it_is_doing_to_the/">American Christianity and what it is doing to the United States</a></li>
-                                       <li><a href="https://teddit.net/r/collapse/comments/w7bz6s/connecting_the_dots_the_rise_of_fascism_and_the/">Connecting the Dots - The Rise of Fascism and the Collapse of democracy</a></li>
-                                       <li><a href="https://www.salon.com/2022/06/28/christian-fascism-is-right-here-right-now-after-roe-can-we-finally-see-it/">Christian fascism is right here, right now: After Roe, can we finally see it?</a></li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </li>
-                        <li>Higher potential for armed conflicts</li>
-                        <li>Restriction of civil rights and freedoms (abortion, same-sex marriage, surveillance-free communication ...)</li>
-                     </ul>
-                     <li>Social issues</li>
-                     <ul>
-                        <li>Mass migration / trapped populations</li>
-                        <li>Greater inequality</li>
-                        <li>Increased prices (food, building materials, fuel etc.)</li>
-                     </ul>
-                     <li>Health-related issues</li>
-                     <ul>
-                        <li>Increase in drug usage / addictions</li>
-                        <li>More diseases (outbreaks, epidemics / pandemics)</li>
-                        <li>Increase in mental disorders</li>
-                        <li>Rising rates of suicide</li>
-                     </ul>
-                     <li>Food production</li>
-                     <ul>
-                        <li>Decreased crop yields</li>
-                        <li>Crops like rice and wheat becoming less nutritious</li>
-                        <li>
-                           <div class="box">
-                              <a class="button" id="Increased-risk of-multiple-breadbasket-failures" href="#popup36">Increased risk of multiple breadbasket failures</a>
-                           </div>
-                           <div id="popup36" class="overlay">
-                              <div class="popup">
-                                 <h2>Sources</h2>
-                                 <a class="close" href="#Increased-risk of-multiple-breadbasket-failures">&times;</a>
-                                 <div class="content">
-                                    <ul>
-                                       <li><a href="https://research-information.bris.ac.uk/ws/portalfiles/portal/198508451/Full_text_PDF_accepted_author_manuscript_.pdf">Increasing risks of multiple breadbasket failure under 1.5 and 2 °C global warming</a> <img alt="paper" class="paper"></li>
-                                       <li><a href="https://www.bu.edu/pardee/files/2017/03/Multiple-Breadbasket-Failures-Pardee-Report.pdf">The Risks of Multiple Breadbasket Failures in the 21st Century: A Science Research Agenda</a></li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </li>
-                     </ul>
-                     <li>Shortages of resources / war over them</li>
-                     <ul>
-                        <li>Freshwater</li>
-                        <li>Food</li>
-                        <li>Cheap fossil fuels</li>
-                        <li>Rare earth metals</li>
-                        <li>Sand</li>
-                        <li>Phosphorus (for fertilizer)</li>
-                     </ul>
-                     <li>Other</li>
-                     <ul>
-                        <li>Decaying infrastructure</li>
-                     </ul>
-                  </ul>
-                  <li>Global shifts</li>
-                  <ul>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="climate-zones" href="#popup35">Climate zones</a>
-                        </div>
-                        <div id="popup35" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#climate-zones">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://e360.yale.edu/features/redrawing-the-map-how-the-worlds-climate-zones-are-shifting">Redrawing the Map: How the World’s Climate Zones Are Shifting</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="seasons" href="#popup30">Seasons</a>
-                        </div>
-                        <div id="popup30" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#seasons">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://brightly.eco/how-does-climate-change-affect-seasons/">Summer Could Last Six Months by 2100 If the World Doesn’t Curb Climate Change</a></li>
-                                    <li><a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020GL091753">Changing Lengths of the Four Seasons by Global Warming</a> <img alt="paper" class="paper"></li>
-                                    <li><a href="https://www.carbonbrief.org/powerful-evidence-global-warmings-effect-seasons-found-troposphere/">‘Powerful evidence’ of global warming’s effect on seasons found in troposphere</a></li>
-                                    <li><a href="https://www.science.org/doi/full/10.1126/science.aas8806">Human influence on the seasonal cycle of tropospheric temperature</a> <img alt="paper" class="paper"></li>
-                                    <li><a href="https://www.smartenergy.com/how-does-climate-change-affect-the-seasons/">How Does Climate Change Affect the Seasons?</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                  </ul>
-                  <li>Extreme weather events</li>
-                  <ul>
-                     <li>Change of frequency and powerfulness</li>
-                  <li>
-                     <div class="box">
-                        <a class="button47" id="wet-bulb-temperatures" href="#popup47">Wet-bulb temperatures</a>
-                     </div>
-                     <div id="popup" class="overlay">
-                        <div class="popup">
-                           <h2>Sources</h2>
-                           <a class="close" href="#wet-bulb-temperatures">&times;</a>
-                           <div class="content">
-                              <ul>
-                                 <li><a href="https://www.theguardian.com/science/2022/jul/31/why-you-need-to-worry-about-the-wet-bulb-temperature">Why you need to worry about the ‘wet-bulb temperature’</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </li>                  </ul>
-                  <li>
-                     <div class="box">
-                        <a class="button" id="passing-tipping-points" href="#popup18">Passing tipping points</a>
-                     </div>
-                     <div id="popup18" class="overlay">
-                        <div class="popup">
-                           <h2>Sources</h2>
-                           <a class="close" href="#passing-tipping-points">&times;</a>
-                           <div class="content">
-                              <ul>
-                                 <li><a href="https://www.nature.com/articles/d41586-019-03595-0">Climate tipping points — too risky to bet against</a></li>
-                                 <li><a href="https://invidious.snopyta.org/watch?v=8Sl28fkrozE">10 years to transform the future of humanity -- or destabilize the planet</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-                  <li>Possible positive feedback loops</li>
-                  <ul>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="emissions-of-methane" href="#popup45">Emissions of methane</a>
-                        </div>
-                        <div id="popup45" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#emissions-of-methane">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://www.science.org/content/article/ominous-sign-global-warming-feedback-loop-may-be-accelerating-methane-emissions">In ominous sign for global warming, feedback loop may be accelerating methane emissions</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>Lower albedo</li>
-                     <li>Slower Gulf Stream</li>
-                     <li>Rainforest turning into Savannah</li>
-                  </ul>
-               </ul>
-               <br>
-               <p><strong>5. Adaptation, mitigation and climate engineering (global)</strong></p>
-               <ul>
-                  <li>Good adjustments</li>
-                  <ul>
-                     <li>Degrowth</li>
-                     <li>Political activism</li>
-                  </ul>
-                  <li>Mediocre adjustments</li>
-                  <ul>
-                     <li>Recycling</li>
-                     <li>Lowering the personal carbon footprint</li>
-                     <li>Green tech</li>
-                  </ul>
-                  <li>Wrong adjustments</li>
-                  <ul>
-                     <li>Green growth</li>
-                     <li>Solar radiation management</li>
-                     <li>Small scale nuclear war</li>
-                     <li>Hypernormalisation</li>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="cognitive-dissonance-and-bias" href="#popup19">Cognitive dissonance and bias</a>
-                        </div>
-                        <div id="popup19" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#cognitive-dissonance-and-bias">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://www.goethe.de/prj/mis/de/mit/kww.html">Kognitive Dissonanz - Wenn Klimawandel zur Meinungssache wird</a></li>
-                                    <li><a href="https://cbtprofessionals.com.au/climate-change-cognitive-biases/">Climate Change and Cognitive Biases</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                  </ul>
-                  <li>
-                     <div class="box">
-                        <a class="button" id="how-the-rich-prepare" href="#popup46">How the rich prepare</a>
-                     </div>
-                     <div id="popup46" class="overlay">
-                        <div class="popup">
-                           <h2>Sources</h2>
-                           <a class="close" href="#how-the-rich-prepare">&times;</a>
-                           <div class="content">
-                              <ul>
-                                 <li><a href="https://www.theguardian.com/news/2018/feb/15/why-silicon-valley-billionaires-are-prepping-for-the-apocalypse-in-new-zealand">Why Silicon Valley billionaires are prepping for the apocalypse in New Zealand</a></li>
-                                 <li><a href="https://www.theguardian.com/technology/2018/jul/23/tech-industry-wealth-futurism-transhumanism-singularity">How tech's richest plan to save themselves after the apocalypse</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-               </ul>
-               </ul>
-               <br>
-               <p><strong>6. Possible future prospects</strong></p>
-               <ul>
-                  <li>
-                     <div class="box">
-                        <a class="button" id="world3" href="#popup20">World 3</a>
-                     </div>
-                     <div id="popup20" class="overlay">
-                        <div class="popup">
-                           <h2>Sources</h2>
-                           <a class="close" href="#world3">&times;</a>
-                           <div class="content">
-                              <ul>
-                                 <li><a href="https://invidious.snopyta.org/watch?v=cCxPOqwCr1I">Computer predicts the end of civilisation (1973)</a></li>
-                                 <li><a href="https://www.clubofrome.org/blog-post/herrington-world-model/">Data check on the world model that forecast global collapse - Club of Rome</a></li>
-                                 <li><a href="https://www.vice.com/en/article/z3xw3x/new-research-vindicates-1972-mit-prediction-that-society-will-collapse-soon">MIT Predicted in 1972 That Society Will Collapse This Century. New Research Shows We’re on Schedule. (VICE)</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-                  <li>
-                     <div class="box">
-                        <a class="button" id="21" href="#popup21">Other</a>
-                     </div>
-                     <div id="popup21" class="overlay">
-                        <div class="popup">
-                           <h2>Sources</h2>
-                           <a class="close" href="#21">&times;</a>
-                           <div class="content">
-                              <ul>
-                                 <li><a href="https://www.vice.com/en/article/597kpd/new-report-suggests-high-likelihood-of-human-civilization-coming-to-an-end-in-2050">New Report Suggests ‘High Likelihood of Human Civilization Coming to an End’ Starting in 2050 (VICE)</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-               </ul>
-               <br>
-               <p><strong>7. Preparing for the worst (personal)</strong></p>
-               <ul>
-                  <li>
-                     <div class="box">
-                        <a class="button" id="preparing-general" href="#popup22">General</a>
-                     </div>
-                     <div id="popup22" class="overlay">
-                        <div class="popup">
-                           <h2>Sources</h2>
-                           <a class="close" href="#preparing-general">&times;</a>
-                           <div class="content">
-                              <ul>
-                                 <li><a href="https://teddit.net/r/collapse/comments/v3kb0j/collapse_is_accelerating_what_should_we/">Collapse is accelerating; what should we realistically be doing to prepare??</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-                  <li>Mentally</li>
-                  <ul>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="mentally-general" href="#popup23">General</a>
-                        </div>
-                        <div id="popup23" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#mentally-general">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://teddit.net/r/collapse/comments/v5i6jy/collapse_nihilism_how_do_you_overcome_it/">Collapse 'nihilism': How do you overcome it?</a></li>
-                                    <li><a href="https://teddit.net/r/collapse/comments/cii799/the_burden_of_knowing/">The Burden of Knowing</a></li>
-                                    <li><a href="https://teddit.net/r/collapse/comments/smx6a5/people_are_having_breakdowns_over_collapse_what/">People are having breakdowns over collapse. What do you say to them?</a></li>
-                                    <li><a href="https://www.thestranger.com/guest-editorial/2022/06/15/75098383/the-blessing-of-extinction">The Blessing of Extinction</a> </li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>Meditation</li>
-                     <li>Practicing different philosophies (stoicism, taoism ...)</li>
-                     <li>Keeping in contact with other likeminded, collapse-aware people</li>
-                     <li>Cut addictions</li>
-                  </ul>
-                  <li>Physically</li>
-                  <ul>
-                     <li>Get / stay fit and healthy</li>
-                  </ul>
-                  <li>
-                     <div class="box">
-                        <a class="button" id="possessions" href="#popup24">Possessions</a>
-                     </div>
-                     <div id="popup24" class="overlay">
-                        <div class="popup">
-                           <h2>Sources</h2>
-                           <a class="close" href="#possessions">&times;</a>
-                           <div class="content">
-                              <ul>
-                                 <li><a href="https://www.bbk.bund.de/DE/Warnung-Vorsorge/Vorsorge/vorsorge_node.html">Vorsorge für den Notfall</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-                  <li>Homesteading</li>
-                  <ul>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="cooking-and-food" href="#popup25">Cooking and food</a>
-                        </div>
-                        <div id="popup25" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#cooking-and-food">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://homesteading.com/homestead-handbook-grow-all-the-food-you-need-in-your-backyard/">How to Grow All The Food You Need</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="box">
-                           <a class="button" id="keeping-animals" href="#popup26">Keeping animals</a>
-                        </div>
-                        <div id="popup26" class="overlay">
-                           <div class="popup">
-                              <h2>Sources</h2>
-                              <a class="close" href="#keeping-animals">&times;</a>
-                              <div class="content">
-                                 <ul>
-                                    <li><a href="https://homesteading.com/category/raising-animals-livestock-tips/">Animals Archives | Homesteading Simple Self Sufficient Off-The-Grid</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                  </ul>
-               </ul>
-               <br>
-               <p><strong>8. Collapse and beyond - Summary</strong></p>
-               <ul>
-                  <li><a href="https://12ft.io/proxy?q=https%3A%2F%2Fnymag.com%2Fintelligencer%2F2017%2F07%2Fclimate-change-earth-too-hot-for-humans.html">The Uninhabitable Earth</a></li>
-                  <li><a href="https://www.plebity.org/conversations/conversation-with-vincent-mignerot/">Is this the end? A conversation with Vincent Mignerot</a></li>
-                  <li><a href="https://invidious.snopyta.org/watch?v=6VSE5ubpKhg">'We're looking at Billions of People not being able to Survive' | Peter Carter, Expert IPCC Reviewer</a></li>
-               </ul>
-               <br>
-               <p><strong>Additional resources</strong></p>
-               <ul>
-                  <li><a href="https://www.letstalkthis.com/collapse/">Let's Talk Collapse</a></li>
-                  <li><a href="https://postdoom.com/">Post-Doom - Resources</a></li>
-                  <li><a href="https://teddit.net/r/BiosphereCollapse/comments/s8jly8/scientific_journal_megathread_by_subject/">Scientific studies megathread</a></li>
-                  <li><a href="https://invidious.snopyta.org/channel/UCr546o7ImhGM57qoY0hHvkA">Paul Beckwith (YouTube)</a></li>
-               </ul>
-               <br>
-               <p><strong>Humorous content</strong></p>
-               <ul>
-                  <li><a href="https://invidious.snopyta.org/channel/UCo6ZdYBk7cCCCAr015Hebcg">The Doom Report w/Nicholas Don Smith</a></li>
-                  <li><a href="https://teddit.net/u/ThisWeegInCollapse/submitted">This Weeg in Collapse</a></li>
-               </ul>
-               <br>
-               <p><strong>Books</strong></p>
-               <ul>
-                  <li><a href="https://www.clubofrome.org/publication/the-limits-to-growth/">The Limits to Growth - Club of Rome</a></li>
-               </ul>
-               <br>
-               <p><strong>Support</strong></p>
-               <ul>
-                  <li><a href="https://www.goodgriefnetwork.org/">Good Grief Network</a></li>
-                  <li><a href="https://doomersupport.org/">Doomer Support</a></li>
-                  <li><a href="https://teddit.net/r/CollapseSupport/">/r/CollapseSupport</a></li>
-               </ul>
-               <br>
-            </div>
-         </section>
-      </div>
-      <p style="margin-left: 10%;">Last updated: 01.08.2022</p>
-   </body>
+            <li>Energy</li>
+            <ul>
+              <li>
+                <div class="box">
+                  <a class="button" id="energy-general-fatcs" href="#popup3">General facts</a>
+                </div>
+                <div id="popup3" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#energy-general-fatcs">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://collapsepod.buzzsprout.com/1403161/5806849-episode-3-the-energy-crisis">Episode 3: The Energy Crisis (BD:C)</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="box">
+                  <a class="button" id="the-post-energy-world" href="#popup27">The post-energy world</a>
+                </div>
+                <div id="popup27" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#the-post-energy-world">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://www.vice.com/en/article/qjkpkq/sri-lanka-fuel-economic-crisis-protest">Here’s What Life Looks Like in a Country That’s Run Out of Fuel (VICE)</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <li>Climate basics</li>
+            <ul>
+              <li>
+                <div class="box">
+                  <a class="button" id="structure-of-the-atmosphere" href="#popup38">Structure of the atmosphere</a>
+                </div>
+                <div id="popup38" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#structure-of-the-atmosphere">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://climate.nasa.gov/news/2919/earths-atmosphere-a-multi-layered-cake/">Earth's Atmosphere: A Multi-layered Cake (NASA)</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="box">
+                  <a class="button" id="climate-vs-weather" href="#popup39">Climate vs. weather</a>
+                </div>
+                <div id="popup39" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#climate-vs-weather">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://education.nationalgeographic.org/resource/weather-or-climate-whats-difference">Weather or Climate ... What's the Difference?</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="box">
+                  <a class="button" id="global-warming-vs-climate-change" href="#popup40">Global warming vs. climate change</a>
+                </div>
+                <div id="popup40" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#global-warming-vs-climate-change">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://climate.nasa.gov/global-warming-vs-climate-change/">Global Warming vs. Climate Change (NASA)</a></li>
+                        <li><a href="https://skepticalscience.com/climate-change-global-warming.htm">Global warming vs climate change (SkepticalScience)</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="box">
+                  <a class="button" id="abrupt-climate-change" href="#popup41">Abrupt climate change</a>
+                </div>
+                <div id="popup41" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#abrupt-climate-change">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://www.priweb.org/blog-post/what-is-abrupt-climate-change">What is Abrupt Climate Change?</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>Radiation balance of the earth</li>
+              <li>Natural causes of climate variability (terrestrial / extraterrestrial)</li>
+              <li>
+                <div class="box">
+                  <a class="button" id="natural-vs-anthropogenic-warming" href="#popup42">Natural vs. anthropogenic warming</a>
+                </div>
+                <div id="popup42" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#natural-vs-anthropogenic-warming">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://www.dw.com/en/fact-check-is-global-warming-merely-a-natural-cycle/a-57831350">Fact check: Is global warming merely a natural cycle? (DW)</a></li>
+                        <li><a href="https://earthobservatory.nasa.gov/features/GlobalWarming/page4.php">Is Current Warming Natural?</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="box">
+                  <a class="button" id="greenhouse-gases" href="#popup43">Greenhouse gases</a>
+                </div>
+                <div id="popup43" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#greenhouse-gases">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://www.nrdc.org/stories/greenhouse-effect-101">Greenhouse Effect 101 (NRDC)</a></li>
+                        <li><a href="https://www.c2es.org/content/main-greenhouse-gases/">Main Greenhouse Gases (C2ES)</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="box">
+                  <a class="button" id="global-dimming" href="#popup44">Global dimming</a>
+                </div>
+                <div id="popup44" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#global-dimming">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://www.scientistswarning.org/2020/06/04/dimming-dilemma/">Global Dimming Dilemma (Scientists Warning)</a></li>
+                        <li><a href="https://news.agu.org/press-release/aerosol-pollution-caused-decades-of-global-dimming/">AEROSOL POLLUTION CAUSED DECADES OF “GLOBAL DIMMING” (AGU)</a></li>
+                        <li><a href="https://invidious.snopyta.org/watch?v=emn1hBSHUfQ">Global Dimming Paradox: Are we facing an abrupt temperature spike? (Just Have a Think)</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <li>Emissions</li>
+            <ul>
+              <li>
+                <div class="box">
+                  <a class="button" id="what-causes-emissions" href="#popup37">Who and what causes emissions?</a>
+                </div>
+                <div id="popup37" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#what-causes-emissions">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://www.climatewatchdata.org/key-visualizations">Key Visualizations (Climate Watch)</a></li>
+                        <li><a href="https://ourworldindata.org/ghg-emissions-by-sector">Sector by sector: where do global greenhouse gas emissions come from? (Our World in Data)</a></li>
+                        <li><a href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions#co2-and-greenhouse-gas-emissions-country-profiles">CO2 and Greenhouse Gas Emissions Country Profiles (Our World in Data)</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>Trends</li>
+            </ul>
+            <li>
+              <div class="box">
+                <a class="button" id="planetary-boundaries" href="#popup4">Planetary boundaries</a>
+              </div>
+              <div id="popup4" class="overlay">
+                <div class="popup">
+                  <h2>Sources</h2>
+                  <a class="close" href="#planetary-boundaries">&times;</a>
+                  <div class="content">
+                    <ul>
+                      <li><a href="https://www.stockholmresilience.org/research/planetary-boundaries.html">Stockholm Resilience Centre: Planetary boundaries</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="box">
+                <a class="button" id="system-dynamics" href="#popup5">System dynamics</a>
+              </div>
+              <div id="popup5" class="overlay">
+                <div class="popup">
+                  <h2>Sources</h2>
+                  <a class="close" href="#system-dynamics">&times;</a>
+                  <div class="content">
+                    <ul>
+                      <li><a href="https://invidious.snopyta.org/watch?v=qPb_0JZ6-Rc">COLLAPSE: THE ONLY REALISTIC SCENARIO ? (A. Keller) [NEXT] S02 E04</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="box">
+                <a class="button" id="overshoot-and-limits-to-growth" href="#popup6">Overshoot and limits to growth</a>
+              </div>
+              <div id="popup6" class="overlay">
+                <div class="popup">
+                  <h2>Sources</h2>
+                  <a class="close" href="#overshoot-and-limits-to-growth">&times;</a>
+                  <div class="content">
+                    <ul>
+                      <li><a href="https://collapsepod.buzzsprout.com/1403161/5892508-episode-4-overshoot-limits-to-growth">Episode 4: Overshoot & Limits to Growth (BD:C)</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="box">
+                <a class="button" id="near-real-time-tracking" href="#popup10">(Near) real-time tracking, interactive maps and charts</a>
+              </div>
+              <div id="popup10" class="overlay">
+                <div class="popup">
+                  <h2>Sources</h2>
+                  <a class="close" href="#near-real-time-tracking">&times;</a>
+                  <div class="content">
+                    <ul>
+                      <li><a href="https://climate.nasa.gov/">NASA: Climate Change and Global Warming (NASA)</a></li>
+                      <li><a href="https://osi-saf.eumetsat.int/products">Products | OSI SAF (eumetsat.int)</a></li>
+                      <li><a href="https://interactive-atlas.ipcc.ch/regional-information">IPCC WGI Interactive Atlas</a></li>
+                      <li><a href="https://sites.uci.edu/zlabe/arctic-sea-ice-figures">Arctic Sea Ice Figures (Zachary Labe)</a></li>
+                      <li><a href="https://www.zeit.de/wirtschaft/2022-04/energiekosten-deutschland-gas-strom-benzin-energiemonitor">Energiemonitor Deutschland (Zeit)</a></li>
+                      <li><a href="https://www.sueddeutsche.de/projekte/artikel/wissen/klimawandel-aktuell-der-sz-klimamonitor-e203859/">Klimawandel aktuell: Der SZ-Klimamonitor (SZ)</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <br>
+          <p><strong>2. History</strong></p>
+          <ul>
+            <li>Collapse in history</li>
+            <ul>
+              <li>
+                <div class="box">
+                  <a class="button" id="collapse-in-history" href="#popup7">General</a>
+                </div>
+                <div id="popup7" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#collapse-in-history">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://teddit.net/r/collapse/comments/qc63pa/people_dont_realize_that_sophisticated/">People don't realize that sophisticated civilizations have been wiped off the map before</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>Examples</li>
+              <ul>
+                <li>
+                  <div class="box">
+                    <a class="button" id="sumerians" href="#popup8">Sumerians</a>
+                  </div>
+                  <div id="popup8" class="overlay">
+                    <div class="popup">
+                      <h2>Sources</h2>
+                      <a class="close" href="#sumerians">&times;</a>
+                      <div class="content">
+                        <ul>
+                          <li><a href="https://invidious.snopyta.org/watch?v=d2lJUOv0hLA">The Sumerians - Fall of the First Cities</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="box">
+                    <a class="button" id="bronze-age" href="#popup9">Bronze Age</a>
+                  </div>
+                  <div id="popup9" class="overlay">
+                    <div class="popup">
+                      <h2>Sources</h2>
+                      <a class="close" href="#bronze-age">&times;</a>
+                      <div class="content">
+                        <ul>
+                          <li><a href="https://invidious.snopyta.org/watch?v=B965f8AcNbw">The Bronze Age Collapse - Mediterranean Apocalypse</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>Roman Empire</li>
+                <li>USSR</li>
+              </ul>
+            </ul>
+          </ul>
+          <br>
+          <p><strong>3. Contributors to collapse</strong></p>
+          <ul>
+            <li>
+              <div class="box">
+                <a class="button" id="dependency-on-finite-resources" href="#popup28">Dependency on finite resources</a>
+              </div>
+              <div id="popup28" class="overlay">
+                <div class="popup">
+                  <h2>Sources</h2>
+                  <a class="close" href="#dependency-on-finite-resources">&times;</a>
+                  <div class="content">
+                    <ul>
+                      <li><a href="https://www.resilience.org/stories/2022-07-25/will-civilization-collapse-because-its-running-out-of-oil/">Will civilization collapse because it’s running out of oil?</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>Overpopulation</li>
+            <li>Overconsumption</li>
+            <li>
+              <div class="box">
+                <a class="button" id="deforestation" href="#popup28">Deforestation</a>
+              </div>
+              <div id="popup28" class="overlay">
+                <div class="popup">
+                  <h2>Sources</h2>
+                  <a class="close" href="#deforestation">&times;</a>
+                  <div class="content">
+                    <ul>
+                      <li><a href="https://www.nature.com/articles/s41598-020-63657-6">Deforestation and world population sustainability: a quantitative analysis</a> <img alt="paper" class="paper"></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>Pollution</li>
+            <ul>
+              <li>Light pollution</li>
+              <li>PFAS (forever chemicals)</li>
+              <li>Micro- and nanoplastics</li>
+              <ul>
+                <li>Endocrine disruptors</li>
+              </ul>
+            </ul>
+            <li>Propaganda and misinformation</li>
+            <ul>
+              <li>
+                <div class="box">
+                  <a class="button" id="in-media" href="#popup11">In media</a>
+                </div>
+                <div id="popup11" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#in-media">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://www.vox.com/23158406/climate-change-tell-kids-wont-destroy-world">We’re giving kids “climate anxiety” and it’s not necessary</a></li>
+                        <li><a href="https://archive.ph/59gJH">Opinion | Your Kids Are Not Doomed</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="box">
+                  <a class="button" id="greenwashing" href="#popup12">Greenwashing</a>
+                </div>
+                <div id="popup12" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#greenwashing">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://invidious.snopyta.org/watch?v=uCuy1DaQzWI">Kurzgesagt and the art of climate greenwashing</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <li>From cooperations</li>
+            <ul>
+              <li>
+                <div class="box">
+                  <a class="button" id="Exxon" href="#popup13">Exxon</a>
+                </div>
+                <div id="popup13" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#exxon">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://www.wired.com/2015/09/exxons-scientists-confirmed-climate-changein-70s/">Exxon's Own Scientists Confirmed Climate Change—In the 70s</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="box">
+                  <a class="button" id="british-petroleum" href="#popup14">British Petroleum</a>
+                </div>
+                <div id="popup14" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#british-petroleum">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://www.theguardian.com/commentisfree/2021/aug/23/big-oil-coined-carbon-footprints-to-blame-us-for-their-greed-keep-them-on-the-hook">Big oil coined ‘carbon footprints’ to blame us for their greed. Keep them on the hook</a></li>
+                        <li><a href="https://mashable.com/feature/carbon-footprint-pr-campaign-sham">The devious fossil fuel propaganda we all use</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <li>About resources</li>
+            <ul>
+              <li>
+                <div class="box">
+                  <a class="button" id="plastic" href="#popup15">Plastic</a>
+                </div>
+                <div id="popup15" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#plastic">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://text.npr.org/897692090">How Big Oil Misled The Public Into Believing Plastic Would Be Recycled</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </ul>
+          <br>
+          <p><strong>4. Symptoms of spherical collapses</strong></p>
+          <ul>
+            <li>Atmosphere</li>
+            <ul>
+              <li>
+                <div class="box">
+                  <a class="button" id="structural-change" href="#popup29">Structural change</a>
+                </div>
+                <div id="popup29" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#structural-change">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://www.insidescience.org/news/climate-change-raising-top-troposphere">Climate Change is Raising the Top of the Troposphere</a></li>
+                        <li><a href="https://www.science.org/doi/10.1126/sciadv.abi8065">Continuous rise of the tropopause in the Northern Hemisphere over 1980–2020</a> <img alt="paper" class="paper"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="box">
+                  <a class="button" id="increase-in-aeorosol-emissions" href="#popup32">Increase in aerosol emissions</a>
+                </div>
+                <div id="popup32" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#increase-in-aeorosol-emissions">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://www.theguardian.com/environment/2022/jul/05/global-heating-causes-methane-growth-four-times-faster-than-thought-study">Methane much more sensitive to global heating than previously thought – study</a></li>
+                        <li><a href="https://www.nature.com/articles/s41467-022-31345-w">Impact of interannual and multidecadal trends on methane-climate feedbacks and sensitivity</a> <img alt="paper" class="paper"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>Worse air quality</li>
+              <li>
+                <div class="box">
+                  <a class="button" id="jet-stream-disruption" href="#popup34">Jet-stream disruption</a>
+                </div>
+                <div id="popup34" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#jet-stream-disruption">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://www.carbonbrief.org/qa-how-is-arctic-warming-linked-to-polar-vortext-other-extreme-weather">Q&A: How is Arctic warming linked to the ‘polar vortex’ and other extreme weather?</a></li>
+                        <li><a href="https://iopscience.iop.org/article/10.1088/1748-9326/10/1/014005">Evidence for a wavier jet stream in response to rapid Arctic warming</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>Polar vortex shift</li>
+            </ul>
+            <li>Cryosphere</li>
+            <ul>
+              <li>
+                <div class="box">
+                  <a class="button" id="ice-free-arctic" href="#popup33">Ice-free Arctic / Blue Ocean Event</a>
+                </div>
+                <div id="popup33" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#ice-free-arctic">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://invidious.snopyta.org/watch?v=U82e8XF-5Lo">The First Arctic Blue Ocean Event: What Computer Simulations and Statistical Trend Analysis Tells Us</a></li>
+                        <li><a href="https://invidious.snopyta.org/watch?v=P_7OfhrbAPY">What will life be like after Arctic Blue-Ocean-Zero: Abrupt Climate System Disruption</a></li>
+                        <li><a href="https://invidious.snopyta.org/watch?v=qo3cznpfIpA">Blue Ocean Event : Game Over?</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>Melting of permafrost</li>
+              <li>Thawing glaciers</li>
+            </ul>
+            <li>Hydrosphere (water and oceans)</li>
+            <ul>
+              <li>Sea level rise</li>
+              <li>Increased risk of floods</li>
+              <li>Ocean warming</li>
+              <li>Ocean acidification</li>
+              <li>Changes in precipitation</li>
+              <li>Worse water quality</li>
+            </ul>
+            <li>Lithosphere</li>
+            <ul>
+              <li>
+                <div class="box">
+                  <a class="button" id="desertification" href="#popup31">Desertification</a>
+                </div>
+                <div id="popup31" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#desertification">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://www.livescience.com/62168-sahara-desert-expanding.html">The Sahara Desert Is Growing. Here's What That Means</a></li>
+                        <li><a href="https://journals.ametsoc.org/view/journals/clim/31/9/jcli-d-17-0187.1.xml">Twentieth-Century Climate Change over Africa: Seasonal Hydroclimate Trends and Sahara Desert Expansion</a> <img alt="paper" class="paper"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="box">
+                  <a class="button" id="top-soil-erosion" href="#popup16">(Top) soil erosion</a>
+                </div>
+                <div id="popup16" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#top-soil-erosion">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://earthisland.org/journal/index.php/magazine/entry/peak_soil">Peak Soil (earthisland.org)</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>More droughts</li>
+            </ul>
+            <li>Biosphere</li>
+            <ul>
+              <li>Lower nutritional value of crops</li>
+              <li>Rainforest turning into a savanna</li>
+              <li>Biodiversity loss</li>
+              <li>Species decline (birds, insects ...)</li>
+              <ul>
+                <li>Pollinators</li>
+                <li>Phytoplankton</li>
+              </ul>
+            </ul>
+            <li>Anthroposphere</li>
+            <ul>
+              <li>Political issues</li>
+              <ul>
+                <li>Political corruption</li>
+                <li>
+                  <div class="box">
+                    <a class="button" id="rise-of-extremism" href="#popup17">Rise of political / religious extremism</a>
+                  </div>
+                  <div id="popup17" class="overlay">
+                    <div class="popup">
+                      <h2>Sources</h2>
+                      <a class="close" href="#rise-of-extremism">&times;</a>
+                      <div class="content">
+                        <ul>
+                          <li><a href="https://teddit.net/r/collapse/comments/van0ff/american_christianity_and_what_it_is_doing_to_the/">American Christianity and what it is doing to the United States</a></li>
+                          <li><a href="https://teddit.net/r/collapse/comments/w7bz6s/connecting_the_dots_the_rise_of_fascism_and_the/">Connecting the Dots - The Rise of Fascism and the Collapse of democracy</a></li>
+                          <li><a href="https://www.salon.com/2022/06/28/christian-fascism-is-right-here-right-now-after-roe-can-we-finally-see-it/">Christian fascism is right here, right now: After Roe, can we finally see it?</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>Higher potential for armed conflicts</li>
+                <li>Restriction of civil rights and freedoms (abortion, same-sex marriage, surveillance-free communication ...)</li>
+              </ul>
+              <li>Social issues</li>
+              <ul>
+                <li>Mass migration / trapped populations</li>
+                <li>Greater inequality</li>
+                <li>Increased prices (food, building materials, fuel etc.)</li>
+              </ul>
+              <li>Health-related issues</li>
+              <ul>
+                <li>Increase in drug usage / addictions</li>
+                <li>More diseases (outbreaks, epidemics / pandemics)</li>
+                <li>Increase in mental disorders</li>
+                <li>Rising rates of suicide</li>
+              </ul>
+              <li>Food production</li>
+              <ul>
+                <li>Decreased crop yields</li>
+                <li>Crops like rice and wheat becoming less nutritious</li>
+                <li>
+                  <div class="box">
+                    <a class="button" id="Increased-risk of-multiple-breadbasket-failures" href="#popup36">Increased risk of multiple breadbasket failures</a>
+                  </div>
+                  <div id="popup36" class="overlay">
+                    <div class="popup">
+                      <h2>Sources</h2>
+                      <a class="close" href="#Increased-risk of-multiple-breadbasket-failures">&times;</a>
+                      <div class="content">
+                        <ul>
+                          <li><a href="https://research-information.bris.ac.uk/ws/portalfiles/portal/198508451/Full_text_PDF_accepted_author_manuscript_.pdf">Increasing risks of multiple breadbasket failure under 1.5 and 2 °C global warming</a> <img alt="paper" class="paper"></li>
+                          <li><a href="https://www.bu.edu/pardee/files/2017/03/Multiple-Breadbasket-Failures-Pardee-Report.pdf">The Risks of Multiple Breadbasket Failures in the 21st Century: A Science Research Agenda</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <li>Shortages of resources / war over them</li>
+              <ul>
+                <li>Freshwater</li>
+                <li>Food</li>
+                <li>Cheap fossil fuels</li>
+                <li>Rare earth metals</li>
+                <li>Sand</li>
+                <li>Phosphorus (for fertilizer)</li>
+              </ul>
+              <li>Other</li>
+              <ul>
+                <li>Decaying infrastructure</li>
+              </ul>
+            </ul>
+            <li>Global shifts</li>
+            <ul>
+              <li>
+                <div class="box">
+                  <a class="button" id="climate-zones" href="#popup35">Climate zones</a>
+                </div>
+                <div id="popup35" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#climate-zones">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://e360.yale.edu/features/redrawing-the-map-how-the-worlds-climate-zones-are-shifting">Redrawing the Map: How the World’s Climate Zones Are Shifting</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="box">
+                  <a class="button" id="seasons" href="#popup30">Seasons</a>
+                </div>
+                <div id="popup30" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#seasons">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://brightly.eco/how-does-climate-change-affect-seasons/">Summer Could Last Six Months by 2100 If the World Doesn’t Curb Climate Change</a></li>
+                        <li><a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020GL091753">Changing Lengths of the Four Seasons by Global Warming</a> <img alt="paper" class="paper"></li>
+                        <li><a href="https://www.carbonbrief.org/powerful-evidence-global-warmings-effect-seasons-found-troposphere/">‘Powerful evidence’ of global warming’s effect on seasons found in troposphere</a></li>
+                        <li><a href="https://www.science.org/doi/full/10.1126/science.aas8806">Human influence on the seasonal cycle of tropospheric temperature</a> <img alt="paper" class="paper"></li>
+                        <li><a href="https://www.smartenergy.com/how-does-climate-change-affect-the-seasons/">How Does Climate Change Affect the Seasons?</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <li>Extreme weather events</li>
+            <ul>
+              <li>Change of frequency and powerfulness</li>
+              <li>
+                <div class="box">
+                  <a class="button47" id="wet-bulb-temperatures" href="#popup47">Wet-bulb temperatures</a>
+                </div>
+                <div id="popup" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#wet-bulb-temperatures">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://www.theguardian.com/science/2022/jul/31/why-you-need-to-worry-about-the-wet-bulb-temperature">Why you need to worry about the ‘wet-bulb temperature’</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <li>
+              <div class="box">
+                <a class="button" id="passing-tipping-points" href="#popup18">Passing tipping points</a>
+              </div>
+              <div id="popup18" class="overlay">
+                <div class="popup">
+                  <h2>Sources</h2>
+                  <a class="close" href="#passing-tipping-points">&times;</a>
+                  <div class="content">
+                    <ul>
+                      <li><a href="https://www.nature.com/articles/d41586-019-03595-0">Climate tipping points — too risky to bet against</a></li>
+                      <li><a href="https://invidious.snopyta.org/watch?v=8Sl28fkrozE">10 years to transform the future of humanity -- or destabilize the planet</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>Possible positive feedback loops</li>
+            <ul>
+              <li>
+                <div class="box">
+                  <a class="button" id="emissions-of-methane" href="#popup45">Emissions of methane</a>
+                </div>
+                <div id="popup45" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#emissions-of-methane">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://www.science.org/content/article/ominous-sign-global-warming-feedback-loop-may-be-accelerating-methane-emissions">In ominous sign for global warming, feedback loop may be accelerating methane emissions</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>Lower albedo</li>
+              <li>Slower Gulf Stream</li>
+              <li>Rainforest turning into Savannah</li>
+            </ul>
+          </ul>
+          <br>
+          <p><strong>5. Adaptation, mitigation and climate engineering (global)</strong></p>
+          <ul>
+            <li>Good adjustments</li>
+            <ul>
+              <li>Degrowth</li>
+              <li>Political activism</li>
+            </ul>
+            <li>Mediocre adjustments</li>
+            <ul>
+              <li>Recycling</li>
+              <li>Lowering the personal carbon footprint</li>
+              <li>Green tech</li>
+            </ul>
+            <li>Wrong adjustments</li>
+            <ul>
+              <li>Green growth</li>
+              <li>Solar radiation management</li>
+              <li>Small scale nuclear war</li>
+              <li>Hypernormalisation</li>
+              <li>
+                <div class="box">
+                  <a class="button" id="cognitive-dissonance-and-bias" href="#popup19">Cognitive dissonance and bias</a>
+                </div>
+                <div id="popup19" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#cognitive-dissonance-and-bias">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://www.goethe.de/prj/mis/de/mit/kww.html">Kognitive Dissonanz - Wenn Klimawandel zur Meinungssache wird</a></li>
+                        <li><a href="https://cbtprofessionals.com.au/climate-change-cognitive-biases/">Climate Change and Cognitive Biases</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <li>
+              <div class="box">
+                <a class="button" id="how-the-rich-prepare" href="#popup46">How the rich prepare</a>
+              </div>
+              <div id="popup46" class="overlay">
+                <div class="popup">
+                  <h2>Sources</h2>
+                  <a class="close" href="#how-the-rich-prepare">&times;</a>
+                  <div class="content">
+                    <ul>
+                      <li><a href="https://www.theguardian.com/news/2018/feb/15/why-silicon-valley-billionaires-are-prepping-for-the-apocalypse-in-new-zealand">Why Silicon Valley billionaires are prepping for the apocalypse in New Zealand</a></li>
+                      <li><a href="https://www.theguardian.com/technology/2018/jul/23/tech-industry-wealth-futurism-transhumanism-singularity">How tech's richest plan to save themselves after the apocalypse</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          </ul>
+          <br>
+          <p><strong>6. Possible future prospects</strong></p>
+          <ul>
+            <li>
+              <div class="box">
+                <a class="button" id="world3" href="#popup20">World 3</a>
+              </div>
+              <div id="popup20" class="overlay">
+                <div class="popup">
+                  <h2>Sources</h2>
+                  <a class="close" href="#world3">&times;</a>
+                  <div class="content">
+                    <ul>
+                      <li><a href="https://invidious.snopyta.org/watch?v=cCxPOqwCr1I">Computer predicts the end of civilisation (1973)</a></li>
+                      <li><a href="https://www.clubofrome.org/blog-post/herrington-world-model/">Data check on the world model that forecast global collapse - Club of Rome</a></li>
+                      <li><a href="https://www.vice.com/en/article/z3xw3x/new-research-vindicates-1972-mit-prediction-that-society-will-collapse-soon">MIT Predicted in 1972 That Society Will Collapse This Century. New Research Shows We’re on Schedule. (VICE)</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="box">
+                <a class="button" id="21" href="#popup21">Other</a>
+              </div>
+              <div id="popup21" class="overlay">
+                <div class="popup">
+                  <h2>Sources</h2>
+                  <a class="close" href="#21">&times;</a>
+                  <div class="content">
+                    <ul>
+                      <li><a href="https://www.vice.com/en/article/597kpd/new-report-suggests-high-likelihood-of-human-civilization-coming-to-an-end-in-2050">New Report Suggests ‘High Likelihood of Human Civilization Coming to an End’ Starting in 2050 (VICE)</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <br>
+          <p><strong>7. Preparing for the worst (personal)</strong></p>
+          <ul>
+            <li>
+              <div class="box">
+                <a class="button" id="preparing-general" href="#popup22">General</a>
+              </div>
+              <div id="popup22" class="overlay">
+                <div class="popup">
+                  <h2>Sources</h2>
+                  <a class="close" href="#preparing-general">&times;</a>
+                  <div class="content">
+                    <ul>
+                      <li><a href="https://teddit.net/r/collapse/comments/v3kb0j/collapse_is_accelerating_what_should_we/">Collapse is accelerating; what should we realistically be doing to prepare??</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>Mentally</li>
+            <ul>
+              <li>
+                <div class="box">
+                  <a class="button" id="mentally-general" href="#popup23">General</a>
+                </div>
+                <div id="popup23" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#mentally-general">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://teddit.net/r/collapse/comments/v5i6jy/collapse_nihilism_how_do_you_overcome_it/">Collapse 'nihilism': How do you overcome it?</a></li>
+                        <li><a href="https://teddit.net/r/collapse/comments/cii799/the_burden_of_knowing/">The Burden of Knowing</a></li>
+                        <li><a href="https://teddit.net/r/collapse/comments/smx6a5/people_are_having_breakdowns_over_collapse_what/">People are having breakdowns over collapse. What do you say to them?</a></li>
+                        <li><a href="https://www.thestranger.com/guest-editorial/2022/06/15/75098383/the-blessing-of-extinction">The Blessing of Extinction</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>Meditation</li>
+              <li>Practicing different philosophies (stoicism, taoism ...)</li>
+              <li>Keeping in contact with other likeminded, collapse-aware people</li>
+              <li>Cut addictions</li>
+            </ul>
+            <li>Physically</li>
+            <ul>
+              <li>Get / stay fit and healthy</li>
+            </ul>
+            <li>
+              <div class="box">
+                <a class="button" id="possessions" href="#popup24">Possessions</a>
+              </div>
+              <div id="popup24" class="overlay">
+                <div class="popup">
+                  <h2>Sources</h2>
+                  <a class="close" href="#possessions">&times;</a>
+                  <div class="content">
+                    <ul>
+                      <li><a href="https://www.bbk.bund.de/DE/Warnung-Vorsorge/Vorsorge/vorsorge_node.html">Vorsorge für den Notfall</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>Homesteading</li>
+            <ul>
+              <li>
+                <div class="box">
+                  <a class="button" id="cooking-and-food" href="#popup25">Cooking and food</a>
+                </div>
+                <div id="popup25" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#cooking-and-food">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://homesteading.com/homestead-handbook-grow-all-the-food-you-need-in-your-backyard/">How to Grow All The Food You Need</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="box">
+                  <a class="button" id="keeping-animals" href="#popup26">Keeping animals</a>
+                </div>
+                <div id="popup26" class="overlay">
+                  <div class="popup">
+                    <h2>Sources</h2>
+                    <a class="close" href="#keeping-animals">&times;</a>
+                    <div class="content">
+                      <ul>
+                        <li><a href="https://homesteading.com/category/raising-animals-livestock-tips/">Animals Archives | Homesteading Simple Self Sufficient Off-The-Grid</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </ul>
+          <br>
+          <p><strong>8. Collapse and beyond - Summary</strong></p>
+          <ul>
+            <li><a href="https://12ft.io/proxy?q=https%3A%2F%2Fnymag.com%2Fintelligencer%2F2017%2F07%2Fclimate-change-earth-too-hot-for-humans.html">The Uninhabitable Earth</a></li>
+            <li><a href="https://www.plebity.org/conversations/conversation-with-vincent-mignerot/">Is this the end? A conversation with Vincent Mignerot</a></li>
+            <li><a href="https://invidious.snopyta.org/watch?v=6VSE5ubpKhg">'We're looking at Billions of People not being able to Survive' | Peter Carter, Expert IPCC Reviewer</a></li>
+          </ul>
+          <br>
+          <p><strong>Additional resources</strong></p>
+          <ul>
+            <li><a href="https://www.letstalkthis.com/collapse/">Let's Talk Collapse</a></li>
+            <li><a href="https://postdoom.com/">Post-Doom - Resources</a></li>
+            <li><a href="https://teddit.net/r/BiosphereCollapse/comments/s8jly8/scientific_journal_megathread_by_subject/">Scientific studies megathread</a></li>
+            <li><a href="https://invidious.snopyta.org/channel/UCr546o7ImhGM57qoY0hHvkA">Paul Beckwith (YouTube)</a></li>
+          </ul>
+          <br>
+          <p><strong>Humorous content</strong></p>
+          <ul>
+            <li><a href="https://invidious.snopyta.org/channel/UCo6ZdYBk7cCCCAr015Hebcg">The Doom Report w/Nicholas Don Smith</a></li>
+            <li><a href="https://teddit.net/u/ThisWeegInCollapse/submitted">This Weeg in Collapse</a></li>
+          </ul>
+          <br>
+          <p><strong>Books</strong></p>
+          <ul>
+            <li><a href="https://www.clubofrome.org/publication/the-limits-to-growth/">The Limits to Growth - Club of Rome</a></li>
+          </ul>
+          <br>
+          <p><strong>Support</strong></p>
+          <ul>
+            <li><a href="https://www.goodgriefnetwork.org/">Good Grief Network</a></li>
+            <li><a href="https://doomersupport.org/">Doomer Support</a></li>
+            <li><a href="https://teddit.net/r/CollapseSupport/">/r/CollapseSupport</a></li>
+          </ul>
+          <br>
+        </div>
+      </section>
+    </div>
+    <p style="margin-left: 10%;">Last updated: 01.08.2022</p>
+</body>
 </html>

@@ -1,73 +1,73 @@
 <!DOCTYPE HTML>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta name="keywords" content="privacy, security, anonymity, tor, environmentalism, climate change, collapse">
-      <title>C161</title>
-      <link rel="stylesheet" href="base.css">
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <link rel="shortcut icon" href="icon.png">
-   </head>
-   <body id="main">
-            <script>
-$('#main').toggleClass(localStorage.toggled);
 
-function darkLight() {
-  /*LIGHT CLASS*/
-  if (localStorage.toggled != 'light') {
-    $('#main, p').toggleClass('light', true);
-    localStorage.toggled = "light";
-     
-  } else {
-    $('#main, p').toggleClass('light', false);
-    localStorage.toggled = "";
-  }
-}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="privacy, security, anonymity, tor, environmentalism, climate change, collapse">
+  <title>C161</title>
+  <link rel="stylesheet" href="base.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="shortcut icon" href="icon.png">
+  <script>
+    $('#main').toggleClass(localStorage.toggled);
 
-/*Add 'checked' property to input if background == dark*/
-if ($('main').hasClass('light')) {
-   $( '#dark_light' ).prop( "checked", true )
-} else {
-  $( '#dark_light' ).prop( "checked", false )
-}
+    function darkLight() {
+      /*LIGHT CLASS*/
+      if (localStorage.toggled != 'light') {
+        $('#main, p').toggleClass('light', true);
+        localStorage.toggled = "light";
+      } else {
+        $('#main, p').toggleClass('light', false);
+        localStorage.toggled = "";
+      }
+    }
+    /*Add 'checked' property to input if background == dark*/
+    if ($('main').hasClass('light')) {
+      $('#dark_light').prop("checked", true)
+    } else {
+      $('#dark_light').prop("checked", false)
+    }
 
-                 function changeImage1() {
-                      var image = document.getElementById('xxiivv');
-                      if (image.src.match("https://webring.xxiivv.com/icon.white.svg")) {
-                          image.src = "https://webring.xxiivv.com/icon.black.svg";
-                      } else {
-                          image.src = "https://webring.xxiivv.com/icon.white.svg";
-                      }
-                  }
-         
+    function changeImage1() {
+      var image = document.getElementById('xxiivv');
+      if (image.src.match("https://webring.xxiivv.com/icon.white.svg")) {
+        image.src = "https://webring.xxiivv.com/icon.black.svg";
+      } else {
+        image.src = "https://webring.xxiivv.com/icon.white.svg";
+      }
+    }
+  </script>
+</head>
 
-      </script>
-   <header>
-      <img src="logo.png" class="logo" alt="logo">
-      <div class="name">
-         <h1><a href="index.html" >C161</a></h1>
-      </div>
-      <div class="header-list">
-         <ul class="header-list-items">
-            <li class="art-button"> <a style="color:#fcfcfc;" href="art/art.html">Art</a></li>
-            <li class="hli inactive"> <a href="about.html">About</a></li>
-            <li class="hli active"> <a href="contact.html">Contact</a></li>
-            <a href="https://webring.xxiivv.com/#C161" target="_blank">
-            <img id="xxiivv" src="https://webring.xxiivv.com/icon.white.svg" alt="XXIIVV webring" style="padding: 0px 10px 0px 0px;"/>
-            </a>
-<button type="button" class="theme-toggle" id="dark_light" onclick="darkLight(); changeImage1();">🌙/🌞</button>
-         </ul>
-      </div>
-   </header>
-      <div class="content" style="margin-top: 50px;">
-         <section style="padding: 0; margin: 0;">
-            <h3><u>Contact</u></h3>
-            <p>E-Mail: <a href="mailto:c161@tutanota.com">c161@tutanota.com</a> (I don't check it regularly)<br>
-               Matrix: <a href="https://matrix.to/#/@neo_sodom:matrix.org">neo_sodom:matrix.org</a><br>
-               Briar / Session etc.: on request
-            </p>
-         </section>
-      </div>
-     </body>
+<body id="main">
+
+  <header>
+    <img src="logo.png" class="logo" alt="logo">
+    <div class="name">
+      <h1><a href="index.html">C161</a></h1>
+    </div>
+    <div class="header-list">
+      <ul class="header-list-items">
+        <li class="art-button"> <a style="color:#fcfcfc;" href="art/art.html">Art</a></li>
+        <li class="hli inactive"> <a href="about.html">About</a></li>
+        <li class="hli active"> <a href="contact.html">Contact</a></li>
+        <a href="https://webring.xxiivv.com/#C161" target="_blank">
+          <img id="xxiivv" src="https://webring.xxiivv.com/icon.white.svg" alt="XXIIVV webring" style="padding: 0px 10px 0px 0px;" />
+        </a>
+        <button type="button" class="theme-toggle" id="dark_light" onclick="darkLight(); changeImage1();">🌙/🌞</button>
+      </ul>
+    </div>
+  </header>
+  <div class="content" style="margin-top: 50px;">
+    <section style="padding: 0; margin: 0;">
+      <h3><u>Contact</u></h3>
+      <p>E-Mail: <a href="mailto:c161@tutanota.com">c161@tutanota.com</a> (I don't check it regularly)<br>
+        Matrix: <a href="https://matrix.to/#/@neo_sodom:matrix.org">neo_sodom:matrix.org</a><br>
+        Briar / Session etc.: on request
+      </p>
+    </section>
+  </div>
+</body>
+
 </html>
